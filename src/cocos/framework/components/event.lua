@@ -119,6 +119,7 @@ function Event:removeEventListenersByTag(tagToRemove)
 end
 
 function Event:removeEventListenersByEvent(eventName)
+    if not  eventName  then return end
     self.listeners_[string.upper(eventName)] = nil
     if DEBUG > 1 then
         printInfo("%s [Event] removeAllEventListenersForEvent() - remove all listeners for event %s", tostring(self.target_), eventName)

@@ -32,19 +32,19 @@ end
 
 function cc.load(...)
     local names = {...}
-    assert(#names > 0, "cc.load() - invalid package names")
+    assert(#names > 0, "cc.load() - invalid fwm names")
 
     local packages = {}
     for _, name in ipairs(names) do
-        assert(type(name) == "string", string.format("cc.load() - invalid package name \"%s\"", tostring(name)))
+        assert(type(name) == "string", string.format("cc.load() - invalid fmw name \"%s\"", tostring(name)))
         if not loaded_packages[name] then
-            local packageName = string.format("packages.%s.init", name)
+            local packageName = string.format("fmw.%s.init", name)
             local cls = require(packageName)
-            assert(cls, string.format("cc.load() - package class \"%s\" load failed", packageName))
+            assert(cls, string.format("cc.load() - fmw class \"%s\" load failed", packageName))
             loaded_packages[name] = cls
 
             if DEBUG > 1 then
-                printInfo("cc.load() - load module \"packages.%s.init\"", name)
+                printInfo("cc.load() - load module \"fmw.%s.init\"", name)
             end
         end
         packages[#packages + 1] = loaded_packages[name]

@@ -17,7 +17,6 @@ function app:ctor()
         printInfo("collect")
         collectgarbage("collect")
         collectgarbage("setstepmul", DNP_APP.gcBlock)
-        
     end
 
     timer:start("MEMERY_DUMP_TIMER",onMemoryTimer, DNP_APP.gcInterval,10000000)

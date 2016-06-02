@@ -7,11 +7,10 @@ cc.FileUtils:getInstance():addSearchPath("res/studio/")
 cc.FileUtils:getInstance():addSearchPath("res/studio/views/")
 
 
-
 require "config"
 require "cocos.init"
 require "util.init"
-
+require "fmw.init"
 
 local function main()
     require("app.MyApp"):create():run()

@@ -30,7 +30,7 @@ function MainScene:onCreate()
     end
     self:addSelfEventListener("TAST_CALL", call)
     
-    event:dispatchEvent("TAST_CALL")
+    event:dispatchEvent({name = "TAST_CALL"})
 
     local layer1 = KTGroundView:create(self:getApp(),"map")
         :addTo(self)
