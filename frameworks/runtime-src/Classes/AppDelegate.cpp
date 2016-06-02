@@ -117,6 +117,11 @@ void AppDelegate::applicationDidEnterBackground()
     Director::getInstance()->stopAnimation();
 
     SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
+    
+    auto dispatcher = Director::getInstance()->getEventDispatcher();
+    if (dispatcher) {
+        dispatcher->dispatchCustomEvent("APP_ENTER_BACKGROUND_EVENT");
+    }
 }
 
 // this function will be called when the app is active again
@@ -125,4 +130,9 @@ void AppDelegate::applicationWillEnterForeground()
     Director::getInstance()->startAnimation();
 
     SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
+    
+    auto dispatcher = Director::getInstance()->getEventDispatcher();
+    if (dispatcher) {
+        dispatcher->dispatchCustomEvent("APP_ENTER_FOREGROUND_EVENT");
+    }
 }

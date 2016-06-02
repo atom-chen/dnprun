@@ -1,5 +1,5 @@
 
-#include "crypto/CCCrypto.h"
+#include "CCCrypto.h"
 
 #if CC_LUA_ENGINE_ENABLED > 0
 extern "C" {

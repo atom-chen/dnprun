@@ -22,7 +22,29 @@ function app:ctor()
 
     timer:start("MEMERY_DUMP_TIMER",onMemoryTimer, DNP_APP.gcInterval,10000000)
 
+
+
+    local eventDispatcher = cc.Director:getInstance():getEventDispatcher()
+    
+    local customListenerbg = cc.EventListenerCustom:create(app.events.APP_ENTER_BACKGROUND_EVENT,
+        handler(self, self.onEnterBackground))
+    eventDispatcher:addEventListenerWithFixedPriority(customListenerbg, 1) 
+
+    local customListenerfg = cc.EventListenerCustom:create(app.events.APP_ENTER_FOREGROUND_EVENT,
+        handler(self, self.onForeBackground))
+    eventDispatcher:addEventListenerWithFixedPriority(customListenerfg, 1) 
 end
+
+
+
+function app:onEnterBackground()
+    print("onEnterBackground")
+end
+
+function app:onForeBackground()
+    print("onForeBackground")
+end
+
 
 function app:exit()
     cc.Director:getInstance():endToLua()
@@ -35,15 +57,5 @@ function app:dumpMemory()
     return string.format("%0.4f", collectgarbage("count")/1024)
 end
 
-
-function app.onEnterBackground()
-    app.isPaused = true
-    event:dispatchEvent({name = app.events.APP_ENTER_BACKGROUND_EVENT})
-end
-
-function app.onEnterForeground()
-    app.isPaused = false
-    event:dispatchEvent({name = app.events.APP_ENTER_FOREGROUND_EVENT})
-end
 
 return app

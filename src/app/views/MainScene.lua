@@ -89,8 +89,13 @@ function MainScene:onCreate()
     print(ts)
     
     dump(sloter:value())
+    
+    
+--    local eventDispatcher = cc.Director:getInstance():getEventDispatcher()
+--    local customListenerBg = cc.EventListenerCustom:create("APP_ENTER_BACKGROUND_EVENT",
+--        handler(self, self.onEnterBackground))
+--    eventDispatcher:addEventListenerWithFixedPriority(customListenerBg, 1) 
 end
-
 
 function MainScene:onClick( path,node,funcName)
     printf("onClick")

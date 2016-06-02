@@ -1,5 +1,5 @@
 
-#include "crypto/CCCrypto.h"
+#include "CCCrypto.h"
 
 #import <CommonCrypto/CommonCryptor.h>
 

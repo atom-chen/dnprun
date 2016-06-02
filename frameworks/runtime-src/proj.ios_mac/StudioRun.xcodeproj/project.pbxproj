@@ -50,10 +50,6 @@
 		A68450971CFF4AB600A7525C /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = A68450851CFF4AB600A7525C /* build.sh */; };
 		A68450981CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
 		A68450991CFF4AB600A7525C /* cocos2dx_extra_luabinding.tolua in Resources */ = {isa = PBXBuildFile; fileRef = A68450881CFF4AB600A7525C /* cocos2dx_extra_luabinding.tolua */; };
-		A684509A1CFF4AB600A7525C /* CCCryptoAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684508B1CFF4AB600A7525C /* CCCryptoAndroid.cpp */; };
-		A684509B1CFF4AB600A7525C /* CCCryptoIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A684508D1CFF4AB600A7525C /* CCCryptoIOS.mm */; };
-		A684509C1CFF4AB600A7525C /* CCCryptoMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68450901CFF4AB600A7525C /* CCCryptoMac.mm */; };
-		A684509D1CFF4AB600A7525C /* CCCryptoWin32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */; };
 		A684509F1CFF4E9900A7525C /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = A684507C1CFF4AB600A7525C /* libbase64.c */; };
 		A68450A11CFFD56800A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
 		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
@@ -864,20 +860,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
-				A684509A1CFF4AB600A7525C /* CCCryptoAndroid.cpp in Sources */,
-				A684509D1CFF4AB600A7525C /* CCCryptoWin32.cpp in Sources */,
 				A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */,
 				A68450931CFF4AB600A7525C /* libbase64.c in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				A68450981CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
-				A684509B1CFF4AB600A7525C /* CCCryptoIOS.mm in Sources */,
 				A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				A68450941CFF4AB600A7525C /* CCCrypto.cpp in Sources */,
 				A6D398D21CF99427000870D2 /* GdtAdManager.mm in Sources */,
-				A684509C1CFF4AB600A7525C /* CCCryptoMac.mm in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
@@ -1106,7 +1098,7 @@
 					100000000,
 				);
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donopo.dnprun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donpo.dnprun;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1155,7 +1147,7 @@
 					100000000,
 				);
 				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donopo.dnprun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donpo.dnprun;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
