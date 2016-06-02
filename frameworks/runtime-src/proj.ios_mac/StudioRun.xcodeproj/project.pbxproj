@@ -43,7 +43,6 @@
 		9FFE00A01ACCF59E00D6E35A /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009B1ACCF59E00D6E35A /* lua_debugger.c */; };
 		9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
-		A60D18F21CF87ECA00707DDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60D18F11CF87ECA00707DDA /* Images.xcassets */; };
 		A68450931CFF4AB600A7525C /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = A684507C1CFF4AB600A7525C /* libbase64.c */; };
 		A68450941CFF4AB600A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
 		A68450961CFF4AB600A7525C /* build.bat in Resources */ = {isa = PBXBuildFile; fileRef = A68450841CFF4AB600A7525C /* build.bat */; };
@@ -54,6 +53,8 @@
 		A68450A11CFFD56800A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
 		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
 		A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
+		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
+		A6BB80611D0004730053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
 		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
@@ -67,7 +68,6 @@
 		A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D398D11CF99427000870D2 /* InterstitialViewController.m */; };
 		A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D6F11CFAA82800D82BBC /* SplashViewController.m */; };
 		A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5023811317EBBCAC00990C9B /* Info.plist */; };
-		A6F8D7381CFB154000D82BBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60D18EF1CF87C4A00707DDA /* Images.xcassets */; };
 		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -228,8 +228,6 @@
 		9FFE009C1ACCF59E00D6E35A /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
 		9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeLuaImpl.cpp; sourceTree = "<group>"; };
 		9FFE009E1ACCF59E00D6E35A /* RuntimeLuaImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeLuaImpl.h; sourceTree = "<group>"; };
-		A60D18EF1CF87C4A00707DDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "StudioRun-mobile/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		A60D18F11CF87ECA00707DDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "StudioRun-desktop/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		A68450791CFF4AB600A7525C /* cocos2dx_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocos2dx_extra.h; sourceTree = "<group>"; };
 		A684507C1CFF4AB600A7525C /* libbase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libbase64.c; sourceTree = "<group>"; };
 		A684507D1CFF4AB600A7525C /* libbase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase64.h; sourceTree = "<group>"; };
@@ -244,6 +242,8 @@
 		A684508D1CFF4AB600A7525C /* CCCryptoIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoIOS.mm; sourceTree = "<group>"; };
 		A68450901CFF4AB600A7525C /* CCCryptoMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoMac.mm; sourceTree = "<group>"; };
 		A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCCryptoWin32.cpp; sourceTree = "<group>"; };
+		A6BB805E1D0004360053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ios/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		A6BB80601D0004730053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mac/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6D398B71CF992FA000870D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
 		A6D398B81CF992FA000870D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
 		A6D398B91CF992FA000870D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
@@ -641,8 +641,8 @@
 		F293BC4615EB859D00256477 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A60D18F11CF87ECA00707DDA /* Images.xcassets */,
-				A60D18EF1CF87C4A00707DDA /* Images.xcassets */,
+				A6BB80601D0004730053D6E3 /* Images.xcassets */,
+				A6BB805E1D0004360053D6E3 /* Images.xcassets */,
 				C05D1C111923449100B808A4 /* config.json */,
 				C03781B718BF655400FE4F13 /* res */,
 				C03781B818BF655400FE4F13 /* src */,
@@ -794,7 +794,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C03781BA18BF655400FE4F13 /* res in Resources */,
-				A60D18F21CF87ECA00707DDA /* Images.xcassets in Resources */,
 				C03781BC18BF655400FE4F13 /* src in Resources */,
 				9FF504841A5E87B100AFDA55 /* ConsoleWindow.xib in Resources */,
 				9FC760431A67791200D1E6E7 /* lang in Resources */,
@@ -808,7 +807,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6F8D7381CFB154000D82BBC /* Images.xcassets in Resources */,
+				A6BB80611D0004730053D6E3 /* Images.xcassets in Resources */,
+				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,
 				A68450961CFF4AB600A7525C /* build.bat in Resources */,
 				A68450971CFF4AB600A7525C /* build.sh in Resources */,

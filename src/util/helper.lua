@@ -17,7 +17,6 @@ function helper.scrollable(layer, width)
     local touchBeginPoint = nil
     local touchLastPoint = nil
 
-    local actionMove
     local beginTime = 0
     local oneTouch = false
 
@@ -33,10 +32,7 @@ function helper.scrollable(layer, width)
         local location = touch:getLocation()
         touchBeginPoint = {x = location.x, y = location.y}
         touchLastPoint = touchBeginPoint
-        if (nil ~= actionMove) then
-            layer:stopAction(actionMove)
-        end
-        -- CCTOUCHBEGAN event must return true
+        ac.stopTarget(layer)
         return true
     end
 
@@ -60,8 +56,6 @@ function helper.scrollable(layer, width)
         local distance = (math.abs(location.x - touchLastPoint.x) )
         local position
 
-        --        cclog("time ### : " .. time)
-
         if distance > 60 and time < 0.5 then
             local cx, cy = layer:getPosition()
 
@@ -79,7 +73,7 @@ function helper.scrollable(layer, width)
                 end
             end
             local period = distance / 256
-            actionMove = cc.MoveTo:create(period,{x=position,y=0})
+            local actionMove = cc.MoveTo:create(period,{x=position,y=cy})
             layer:runAction(actionMove)
         end
         touchBeginPoint = nil
