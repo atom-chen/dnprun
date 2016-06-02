@@ -6,7 +6,6 @@
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
 #include "cocos2dx_extra_luabinding.h"
-#include "Const.h"
  //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -85,7 +84,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     LuaStack* stack = engine->getLuaStack();
     //################# QHZF 修改Key and Sign ###################
-    stack->setXXTEAKeyAndSign(XXTEA_KEY, strlen(XXTEA_KEY), XXTEA_SIGN, strlen(XXTEA_SIGN));
+     stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
 
     //register custom function
 //    LuaStack* stack = engine->getLuaStack();

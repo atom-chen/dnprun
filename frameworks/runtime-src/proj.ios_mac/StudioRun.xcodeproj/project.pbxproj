@@ -57,6 +57,7 @@
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
 		A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */ = {isa = PBXBuildFile; fileRef = A6BB806D1D0016BE0053D6E3 /* game.dat */; };
+		A6BB80781D0048950053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
@@ -820,6 +821,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BB80781D0048950053D6E3 /* res in Resources */,
 				A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */,
 				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,

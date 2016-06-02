@@ -25,16 +25,21 @@ function MainScene:onCreate()
 --    end
 --    timer:start(callback, 2, 10)
 
-
+    local function call()
+        
+    end
+    self:addSelfEventListener("TAST_CALL", call)
+    
+    event:dispatchEvent("TAST_CALL")
 
     local layer1 = KTGroundView:create(self:getApp(),"map")
         :addTo(self)
         
---    local layer1 = AppViews:addViewByName("app.views.KTGroundView","back",self)
+    local layer1 = AppViews:addViewByName("app.views.KTGroundView","back",self)
         
---    local layer2 = KTTopView:create(self:getApp(),"top")
---        :register()
---        :addTo(self)
+    local layer2 = KTTopView:create(self:getApp(),"top")
+        :register()
+        :addTo(self)
 --    layer2:get():setPosition(display.width/2,display.height)
 --
 --    local layer3 = KTBottomView:create(self:getApp(),"bottom")
@@ -45,18 +50,19 @@ function MainScene:onCreate()
     local sp = display.newSprite("#l-0.png")
         :addTo(self)
 
+
     ac.execute(sp, ac.ccMoveBy(2,cc.p(400,600)), {easing = 1})
     ac.execute(sp,ac.ccSeq(
         ac.ccDelay(4),ac.ccEasing(ac.ccMoveBy(3,cc.p(200,-400)),12)
     ))
-    
+--    
     --计时器
---    local function callback()
-----        layer1:removeSelf()
-----        AppViews:getView("top"):closeSelf()
---    print("timer")
---    end
---    timer:start(callback,4,10)
+    local function callback()
+--        layer1:removeSelf()
+--        AppViews:getView("top"):closeSelf()
+    print("timer")
+    end
+    timer:start(callback,1,200000)
 --    
        local function callback()
     ----        layer1:removeSelf()

@@ -262,6 +262,7 @@ function helper.setSloterData(key,value)
     sloter:setValueItem(key,value)
 end
 
+
 ---------------------------
 --向存储卡上储存用户数据，并保存
 --@function [parent=#helper] saveSloterData
