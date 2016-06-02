@@ -270,7 +270,7 @@ end
 
 ---------------------------
 --向存储卡上储存用户数据，并保存
---@function [parent=#helper] setUserSloterData
+--@function [parent=#helper] saveSloterData
 function helper.saveSloterData(key,value)
     sloter:setValueItem(key,value)
     sloter:save()
@@ -279,7 +279,7 @@ end
 
 ---------------------------
 --获取存储卡上的用户数据
---@function [parent=#helper] setUserSloterData
+--@function [parent=#helper] getUserSloterData
 function helper.getUserSloterData(key)
     return sloter:getValueItem(key)
 end

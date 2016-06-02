@@ -55,7 +55,9 @@
 		A684509C1CFF4AB600A7525C /* CCCryptoMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68450901CFF4AB600A7525C /* CCCryptoMac.mm */; };
 		A684509D1CFF4AB600A7525C /* CCCryptoWin32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */; };
 		A684509F1CFF4E9900A7525C /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = A684507C1CFF4AB600A7525C /* libbase64.c */; };
-		A68450A01CFF4EA700A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
+		A68450A11CFFD56800A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
+		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
+		A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
 		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
@@ -844,7 +846,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68450A01CFF4EA700A7525C /* CCCrypto.cpp in Sources */,
+				A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */,
+				A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */,
+				A68450A11CFFD56800A7525C /* CCCrypto.cpp in Sources */,
 				A684509F1CFF4E9900A7525C /* libbase64.c in Sources */,
 				C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */,
 				9FFE00A01ACCF59E00D6E35A /* lua_debugger.c in Sources */,

@@ -133,34 +133,34 @@ const string Crypto::MD5String(void* input, int inputLength)
 
 #if CC_LUA_ENGINE_ENABLED > 0
 
-cocos2d::LUA_STRING Crypto::cryptAES256Lua(bool isDecrypt,
-                                             const char* input,
-                                             int inputLength,
-                                             const char* key,
-                                             int keyLength)
-{
-    LuaStack* stack = LuaEngine::getInstance()->getLuaStack();
-    stack->clean();
-    if (getAES256KeyLength() == 0)
-    {
-        stack->pushNil();
-        return 1;
-    }
-    
-    int bufferSize = inputLength + getAES256KeyLength();
-    void* buffer = malloc(bufferSize);
-    int dataUsed = cryptAES256(isDecrypt, (unsigned char*)input, inputLength, (unsigned char*)buffer, bufferSize, (unsigned char*)key, keyLength);
-    if (dataUsed > 0)
-    {
-        stack->pushString(static_cast<const char*>(buffer), dataUsed);
-    }
-    else
-    {
-        stack->pushNil();
-    }
-    free(buffer);
-    return 1;
-}
+//cocos2d::LUA_STRING Crypto::cryptAES256Lua(bool isDecrypt,
+//                                             const char* input,
+//                                             int inputLength,
+//                                             const char* key,
+//                                             int keyLength)
+//{
+//    LuaStack* stack = LuaEngine::getInstance()->getLuaStack();
+//    stack->clean();
+//    if (getAES256KeyLength() == 0)
+//    {
+//        stack->pushNil();
+//        return 1;
+//    }
+//    
+//    int bufferSize = inputLength + getAES256KeyLength();
+//    void* buffer = malloc(bufferSize);
+//    int dataUsed = cryptAES256(isDecrypt, (unsigned char*)input, inputLength, (unsigned char*)buffer, bufferSize, (unsigned char*)key, keyLength);
+//    if (dataUsed > 0)
+//    {
+//        stack->pushString(static_cast<const char*>(buffer), dataUsed);
+//    }
+//    else
+//    {
+//        stack->pushNil();
+//    }
+//    free(buffer);
+//    return 1;
+//}
 
 LUA_STRING Crypto::encryptXXTEALua(const char* plaintext,
                                      int plaintextLength,

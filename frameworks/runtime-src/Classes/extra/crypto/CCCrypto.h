@@ -15,30 +15,30 @@ class Crypto
 public:
     static const int MD5_BUFFER_LENGTH = 16;
     
-    /** @brief Return AES256 key length */
-    static int getAES256KeyLength(void);
-    
-    /** @brief Encrypt data with AES256 algorithm, return ciphertext length */
-    static int encryptAES256(unsigned char* plaintext,
-                             int plaintextLength,
-                             unsigned char* ciphertext,
-                             int ciphertextBufferLength,
-                             unsigned char* key,
-                             int keyLength)
-    {
-        return cryptAES256(false, plaintext, plaintextLength, ciphertext, ciphertextBufferLength, key, keyLength);
-    }
-    
-    /** @brief Decrypt data with AES256 algorithm, return plaintext length */
-    static int decryptAES256(unsigned char* ciphertext,
-                             int ciphertextLength,
-                             unsigned char* plaintext,
-                             int plaintextBufferLength,
-                             unsigned char* key,
-                             int keyLength)
-    {
-        return cryptAES256(true, ciphertext, ciphertextLength, plaintext, plaintextBufferLength, key, keyLength);
-    }
+//    /** @brief Return AES256 key length */
+//    static int getAES256KeyLength(void);
+//    
+//    /** @brief Encrypt data with AES256 algorithm, return ciphertext length */
+//    static int encryptAES256(unsigned char* plaintext,
+//                             int plaintextLength,
+//                             unsigned char* ciphertext,
+//                             int ciphertextBufferLength,
+//                             unsigned char* key,
+//                             int keyLength)
+//    {
+//        return cryptAES256(false, plaintext, plaintextLength, ciphertext, ciphertextBufferLength, key, keyLength);
+//    }
+//    
+//    /** @brief Decrypt data with AES256 algorithm, return plaintext length */
+//    static int decryptAES256(unsigned char* ciphertext,
+//                             int ciphertextLength,
+//                             unsigned char* plaintext,
+//                             int plaintextBufferLength,
+//                             unsigned char* key,
+//                             int keyLength)
+//    {
+//        return cryptAES256(true, ciphertext, ciphertextLength, plaintext, plaintextBufferLength, key, keyLength);
+//    }
     
     /** @brief Encrypt data with XXTEA algorithm, return ciphertext, free ciphertext after used */
     static unsigned char* encryptXXTEA(unsigned char* plaintext,

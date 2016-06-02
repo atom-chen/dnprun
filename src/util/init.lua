@@ -22,6 +22,7 @@ THE SOFTWARE.
 
 ]]
 
+json = require("json")
 --require("util.Set")
 tagen = require("util.tagen").new()
 
@@ -32,3 +33,4 @@ sloter = require("util.sloter"):new()
 gamer = require("util.gamer"):new()
 helper = require("util.helper"):new()
 app = require("util.app").new()
+

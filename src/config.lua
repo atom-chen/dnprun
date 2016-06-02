@@ -6,6 +6,8 @@ DEBUG = 2
 DNP_APP = {
     appName = "DnpRun", 
     
+    slotKey = "D*N@P#L0NGL1FE",         -- 存档加密
+    confuseKey = 10240806,              -- 内存混淆
     gcInterval = 10,                    -- 垃圾回收频度(秒)
     gcBlock = 5000,                     -- 垃圾回收颗粒度(单元)
 }

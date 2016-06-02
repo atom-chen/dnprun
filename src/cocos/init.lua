@@ -25,6 +25,7 @@ THE SOFTWARE.
 require "cocos.cocos2d.Cocos2d"
 require "cocos.cocos2d.Cocos2dConstants"
 require "cocos.cocos2d.functions"
+--json = require("json")
 
 __G__TRACKBACK__ = function(msg)
     local msg = debug.traceback(msg, 3)

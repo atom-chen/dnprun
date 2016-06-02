@@ -5,6 +5,7 @@
 #include "lua_module_register.h"
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
+#include "cocos2dx_extra_luabinding.h"
  //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -20,6 +21,20 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 using namespace std;
+
+ //################# QHZF ###################
+
+static void quick_module_register(lua_State *L)
+{
+    lua_getglobal(L, "_G");
+    if (lua_istable(L, -1))//stack:...,_G,
+    {
+        luaopen_cocos2dx_extra_luabinding(L);
+    }
+    lua_pop(L, 1);
+}
+
+ //################# QHZF ###################
 
 AppDelegate::AppDelegate()
 {
@@ -77,6 +92,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 //    lua_getglobal(L, "_G");
 //    register_all_cocos2dx_dnp(engine->getLuaStack()->getLuaState());
 //    lua_settop(L, 0);
+    
+     quick_module_register(L);
      //################# QHZF ###################
     
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)

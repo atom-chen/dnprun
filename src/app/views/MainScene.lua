@@ -25,11 +25,6 @@ function MainScene:onCreate()
 --    end
 --    timer:start(callback, 2, 10)
 
-    dump(sloter)
-    sloter:setValueItem("12","1111")
-    dump(sloter)
-    sloter:save()
-
 
 
     local layer1 = KTGroundView:create(self:getApp(),"map")
@@ -76,6 +71,24 @@ function MainScene:onCreate()
     end
     event:addEventListener("122",handler(self,call))
     event:dispatchEvent({name = "122"})
+    
+    
+    local t =  crypto.encryptXXTEA("rest11", "123")
+    print(crypto.decryptXXTEA(t, "123"))
+    
+    
+    local tab = {}
+    tab["Himi"]="himigame.com"
+    tab["age"]="23"
+    
+    local enjson =  json.encode(tab)
+    print(enjson)
+    helper.saveSloterData("test","123")
+    
+    local ts =  helper.getUserSloterData("test")
+    print(ts)
+    
+    dump(sloter:value())
 end
 
 
