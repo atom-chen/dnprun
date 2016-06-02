@@ -54,8 +54,9 @@
 		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
 		A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
-		A6BB80611D0004730053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
-		A6BB80651D00140C0053D6E3 /* game.dat in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80641D00140C0053D6E3 /* game.dat */; };
+		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
+		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
+		A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */ = {isa = PBXBuildFile; fileRef = A6BB806D1D0016BE0053D6E3 /* game.dat */; };
 		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
@@ -69,8 +70,6 @@
 		A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D398D11CF99427000870D2 /* InterstitialViewController.m */; };
 		A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D6F11CFAA82800D82BBC /* SplashViewController.m */; };
 		A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5023811317EBBCAC00990C9B /* Info.plist */; };
-		C03781B918BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
-		C03781BA18BF655400FE4F13 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C05D1C121923449100B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C111923449100B808A4 /* config.json */; };
@@ -245,7 +244,8 @@
 		A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCCryptoWin32.cpp; sourceTree = "<group>"; };
 		A6BB805E1D0004360053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ios/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB80601D0004730053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mac/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		A6BB80641D00140C0053D6E3 /* game.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = game.dat; path = ../../../encrypt/game.dat; sourceTree = "<group>"; };
+		A6BB806D1D0016BE0053D6E3 /* game.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = game.dat; path = ../../../encrypt/game.dat; sourceTree = "<group>"; };
+		A6BB80701D00183D0053D6E3 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Const.h; path = ../Classes/Const.h; sourceTree = "<group>"; };
 		A6D398B71CF992FA000870D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
 		A6D398B81CF992FA000870D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
 		A6D398B91CF992FA000870D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
@@ -530,6 +530,14 @@
 			path = win32;
 			sourceTree = "<group>";
 		};
+		A6BB806C1D0016A00053D6E3 /* pbulish */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB806D1D0016BE0053D6E3 /* game.dat */,
+			);
+			name = pbulish;
+			sourceTree = "<group>";
+		};
 		A6D398B51CF992FA000870D2 /* Gdt */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,7 +577,6 @@
 		F293B3BD15EB7BE500256477 = {
 			isa = PBXGroup;
 			children = (
-				A6BB80641D00140C0053D6E3 /* game.dat */,
 				9FF504781A5E86D600AFDA55 /* libsimulator.xcodeproj */,
 				C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */,
 				15A8A4031834BDA200142BE0 /* cocos2d_libs.xcodeproj */,
@@ -632,6 +639,7 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A6BB80701D00183D0053D6E3 /* Const.h */,
 				A68450781CFF4AB600A7525C /* extra */,
 				9FC7603E1A67791200D1E6E7 /* ide-support */,
 				15427CE2198F237300DC375D /* lua_module_register.h */,
@@ -644,6 +652,7 @@
 		F293BC4615EB859D00256477 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A6BB806C1D0016A00053D6E3 /* pbulish */,
 				A6BB80601D0004730053D6E3 /* Images.xcassets */,
 				A6BB805E1D0004360053D6E3 /* Images.xcassets */,
 				C05D1C111923449100B808A4 /* config.json */,
@@ -796,8 +805,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BB80651D00140C0053D6E3 /* game.dat in Resources */,
-				C03781BA18BF655400FE4F13 /* res in Resources */,
+				A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */,
+				A6BB80681D0015840053D6E3 /* res in Resources */,
 				C03781BC18BF655400FE4F13 /* src in Resources */,
 				9FF504841A5E87B100AFDA55 /* ConsoleWindow.xib in Resources */,
 				9FC760431A67791200D1E6E7 /* lang in Resources */,
@@ -811,12 +820,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BB80611D0004730053D6E3 /* Images.xcassets in Resources */,
+				A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */,
 				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,
 				A68450961CFF4AB600A7525C /* build.bat in Resources */,
 				A68450971CFF4AB600A7525C /* build.sh in Resources */,
-				C03781B918BF655400FE4F13 /* res in Resources */,
 				C03781BB18BF655400FE4F13 /* src in Resources */,
 				A68450991CFF4AB600A7525C /* cocos2dx_extra_luabinding.tolua in Resources */,
 				C05D1C121923449100B808A4 /* config.json in Resources */,
@@ -1067,7 +1075,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconiOS;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
@@ -1117,7 +1125,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconiOS;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;

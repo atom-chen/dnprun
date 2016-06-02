@@ -6,6 +6,7 @@
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
 #include "cocos2dx_extra_luabinding.h"
+#include "Const.h"
  //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -83,7 +84,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_all_packages();
 
     LuaStack* stack = engine->getLuaStack();
-    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+    //################# QHZF 修改Key and Sign ###################
+    stack->setXXTEAKeyAndSign(XXTEA_KEY, strlen(XXTEA_KEY), XXTEA_SIGN, strlen(XXTEA_SIGN));
 
     //register custom function
 //    LuaStack* stack = engine->getLuaStack();
@@ -97,6 +99,12 @@ bool AppDelegate::applicationDidFinishLaunching()
      //################# QHZF ###################
     
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
+     //################# QHZF ###################
+//    stack->setDataInfo(XXTEA_KEY, strlen(XXTEA_KEY), XXTEA_SIGN, strlen(XXTEA_SIGN));
+//    engine->getLuaStack()->loadData("game.dat");
+//    usleep(500);
+ //################# QHZF ###################
+    
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE
     auto runtimeEngine = RuntimeEngine::getInstance();
     runtimeEngine->addRuntime(RuntimeLuaImpl::create(), kRuntimeEngineLua);
