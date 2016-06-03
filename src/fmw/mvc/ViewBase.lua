@@ -1,15 +1,19 @@
-
+-----------------------------------------
+--视图基础类
+--默认动画 进场enter   退场exit（结束的帧事件必须是exitEnd）
+--
+--
 local ViewBase = class("ViewBase", cc.Node)
 
 function ViewBase:ctor(app, name)
     self:enableNodeEvents()
     self.app_ = app
     self.name_ = name
-    
+
     self.tag         = tagen:get()
-    
+
     self.resourceExtend_ = nil
-    
+
     self.events = {}
     self.timers = {}
     self.tables = {}
@@ -26,6 +30,8 @@ function ViewBase:ctor(app, name)
     end
 
     if self.onCreate then self:onCreate() end
+
+    print("onEnter_1")
 end
 
 function ViewBase:getApp()
@@ -73,6 +79,9 @@ end
 --@param name frame 帧，frame:getEvent()可获取对应的帧事件名称
 function ViewBase:onFrameEvent(frame)
     local eventName = frame:getEvent()
+    if eventName == "exitEnd" then
+        self:removeSelf()
+    end
 end
 
 
@@ -127,6 +136,8 @@ end
 
 function ViewBase:onEnter()
     print("onEnter_")
+
+    self:runAnimation("enter")
 end
 
 function ViewBase:onExit_()
@@ -135,25 +146,25 @@ end
 
 function ViewBase:onCleanup_()
     print("onCleanup_")
-    
+
     if next(self.events) ~=nil then
         for eventName,evt in pairs(self.events) do
             event.removeEventListenersByEvent(eventName)
         end
     end
-    
+
     if next(self.timers) ~=nil then
         for _, time in pairs(self.timers) do
             timer:kill(time)
         end
     end
-    
+
     if next(self.tables) ~=nil then
         for _,table in pairs(self.tables) do
             table:removeEventListenersByTag(self.tag)
         end
     end
-    
+
 end
 
 ---------------------------
@@ -162,7 +173,11 @@ end
 --@param self
 --@return ViewBase#ViewBase 自身句柄
 function ViewBase:closeSelf()
-    self:removeSelf()
+    local exitAin =  self:runAnimation("exit")
+    if not exitAin then
+        self:removeSelf()
+    end
+    
 end
 
 
@@ -172,7 +187,15 @@ end
 --@param self
 --@return ViewBase#ViewBase 自身句柄
 function ViewBase:runAnimation(name,loop)
-    self.resourceExtend_['animation']:play(name,loop or false)
+    local aniName = self.resourceExtend_['animation']:getAnimationInfo(name)
+    if aniName and  aniName.endIndex ~= 0 then
+        self.resourceExtend_['animation']:play(name,loop or false)
+        return true
+    else
+        printInfo("no animation name "..name)
+        return false
+    end
+
 end
 
 

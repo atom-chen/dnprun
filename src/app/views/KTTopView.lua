@@ -3,6 +3,8 @@ local KTTopView = class("KTTopView", cc.load("mvc").ViewBase)
 
 KTTopView.RESOURCE_FILENAME = "node_top.lua"
 
+local KTDialogView = import(".KTDialogView")
+
 function KTTopView:onCreate()
 --    printf("resource node = %s", tostring(self:getResourceNode()))
     
@@ -18,19 +20,21 @@ function KTTopView:onCreate()
         :addTo(self)
     ]]
     
-    self:runAnimation("start")
 end
 
 
 function KTTopView:onClick( path,node,funcName)
 --    printf("onClick")
---    if path == "KTTopView.lua" and node:getName()=="Button_1" and funcName =="onCloseClick" then
+    if  node:getName()=="Button_1" and funcName =="onHeadClick" then
             local function btnCallback(  node,eventType  )
             --TODO
         print("test"..funcName)
+        
+            local layer= KTDialogView:create(self:getApp(),"dialog")
+                :addTo(self)
             end
             return btnCallback
---        end
+        end
 end
 
 

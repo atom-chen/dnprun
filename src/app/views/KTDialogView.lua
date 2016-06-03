@@ -1,9 +1,9 @@
 
-local KTBottomView = class("KTBottomView", cc.load("mvc").ViewBase)
+local KTDialogView = class("KTDialogView", cc.load("mvc").ViewBase)
 
-KTBottomView.RESOURCE_FILENAME = "node_bottom.lua"
+KTDialogView.RESOURCE_FILENAME = "layer_dialog.lua"
 
-function KTBottomView:onCreate()
+function KTDialogView:onCreate()
 --    printf("resource node = %s", tostring(self:getResourceNode()))
     
     --[[ you can create scene with following comment code instead of using csb file.
@@ -21,16 +21,18 @@ function KTBottomView:onCreate()
 end
 
 
-function KTBottomView:onClick( path,node,funcName)
+function KTDialogView:onClick( path,node,funcName)
 --    printf("onClick")
-    if node:getName()=="Button_1" and funcName =="onStarClick" then
+    if  node:getName()=="Button_1" and funcName =="onCloseClick" then
             local function btnCallback(  node,eventType  )
             --TODO
         print("test"..funcName)
+        
+            self:closeSelf()
             end
             return btnCallback
         end
 end
 
 
-return KTBottomView
+return KTDialogView

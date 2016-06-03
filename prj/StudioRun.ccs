@@ -70,6 +70,7 @@
           <Project Name="node_hud.csd" Type="Node" />
           <Project Name="node_top.csd" Type="Node" />
           <Project Name="scene_main.csd" Type="Scene" />
+          <Project Name="layer_dialog.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>
