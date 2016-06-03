@@ -44,18 +44,19 @@ Panel_1:setClippingEnabled(false)
 Panel_1:setBackGroundColorType(1)
 Panel_1:setBackGroundColor({r = 255, g = 255, b = 255})
 Panel_1:setBackGroundColorOpacity(0)
-Panel_1:setTouchEnabled(true);
 Panel_1:setLayoutComponentEnabled(true)
 Panel_1:setName("Panel_1")
 Panel_1:setTag(35)
 Panel_1:setCascadeColorEnabled(true)
 Panel_1:setCascadeOpacityEnabled(true)
-Panel_1:setAnchorPoint(0.5000, 0.5000)
+Panel_1:setAnchorPoint(0.5000, 1.0000)
 layout = ccui.LayoutComponent:bindLayoutComponent(Panel_1)
 layout:setPositionPercentXEnabled(true)
 layout:setPositionPercentYEnabled(true)
-layout:setPercentWidthEnabled(true)
-layout:setPercentHeightEnabled(true)
+layout:setSize({width = 649.0000, height = 352.0000})
+layout:setLeftMargin(-324.5000)
+layout:setRightMargin(-324.5000)
+layout:setBottomMargin(-352.0000)
 Node:addChild(Panel_1)
 
 --Create top_1
@@ -64,22 +65,94 @@ top_1:setName("top_1")
 top_1:setTag(36)
 top_1:setCascadeColorEnabled(true)
 top_1:setCascadeOpacityEnabled(true)
-top_1:setPosition(5.6893, -123.5586)
+top_1:setPosition(325.3503, 231.1871)
 layout = ccui.LayoutComponent:bindLayoutComponent(top_1)
+layout:setPositionPercentX(0.5013)
+layout:setPositionPercentY(0.6568)
+layout:setPercentWidth(1.1094)
+layout:setPercentHeight(1.0000)
 layout:setSize({width = 720.0000, height = 352.0000})
-layout:setLeftMargin(-354.3107)
-layout:setRightMargin(-365.6893)
-layout:setTopMargin(-52.4414)
-layout:setBottomMargin(-299.5586)
+layout:setLeftMargin(-34.6497)
+layout:setRightMargin(-36.3503)
+layout:setTopMargin(-55.1871)
+layout:setBottomMargin(55.1871)
 top_1:setBlendFunc({src = 1, dst = 771})
 Panel_1:addChild(top_1)
 
 --Create Animation
 result['animation'] = ccs.ActionTimeline:create()
   
-result['animation']:setDuration(0)
+result['animation']:setDuration(30)
 result['animation']:setTimeSpeed(1.0000)
+
+--Create PositionTimeline
+local PositionTimeline = ccs.Timeline:create()
+
+localFrame = ccs.PositionFrame:create()
+localFrame:setFrameIndex(0)
+localFrame:setTween(true)
+localFrame:setTweenType(12)
+localFrame:setX(325.3503)
+localFrame:setY(450.0000)
+PositionTimeline:addFrame(localFrame)
+
+localFrame = ccs.PositionFrame:create()
+localFrame:setFrameIndex(30)
+localFrame:setTween(true)
+localFrame:setTweenType(0)
+localFrame:setX(325.3503)
+localFrame:setY(231.1871)
+PositionTimeline:addFrame(localFrame)
+
+result['animation']:addTimeline(PositionTimeline)
+PositionTimeline:setNode(top_1)
+
+--Create ScaleTimeline
+local ScaleTimeline = ccs.Timeline:create()
+
+localFrame = ccs.ScaleFrame:create()
+localFrame:setFrameIndex(0)
+localFrame:setTween(true)
+localFrame:setTweenType(12)
+localFrame:setScaleX(1.0000)
+localFrame:setScaleY(1.0000)
+ScaleTimeline:addFrame(localFrame)
+
+localFrame = ccs.ScaleFrame:create()
+localFrame:setFrameIndex(30)
+localFrame:setTween(true)
+localFrame:setTweenType(0)
+localFrame:setScaleX(1.0000)
+localFrame:setScaleY(1.0000)
+ScaleTimeline:addFrame(localFrame)
+
+result['animation']:addTimeline(ScaleTimeline)
+ScaleTimeline:setNode(top_1)
+
+--Create RotationSkewTimeline
+local RotationSkewTimeline = ccs.Timeline:create()
+
+localFrame = ccs.RotationSkewFrame:create()
+localFrame:setFrameIndex(0)
+localFrame:setTween(true)
+localFrame:setTweenType(12)
+localFrame:setSkewX(0.0000)
+localFrame:setSkewY(0.0000)
+RotationSkewTimeline:addFrame(localFrame)
+
+localFrame = ccs.RotationSkewFrame:create()
+localFrame:setFrameIndex(30)
+localFrame:setTween(true)
+localFrame:setTweenType(0)
+localFrame:setSkewX(0.0000)
+localFrame:setSkewY(0.0000)
+RotationSkewTimeline:addFrame(localFrame)
+
+result['animation']:addTimeline(RotationSkewTimeline)
+RotationSkewTimeline:setNode(top_1)
 --Create Animation List
+local start = {name="start", startIndex=0, endIndex=60}
+result['animation']:addAnimationInfo(start)
 
 result['root'] = Node
 return result;

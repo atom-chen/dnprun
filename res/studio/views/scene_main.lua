@@ -38,8 +38,7 @@ local Scene=cc.Node:create()
 Scene:setName("Scene")
 
 --Create Sprite_1
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_1 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_1 = cc.Sprite:create("Default/Sprite.png")
 Sprite_1:setName("Sprite_1")
 Sprite_1:setTag(27)
 Sprite_1:setCascadeColorEnabled(true)
@@ -59,8 +58,7 @@ Sprite_1:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_1)
 
 --Create Sprite_2
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_2 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_2 = cc.Sprite:create("Default/Sprite.png")
 Sprite_2:setName("Sprite_2")
 Sprite_2:setTag(28)
 Sprite_2:setCascadeColorEnabled(true)
@@ -80,8 +78,7 @@ Sprite_2:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_2)
 
 --Create Sprite_3
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_3 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_3 = cc.Sprite:create("Default/Sprite.png")
 Sprite_3:setName("Sprite_3")
 Sprite_3:setTag(29)
 Sprite_3:setCascadeColorEnabled(true)
@@ -101,8 +98,7 @@ Sprite_3:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_3)
 
 --Create Sprite_4
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_4 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_4 = cc.Sprite:create("Default/Sprite.png")
 Sprite_4:setName("Sprite_4")
 Sprite_4:setTag(30)
 Sprite_4:setCascadeColorEnabled(true)
@@ -122,8 +118,7 @@ Sprite_4:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_4)
 
 --Create Sprite_5
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_5 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_5 = cc.Sprite:create("Default/Sprite.png")
 Sprite_5:setName("Sprite_5")
 Sprite_5:setTag(31)
 Sprite_5:setCascadeColorEnabled(true)
@@ -143,8 +138,7 @@ Sprite_5:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_5)
 
 --Create Sprite_6
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_6 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_6 = cc.Sprite:create("Default/Sprite.png")
 Sprite_6:setName("Sprite_6")
 Sprite_6:setTag(32)
 Sprite_6:setCascadeColorEnabled(true)
@@ -164,8 +158,7 @@ Sprite_6:setBlendFunc({src = 1, dst = 771})
 Scene:addChild(Sprite_6)
 
 --Create Sprite_7
-cc.SpriteFrameCache:getInstance():addSpriteFrames("Resource/atlas/common.plist")
-local Sprite_7 = cc.Sprite:createWithSpriteFrameName("star-star.png")
+local Sprite_7 = cc.Sprite:create("Default/Sprite.png")
 Sprite_7:setName("Sprite_7")
 Sprite_7:setTag(33)
 Sprite_7:setCascadeColorEnabled(true)

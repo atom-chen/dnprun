@@ -66,6 +66,16 @@ function ViewBase:onClick( path,node,funcName)
 end
 
 
+--------------------
+--帧事件回调方法
+--
+--@function [parent=#.ViewBase] onFrameEvent
+--@param name frame 帧，frame:getEvent()可获取对应的帧事件名称
+function ViewBase:onFrameEvent(frame)
+    local eventName = frame:getEvent()
+end
+
+
 
 function ViewBase:createResoueceNode(resourceFilename)
     if self.resourceNode_ then
@@ -78,6 +88,7 @@ function ViewBase:createResoueceNode(resourceFilename)
     self.resourceNode_ = csLuaScene["root"]  --底层节点
     if csLuaScene['animation'] then
         self:get():runAction(csLuaScene['animation'])
+        csLuaScene['animation']:setFrameEventCallFunc(handler(self,self.onFrameEvent))
     end
     local s =  self.resourceNode_:getContentSize()
     self.resourceNode_:setAnchorPoint(cc.p(0.5,0.5))
