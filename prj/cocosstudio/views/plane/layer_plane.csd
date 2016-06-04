@@ -47,13 +47,13 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="animation0" StartIndex="0" EndIndex="10">
-          <RenderColor A="150" R="144" G="238" B="144" />
+          <RenderColor A="255" R="144" G="238" B="144" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Layer" Tag="34" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="188677743" Tag="36" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-55.0000" RightMargin="-55.0000" TopMargin="-136.0000" BottomMargin="-136.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="188677743" Tag="36" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-55.0000" RightMargin="-55.0000" TopMargin="-136.0000" BottomMargin="-136.0000" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="750.0000" Y="1232.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="480.0000" />
@@ -73,7 +73,7 @@
                 <Size X="47.0000" Y="8.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="67.9018" Y="110.0716" />
-                <Scale ScaleX="0.8002" ScaleY="1.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5067" Y="0.9250" />
                 <PreSize X="0.3507" Y="0.0672" />

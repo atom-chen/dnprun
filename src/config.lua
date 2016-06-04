@@ -12,6 +12,11 @@ DNP_APP = {
     gcBlock = 5000,                     -- 垃圾回收颗粒度(单元)
 }
 
+DNP_GAME = {
+    default_scene = "PlaneScene"
+}
+
+
 -- use framework, will disable all deprecated API, false - use legacy API
 CC_USE_FRAMEWORK = true
 
