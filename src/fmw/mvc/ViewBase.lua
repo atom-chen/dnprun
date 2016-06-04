@@ -292,6 +292,74 @@ function ViewBase:addDatatableWatch(dataTable, listener)
 end
 
 
+---------------------------
+--开启触摸监听事件，默认方法是onTouch
+--@function [parent=#ViewBase] enTouch
+--@param self
+function ViewBase:enTouch()
+    if not self.touchLayer then
+        self.touchLayer = display.newLayer()
+            :addTo(self)
+    end
+    self.touchLayer:onTouch(handler(self, self.touch))
+end
+
+
+---------------------------
+--关闭触摸监听事件
+--@function [parent=#ViewBase] disTouch
+--@param self
+function ViewBase:disTouch()
+    if  self.touchLayer then
+        self.touchLayer:setTouchEnabled(false)
+    end
+end
+
+
+---------------------------
+--默认触摸监听事件，单点触控
+--@function [parent=#ViewBase] onTouch
+--@param self
+function ViewBase:touch(event)
+    if event.name == "began" then
+    --需要返回true
+    --        return true
+    elseif event.name == "moved" then
+    elseif event.name == "ended" then
+    end
+end
+
+
+---------------------------
+--开启update事件，默认方法是update
+--@function [parent=#ViewBase] enUpdate
+--@param self
+function ViewBase:enUpdate()
+    self:onUpdate(handler(self,self.update))
+end
+
+
+---------------------------
+--关闭触摸监听事件
+--@function [parent=#ViewBase] disUpdate
+--@param self
+function ViewBase:disUpdate()
+    if  self.touchLayer then
+        self.touchLayer:setTouchEnabled(false)
+    end
+end
+
+
+---------------------------
+--默认update
+--@function [parent=#ViewBase] update
+--@param self
+function ViewBase:update(event)
+ 
+end
+
+
+
 -----------------------------
 ----更新界面标签元素
 ----@function [parent=#ViewBase] updateLable
