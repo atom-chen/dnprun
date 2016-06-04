@@ -1,6 +1,5 @@
 -----------------------------------------
 --视图基础类
---默认动画 进场enter   退场exit（结束的帧事件必须是exitEnd）
 --
 --
 local ViewBase = class("ViewBase", cc.Node)
@@ -53,10 +52,20 @@ end
 
 --------------------
 --获取整个studio文件资源，root，animation
---
---@function [parent=#.ViewBase] getExtend
+--@param self
+--@function [parent=#ViewBase] getExtend
 function ViewBase:getExtend()
     return self.resourceExtend_
+end
+
+
+---------------------------
+--获取视图资源的方法
+--@function [parent=#ViewBase] getChild
+--@param self
+--@param string#string tableName 数据表命名
+function ViewBase:getChild(name)
+    return self:get():getChildByName(name)
 end
 
 
@@ -72,14 +81,14 @@ function ViewBase:onClick( path,node,funcName)
 end
 
 
---------------------
---帧事件回调方法
---
---@function [parent=#.ViewBase] onFrameEvent
---@param name frame 帧，frame:getEvent()可获取对应的帧事件名称
+---------------------------
+--帧事件回调
+--@function [parent=#ViewBase] onFrameEvent
+--@param self
+--@return ViewBase#ViewBase 自身句柄
 function ViewBase:onFrameEvent(frame)
     local eventName = frame:getEvent()
-    if eventName == "exitEnd" then
+    if self.exitEvent and  eventName == self.exitEvent then
         self:removeSelf()
     end
 end
@@ -108,15 +117,23 @@ end
 
 function ViewBase:createResoueceBinding(binding)
     assert(self.resourceNode_, "ViewBase:createResoueceBinding() - not load resource node")
-    for nodeName, nodeBinding in pairs(binding) do
-        local node = self.resourceNode_:getChildByName(nodeName)
-        if nodeBinding.varname then
-            self[nodeBinding.varname] = node
-        end
-        for _, event in ipairs(nodeBinding.events or {}) do
-            if event.event == "touch" then
-                node:onTouch(handler(self, self[event.method]))
+    if binding and binding.touches then
+        for nodeName, nodeBinding in pairs(binding.touches) do
+            local node = self.resourceNode_:getChildByName(nodeName)
+            if nodeBinding.varname then
+                self[nodeBinding.varname] = node
             end
+            for _, event in ipairs(nodeBinding.events or {}) do
+                if event.event == "touch" then
+                    node:onTouch(handler(self, self[event.method]))
+                end
+            end
+        end
+    end
+
+    if binding and binding.actions then
+        for actName, actBinding in pairs(binding.actions) do
+            self[actName] = actBinding
         end
     end
 end
@@ -136,8 +153,9 @@ end
 
 function ViewBase:onEnter()
     print("onEnter_")
-
-    self:runAnimation("enter")
+    if self.enterAni then
+        self:runAnimation(self.enterAni)
+    end
 end
 
 function ViewBase:onExit_()
@@ -173,11 +191,11 @@ end
 --@param self
 --@return ViewBase#ViewBase 自身句柄
 function ViewBase:closeSelf()
-    local exitAin =  self:runAnimation("exit")
-    if not exitAin then
+    if self.exitAni then
+        self:runAnimation(self.exitAni)
+    else
         self:removeSelf()
     end
-    
 end
 
 
@@ -187,15 +205,7 @@ end
 --@param self
 --@return ViewBase#ViewBase 自身句柄
 function ViewBase:runAnimation(name,loop)
-    local aniName = self.resourceExtend_['animation']:getAnimationInfo(name)
-    if aniName and  aniName.endIndex ~= 0 then
-        self.resourceExtend_['animation']:play(name,loop or false)
-        return true
-    else
-        printInfo("no animation name "..name)
-        return false
-    end
-
+    self.resourceExtend_['animation']:play(name,loop or false)
 end
 
 
@@ -262,7 +272,7 @@ end
 
 ---------------------------
 --停掉面板计数器
---@function [parent=#ViewBase] addTimer
+--@function [parent=#ViewBase] removeTimer
 --@param self
 --@param string#string timerName 事件命名
 function ViewBase:removeTimer(timerName)

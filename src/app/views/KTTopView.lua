@@ -2,6 +2,10 @@
 local KTTopView = class("KTTopView", cc.load("mvc").ViewBase)
 
 KTTopView.RESOURCE_FILENAME = "node_top.lua"
+KTTopView.RESOURCE_BINDING = {
+    touches = nil,
+    actions = {enterAni = "enter",enterEvent = nil,exitAni = "exit",exitEvent = "exitEnd"}
+}
 
 local KTDialogView = import(".KTDialogView")
 

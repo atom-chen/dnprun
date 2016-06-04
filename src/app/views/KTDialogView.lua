@@ -2,6 +2,10 @@
 local KTDialogView = class("KTDialogView", cc.load("mvc").ViewBase)
 
 KTDialogView.RESOURCE_FILENAME = "layer_dialog.lua"
+KTDialogView.RESOURCE_BINDING = {
+    touches = nil,
+    actions = {enterAni = "enter",enterEvent = nil,exitAni = "exit",exitEvent = "exitEnd"}
+}
 
 function KTDialogView:onCreate()
 --    printf("resource node = %s", tostring(self:getResourceNode()))

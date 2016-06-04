@@ -62,7 +62,7 @@
           <AbstractNodeData Name="Panel_1" ActionTag="-1342731744" Tag="63" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-55.0000" RightMargin="-55.0000" TopMargin="-187.0000" BottomMargin="-187.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="750.0000" Y="1334.0000" />
             <Children>
-              <AbstractNodeData Name="background_1" ActionTag="1224099917" Tag="62" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="98.0000" BottomMargin="98.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="background_1" ActionTag="1224099917" Tag="62" FrameEvent="exitEnd" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="98.0000" BottomMargin="98.0000" ctype="SpriteObjectData">
                 <Size X="720.0000" Y="1138.0000" />
                 <Children>
                   <AbstractNodeData Name="Button_1" ActionTag="-334310787" CallBackType="Click" CallBackName="onCloseClick" Tag="64" IconVisible="False" LeftMargin="622.0334" RightMargin="-44.0334" TopMargin="-53.3479" BottomMargin="1052.3479" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="112" Scale9Height="117" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -83,7 +83,7 @@
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="375.0000" Y="667.0000" />
-                <Scale ScaleX="0.6000" ScaleY="0.6000" />
+                <Scale ScaleX="0.0100" ScaleY="0.0100" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5000" />
                 <PreSize X="0.9600" Y="0.8531" />

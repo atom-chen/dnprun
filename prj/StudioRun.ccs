@@ -42,10 +42,13 @@
             </PlistImageFolder>
             <Image Name="background.png" />
             <Image Name="bottom.png" />
+            <Image Name="bullet-1.png" />
             <Image Name="meta_tiles.png" />
+            <Image Name="plane1.png" />
             <Image Name="Player.png" />
             <Image Name="tmw_desert_spacing.png" />
             <Image Name="top.png" />
+            <Image Name="windhead.png" />
           </Folder>
           <Folder Name="font">
             <TTF Name="font.ttf" />
@@ -64,13 +67,14 @@
         </Folder>
         <Folder Name="views">
           <Project Name="layer_back.csd" Type="Layer" />
+          <Project Name="layer_dialog.csd" Type="Layer" />
           <Project Name="layer_game.csd" Type="Layer" />
           <Project Name="layer_map.csd" Type="Layer" />
           <Project Name="node_bottom.csd" Type="Node" />
           <Project Name="node_hud.csd" Type="Node" />
           <Project Name="node_top.csd" Type="Node" />
           <Project Name="scene_main.csd" Type="Scene" />
-          <Project Name="layer_dialog.csd" Type="Layer" />
+          <Project Name="layer_plane.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>

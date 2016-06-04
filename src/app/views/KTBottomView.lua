@@ -2,6 +2,10 @@
 local KTBottomView = class("KTBottomView", cc.load("mvc").ViewBase)
 
 KTBottomView.RESOURCE_FILENAME = "node_bottom.lua"
+KTBottomView.RESOURCE_BINDING = {
+    touches = nil,
+    actions = {enterAni = "enter",enterEvent = nil,exitAni = "exit",exitEvent = "exitEnd"}
+}
 
 function KTBottomView:onCreate()
 --    printf("resource node = %s", tostring(self:getResourceNode()))
