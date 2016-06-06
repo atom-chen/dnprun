@@ -13,7 +13,7 @@ DNP_APP = {
 }
 
 DNP_GAME = {
-    default_scene = "PlaneScene"
+--    default_scene = "PlaneScene"
 }
 
 --######## 广告区域 #######--
@@ -37,6 +37,17 @@ DNP_AD = {
 
 }
 
+
+--######## 分享区域 #######--
+DNP_SHARE = {
+    wxScene = {
+        chat = 0,
+        friends = 1,
+    },
+    usingWeixin = false,                -- 是否采用微信分享
+    wxAppId = "wx0ca6563dedb4f77d",      --kt
+    wxSecret = "bee696f2b18c4572837cafc2db4ff217",   --kt
+}
 
 
 -- use framework, will disable all deprecated API, false - use legacy API

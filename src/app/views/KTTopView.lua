@@ -23,7 +23,10 @@ function KTTopView:onCreate()
         :move(display.cx, display.cy + 200)
         :addTo(self)
     ]]
-    
+--   local s =  self:getChild("top_1")
+--    local s = ccui.Helper:seekWidgetByName(self:get(), "Panel_1")
+----   local s  = self.resourceNode_:getChildByName("top_1")
+--   s:hide()
 end
 
 

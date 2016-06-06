@@ -34,6 +34,7 @@
 //###################QHZFFF#################
 #include "UnityAdManager.h"
 #include "VungleAdManager.h"
+#include "GameCenter.h"
 //###################QHZFFF#################
 
 @implementation AppController
@@ -66,20 +67,20 @@ static AppDelegate s_sharedApplication;
     [eaglView setMultipleTouchEnabled:YES];
     
     // Use RootViewController manage CCEAGLView
-    viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
-    viewController.wantsFullScreenLayout = YES;
-    viewController.view = eaglView;
+    _viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
+    _viewController.wantsFullScreenLayout = YES;
+    _viewController.view = eaglView;
 
     // Set RootViewController to window
     if ( [[UIDevice currentDevice].systemVersion floatValue] < 6.0)
     {
         // warning: addSubView doesn't work on iOS6
-        [window addSubview: viewController.view];
+        [window addSubview: _viewController.view];
     }
     else
     {
         // use this method on ios6
-        [window setRootViewController:viewController];
+        [window setRootViewController:_viewController];
     }
     
     [window makeKeyAndVisible];
@@ -91,8 +92,9 @@ static AppDelegate s_sharedApplication;
     cocos2d::Director::getInstance()->setOpenGLView(glview);
     
     //################ QHZF ###################
-    [[UnityAdManager getInstance] setViewController:viewController];
-    [[VungleAdManager getInstance] setViewController:viewController];
+    [[VungleAdManager getInstance] setViewController:_viewController];
+    [[UnityAdManager getInstance] setViewController:_viewController];
+   
 
     //################ QHZF ###################
 

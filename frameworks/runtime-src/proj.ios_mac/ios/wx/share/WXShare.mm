@@ -45,27 +45,10 @@ enum MessageType {
         NSString *documentsDirectory = [[NSString alloc] initWithFormat:@"%@/%@", [paths objectAtIndex:0], imagePath ];
          UIImage *image = [UIImage imageWithContentsOfFile:documentsDirectory];
          NSData *imageData =  UIImagePNGRepresentation(image);
-        
-//        NSString *filePath = [[NSBundle mainBundle] pathForResource:imagePath ofType:@"png"];
-//        NSData *imageData = [NSData dataWithContentsOfFile:filePath];
-        
-        // 根目录
-//        UIImage *thumbImage = [UIImage imageWithContentsOfFile:documentsDirectory];
-          UIImage *thumbImage = [UIImage imageNamed:@"icon.png"];
-//        UIImage *thumbImage = image;
+
+          UIImage *thumbImage = [UIImage imageNamed:@"Icon.png"];
         return [WXShare sendImageData:imageData TagName:tagName MessageExt:messageExt Action:action ThumbImage:thumbImage InScene:wxScene];
         
-//        NSString *imagePath = [dict objectForKey:@"imagePath"];
-//        NSString *tagName = [dict objectForKey:@"tagName"];
-//        NSString *messageExt = [dict objectForKey:@"messageExt"];
-//        NSString *action = [dict objectForKey:@"action"];
-////        NSString *thumbImagePath = [dict objectForKey:@"thumbImagePath"];
-//        
-//        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"res1" ofType:@"jpg"];
-//        NSData *imageData = [NSData dataWithContentsOfFile:filePath];
-//        
-//        UIImage *thumbImage = [UIImage imageNamed:@"res1thumb.png"];
-//        return [WXShare sendImageData:imageData TagName:tagName MessageExt:messageExt Action:action ThumbImage:thumbImage InScene:wxScene];
     } else if (type == url) {
         NSString *urlString = [dict objectForKey:@"url"];
         NSString *tagName = [dict objectForKey:@"tagName"];
@@ -74,7 +57,7 @@ enum MessageType {
 //        NSString *thumbImagePath = [dict objectForKey:@"thumbImagePath"];
         
         
-        UIImage *thumbImage = [UIImage imageNamed:@"icon.png"];
+        UIImage *thumbImage = [UIImage imageNamed:@"Icon.png"];
         return [WXShare sendLinkURL:urlString TagName:tagName Title:title Description:description ThumbImage:thumbImage InScene:wxScene];
         
         

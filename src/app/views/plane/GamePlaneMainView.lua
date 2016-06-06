@@ -5,9 +5,10 @@
 local GamePlaneMainView = class("GamePlaneMainView", cc.load("mvc").ViewBase)
 
 GamePlaneMainView.RESOURCE_FILENAME = "plane.layer_plane_main.lua"
+
 GamePlaneMainView.RESOURCE_BINDING = {
     touches = nil,
---    actions = {enterAni = "enter",enterEvent = nil,exitAni = "exit",exitEvent = "exitEnd"}
+    actions = {enterAni = "enter",enterEvent = nil,exitAni = "exit",exitEvent = "exitEnd"}
 }
 
 
@@ -29,6 +30,7 @@ function GamePlaneMainView:onClick( path,node,funcName)
             end
 
             gamer:playVungleAd(callback)
+--            gamer:wxShareWeb(1,"http://www.baidu.con","111","2222")
         end
         return btnCallback
     end

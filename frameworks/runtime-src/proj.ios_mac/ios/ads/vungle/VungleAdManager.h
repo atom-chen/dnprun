@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <VungleSDK/VungleSDK.h>
+#import "VungleViewController.h"
+
 @interface VungleAdManager : NSObject<VungleSDKDelegate,VungleSDKLogger>
 
 + (VungleAdManager *) getInstance;
@@ -16,8 +18,13 @@
 + (void)isVideoReady:(NSDictionary*) dict;
 
 
+- (void) adsWillShow;
+- (void) adsVideoCompleted;
+- (void) readyCallLua:(NSString*)status;
+- (void) showCallLua:(NSString*)status;
+
 @property (nonatomic, readwrite, retain) UIViewController* viewController;
-@property (nonatomic, readwrite, retain) VungleSDK* sdk;
-@property (nonatomic, readwrite, retain)  NSNumber *callback;
-@property (nonatomic, readwrite, retain)  NSNumber *callback1;
+@property (nonatomic, readwrite, retain) VungleViewController* _adsView;
+@property (nonatomic, readwrite, retain)  NSNumber *showCall;
+@property (nonatomic, readwrite, retain)  NSNumber *readyCall;
 @end

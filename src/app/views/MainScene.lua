@@ -8,7 +8,7 @@ local MapView = import(".MapView")
 local KTGroundView = import(".KTGroundView")
 local KTTopView = import(".KTTopView")
 local KTBottomView = import(".KTBottomView")
-local GamePlaneView = import(".GamePlaneView")
+--local GamePlaneView = import(".GamePlaneView")
 
 function MainScene:onCreate()
 
@@ -113,21 +113,21 @@ end
 
 function MainScene:onGame()
 --    local layer1 = AppViews:addViewByName("app.views.KTGroundView","back",self)
-    local layer4 = GamePlaneView:create(self:getApp(),"plane")
-        :register()
-        :addTo(self)
-        
---    local layer1= KTGroundView:create(self:getApp(),"map")
---        :addTo(self)
---    
---    local layer2= KTBottomView:create(self:getApp(),"map")
---        :addTo(self)
---    layer2:get():setPosition(display.width/2,0)
---    local layer3 = KTTopView:create(self:getApp(),"top")
+--    local layer4 = GamePlaneView:create(self:getApp(),"plane")
 --        :register()
 --        :addTo(self)
---
---    layer3:get():setPosition(display.width/2,display.height)
+        
+    local layer1= KTGroundView:create(self:getApp(),"map")
+        :addTo(self)
+    
+    local layer2= KTBottomView:create(self:getApp(),"map")
+        :addTo(self)
+    layer2:get():setPosition(display.width/2,0)
+    local layer3 = KTTopView:create(self:getApp(),"top")
+        :register()
+        :addTo(self)
+
+    layer3:get():setPosition(display.width/2,display.height)
 end
 
 

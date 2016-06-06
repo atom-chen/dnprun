@@ -23,13 +23,18 @@
  THE SOFTWARE.
  ****************************************************************************/
 
+#import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
+
 @class RootViewController;
 
-@interface AppController : NSObject <UIApplicationDelegate>
+@interface AppController : NSObject <UIApplicationDelegate,GKLeaderboardViewControllerDelegate,GKAchievementViewControllerDelegate>
 {
     UIWindow *window;
-    RootViewController *viewController;
+//    RootViewController *viewController;,
 }
+
+@property(nonatomic, readonly) RootViewController* viewController;
 
 @end
 
