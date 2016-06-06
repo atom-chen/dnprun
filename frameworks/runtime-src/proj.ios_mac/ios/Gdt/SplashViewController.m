@@ -14,6 +14,10 @@
     GDTSplashAd *_splash;
 }
 
+static NSString *APP_KEY     = @"1101508191";
+static NSString *PLACEMENTID = @"9040714184494018";
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,7 +36,7 @@
 -(void)showSplashAd
 {
     //开屏广告初始化
-    _splash = [[GDTSplashAd alloc] initWithAppkey:@"1101508191" placementId:@"9040714184494018"];
+    _splash = [[GDTSplashAd alloc] initWithAppkey:APP_KEY placementId:PLACEMENTID];
     _splash.delegate = self;//设置代理
     //针对不同设备尺寸设置不同的默认图片，拉取广告等待时间会展示该默认图片。
     if ([[UIScreen mainScreen] bounds].size.height >= 568.0f) {

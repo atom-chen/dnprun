@@ -75,15 +75,13 @@ function GamePlaneView:touch(event)
         beginY =  event.y
         return true
     elseif event.name == "moved" then
-    dump(event)
         self.plane:setPositionX(planeX+(event.x-beginX))
         self.plane:setPositionY(planeY+(event.y-beginY))
-
     elseif event.name == "ended" then
         beginX=nil
         beginY=nil
         planeX=nil
-        planeY= nil
+        planeY=nil
     end
 end
 

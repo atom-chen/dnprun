@@ -20,7 +20,6 @@ function helper.scrollable(layer, width)
     local beginTime = 0
     local oneTouch = false
 
-
     local function onTouchBegan(touch, event)
         if oneTouch == true then
             return
@@ -303,6 +302,14 @@ end
 ----@function [parent=#helper] pEqual
 function helper.pEqual(p1,p2)
     return (p1.x == p2.x and p1.y == p2.y)
+end
+
+--------------------
+--打开一个外部链接,"http://www.baidu.com"
+--
+----@function [parent=#helper] openUrl
+function helper.openUrl(url)
+    cc.Application:getInstance():openURL(url)
 end
 
 return helper

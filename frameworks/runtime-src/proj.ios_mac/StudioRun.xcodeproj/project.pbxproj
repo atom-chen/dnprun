@@ -53,10 +53,21 @@
 		A68450A11CFFD56800A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
 		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
 		A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
+		A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */; };
+		A68BB09A1D047C9800782F81 /* UnityAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0901D047C9800782F81 /* UnityAdManager.mm */; };
+		A68BB09B1D047C9800782F81 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A68BB0911D047C9800782F81 /* UnityAds.bundle */; };
+		A68BB09C1D047C9800782F81 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0921D047C9800782F81 /* UnityAds.framework */; };
+		A68BB09D1D047C9800782F81 /* UnityAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0941D047C9800782F81 /* UnityAdsViewController.m */; };
+		A68BB09E1D047C9800782F81 /* VungleAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0971D047C9800782F81 /* VungleAdManager.mm */; };
+		A68BB09F1D047C9800782F81 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0981D047C9800782F81 /* VungleSDK.framework */; };
+		A68BB0AB1D047DFB00782F81 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */; };
+		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
+		A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0AA1D047DFB00782F81 /* WXManager.mm */; };
+		A68BB0AF1D047E3B00782F81 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0AE1D047E3B00782F81 /* libsqlite3.0.tbd */; };
+		A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0B21D047E8000782F81 /* libc++.tbd */; };
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
-		A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */ = {isa = PBXBuildFile; fileRef = A6BB806D1D0016BE0053D6E3 /* game.dat */; };
 		A6BB80781D0048950053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -186,13 +197,6 @@
 		3EEEDB60197107C0006A9FF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		5023810717EBBCAC00990C9B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		5023810817EBBCAC00990C9B /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
-		5023810C17EBBCAC00990C9B /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
-		5023810D17EBBCAC00990C9B /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
-		5023810E17EBBCAC00990C9B /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
-		5023810F17EBBCAC00990C9B /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
-		5023811017EBBCAC00990C9B /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
-		5023811117EBBCAC00990C9B /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		5023811217EBBCAC00990C9B /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		5023811317EBBCAC00990C9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5023811417EBBCAC00990C9B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5023811517EBBCAC00990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -204,12 +208,6 @@
 		5023817517EBBE3400990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5023817917EBBE8300990C9B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		50805AAE17EBBEAA004CFAD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5091733017ECE17A00D62437 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
-		5091733117ECE17A00D62437 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		5091733217ECE17A00D62437 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
-		5091733317ECE17A00D62437 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
-		5091733417ECE17A00D62437 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
-		5091733517ECE17A00D62437 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50D7C96B17EBBEDF005D0B91 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		50D7C96D17EBBEE6005D0B91 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		50D7C96F17EBBEEC005D0B91 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -243,6 +241,27 @@
 		A684508D1CFF4AB600A7525C /* CCCryptoIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoIOS.mm; sourceTree = "<group>"; };
 		A68450901CFF4AB600A7525C /* CCCryptoMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoMac.mm; sourceTree = "<group>"; };
 		A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCCryptoWin32.cpp; sourceTree = "<group>"; };
+		A68BB08C1D047C9800782F81 /* PGStoreKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGStoreKitManager.h; sourceTree = "<group>"; };
+		A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGStoreKitManager.mm; sourceTree = "<group>"; };
+		A68BB08F1D047C9800782F81 /* UnityAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdManager.h; sourceTree = "<group>"; };
+		A68BB0901D047C9800782F81 /* UnityAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityAdManager.mm; sourceTree = "<group>"; };
+		A68BB0911D047C9800782F81 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
+		A68BB0921D047C9800782F81 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+		A68BB0931D047C9800782F81 /* UnityAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsViewController.h; sourceTree = "<group>"; };
+		A68BB0941D047C9800782F81 /* UnityAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsViewController.m; sourceTree = "<group>"; };
+		A68BB0961D047C9800782F81 /* VungleAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdManager.h; sourceTree = "<group>"; };
+		A68BB0971D047C9800782F81 /* VungleAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VungleAdManager.mm; sourceTree = "<group>"; };
+		A68BB0981D047C9800782F81 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		A68BB0A31D047DFB00782F81 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		A68BB0A41D047DFB00782F81 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		A68BB0A51D047DFB00782F81 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		A68BB0A71D047DFB00782F81 /* WXShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXShare.h; sourceTree = "<group>"; };
+		A68BB0A81D047DFB00782F81 /* WXShare.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXShare.mm; sourceTree = "<group>"; };
+		A68BB0A91D047DFB00782F81 /* WXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXManager.h; sourceTree = "<group>"; };
+		A68BB0AA1D047DFB00782F81 /* WXManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXManager.mm; sourceTree = "<group>"; };
+		A68BB0AE1D047E3B00782F81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
+		A68BB0B21D047E8000782F81 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		A6BB805E1D0004360053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ios/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB80601D0004730053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mac/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB806D1D0016BE0053D6E3 /* game.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = game.dat; path = ../../../encrypt/game.dat; sourceTree = "<group>"; };
@@ -318,6 +337,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */,
+				A68BB0AF1D047E3B00782F81 /* libsqlite3.0.tbd in Frameworks */,
 				A6D398CD1CF99390000870D2 /* StoreKit.framework in Frameworks */,
 				A6D398CB1CF99387000870D2 /* Security.framework in Frameworks */,
 				A6D398C91CF9937F000870D2 /* libz.tbd in Frameworks */,
@@ -327,6 +348,7 @@
 				A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */,
 				A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */,
 				9FA3AE4E1BE9BCC900FC9645 /* CFNetwork.framework in Frameworks */,
+				A68BB0AB1D047DFB00782F81 /* libWeChatSDK.a in Frameworks */,
 				ED545A891B68A23E00C3958E /* libiconv.dylib in Frameworks */,
 				9FF504871A5E88CE00AFDA55 /* libsimulator iOS.a in Frameworks */,
 				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
@@ -335,10 +357,12 @@
 				3EEEDB61197107C0006A9FF8 /* MediaPlayer.framework in Frameworks */,
 				D6B061351803AC000077942B /* CoreMotion.framework in Frameworks */,
 				1AF4C403178663F200122817 /* libz.dylib in Frameworks */,
+				A68BB09C1D047C9800782F81 /* UnityAds.framework in Frameworks */,
 				50805AAF17EBBEAA004CFAD3 /* UIKit.framework in Frameworks */,
 				5023817A17EBBE8300990C9B /* OpenGLES.framework in Frameworks */,
 				F293B3CD15EB7BE500256477 /* QuartzCore.framework in Frameworks */,
 				F293B3D115EB7BE500256477 /* OpenAL.framework in Frameworks */,
+				A68BB09F1D047C9800782F81 /* VungleSDK.framework in Frameworks */,
 				F293B3D315EB7BE500256477 /* AudioToolbox.framework in Frameworks */,
 				F293B3D515EB7BE500256477 /* AVFoundation.framework in Frameworks */,
 				F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */,
@@ -362,10 +386,13 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				A6D398B51CF992FA000870D2 /* Gdt */,
+				A68BB0A01D047DFB00782F81 /* wx */,
+				A68BB08B1D047C9800782F81 /* iap */,
+				A68BB08E1D047C9800782F81 /* unity */,
+				A68BB0951D047C9800782F81 /* vungle */,
+				A6D398B51CF992FA000870D2 /* gdt */,
 				5023810717EBBCAC00990C9B /* AppController.h */,
 				5023810817EBBCAC00990C9B /* AppController.mm */,
-				5091734A17ECE18300D62437 /* Icons */,
 				5023811317EBBCAC00990C9B /* Info.plist */,
 				5023811417EBBCAC00990C9B /* main.m */,
 				5023811517EBBCAC00990C9B /* Prefix.pch */,
@@ -390,26 +417,6 @@
 				5023817517EBBE3400990C9B /* Prefix.pch */,
 			);
 			path = mac;
-			sourceTree = "<group>";
-		};
-		5091734A17ECE18300D62437 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				5091733017ECE17A00D62437 /* Icon-29.png */,
-				5091733117ECE17A00D62437 /* Icon-40.png */,
-				5091733217ECE17A00D62437 /* Icon-50.png */,
-				5091733317ECE17A00D62437 /* Icon-58.png */,
-				5091733417ECE17A00D62437 /* Icon-80.png */,
-				5091733517ECE17A00D62437 /* Icon-100.png */,
-				5023810C17EBBCAC00990C9B /* Icon-114.png */,
-				5023810D17EBBCAC00990C9B /* Icon-120.png */,
-				5023810E17EBBCAC00990C9B /* Icon-144.png */,
-				5023810F17EBBCAC00990C9B /* Icon-152.png */,
-				5023811017EBBCAC00990C9B /* Icon-57.png */,
-				5023811117EBBCAC00990C9B /* Icon-72.png */,
-				5023811217EBBCAC00990C9B /* Icon-76.png */,
-			);
-			name = Icons;
 			sourceTree = "<group>";
 		};
 		9FC7603E1A67791200D1E6E7 /* ide-support */ = {
@@ -531,6 +538,69 @@
 			path = win32;
 			sourceTree = "<group>";
 		};
+		A68BB08B1D047C9800782F81 /* iap */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB08C1D047C9800782F81 /* PGStoreKitManager.h */,
+				A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */,
+			);
+			path = iap;
+			sourceTree = "<group>";
+		};
+		A68BB08E1D047C9800782F81 /* unity */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB08F1D047C9800782F81 /* UnityAdManager.h */,
+				A68BB0901D047C9800782F81 /* UnityAdManager.mm */,
+				A68BB0911D047C9800782F81 /* UnityAds.bundle */,
+				A68BB0921D047C9800782F81 /* UnityAds.framework */,
+				A68BB0931D047C9800782F81 /* UnityAdsViewController.h */,
+				A68BB0941D047C9800782F81 /* UnityAdsViewController.m */,
+			);
+			path = unity;
+			sourceTree = "<group>";
+		};
+		A68BB0951D047C9800782F81 /* vungle */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB0961D047C9800782F81 /* VungleAdManager.h */,
+				A68BB0971D047C9800782F81 /* VungleAdManager.mm */,
+				A68BB0981D047C9800782F81 /* VungleSDK.framework */,
+			);
+			path = vungle;
+			sourceTree = "<group>";
+		};
+		A68BB0A01D047DFB00782F81 /* wx */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB0A11D047DFB00782F81 /* export */,
+				A68BB0A61D047DFB00782F81 /* share */,
+				A68BB0A91D047DFB00782F81 /* WXManager.h */,
+				A68BB0AA1D047DFB00782F81 /* WXManager.mm */,
+			);
+			path = wx;
+			sourceTree = "<group>";
+		};
+		A68BB0A11D047DFB00782F81 /* export */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */,
+				A68BB0A31D047DFB00782F81 /* WechatAuthSDK.h */,
+				A68BB0A41D047DFB00782F81 /* WXApi.h */,
+				A68BB0A51D047DFB00782F81 /* WXApiObject.h */,
+			);
+			path = export;
+			sourceTree = "<group>";
+		};
+		A68BB0A61D047DFB00782F81 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				A68BB0A71D047DFB00782F81 /* WXShare.h */,
+				A68BB0A81D047DFB00782F81 /* WXShare.mm */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
 		A6BB806C1D0016A00053D6E3 /* pbulish */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,7 +609,7 @@
 			name = pbulish;
 			sourceTree = "<group>";
 		};
-		A6D398B51CF992FA000870D2 /* Gdt */ = {
+		A6D398B51CF992FA000870D2 /* gdt */ = {
 			isa = PBXGroup;
 			children = (
 				A6F8D6F01CFAA82800D82BBC /* SplashViewController.h */,
@@ -550,6 +620,7 @@
 				A6D398D11CF99427000870D2 /* InterstitialViewController.m */,
 				A6D398B61CF992FA000870D2 /* libs */,
 			);
+			name = gdt;
 			path = Gdt;
 			sourceTree = "<group>";
 		};
@@ -602,6 +673,8 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A68BB0B21D047E8000782F81 /* libc++.tbd */,
+				A68BB0AE1D047E3B00782F81 /* libsqlite3.0.tbd */,
 				A6D398CC1CF99390000870D2 /* StoreKit.framework */,
 				A6D398CA1CF99387000870D2 /* Security.framework */,
 				A6D398C81CF9937F000870D2 /* libz.tbd */,
@@ -821,8 +894,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68BB09B1D047C9800782F81 /* UnityAds.bundle in Resources */,
 				A6BB80781D0048950053D6E3 /* res in Resources */,
-				A6BB806F1D0016CB0053D6E3 /* game.dat in Resources */,
 				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,
 				A68450961CFF4AB600A7525C /* build.bat in Resources */,
@@ -875,15 +948,21 @@
 			files = (
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
 				A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */,
+				A68BB09E1D047C9800782F81 /* VungleAdManager.mm in Sources */,
 				A68450931CFF4AB600A7525C /* libbase64.c in Sources */,
+				A68BB09D1D047C9800782F81 /* UnityAdsViewController.m in Sources */,
+				A68BB09A1D047C9800782F81 /* UnityAdManager.mm in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				A68450981CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp in Sources */,
+				A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				A68450941CFF4AB600A7525C /* CCCrypto.cpp in Sources */,
+				A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */,
 				A6D398D21CF99427000870D2 /* GdtAdManager.mm in Sources */,
+				A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 			);
@@ -1082,6 +1161,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios/unity",
+					"$(PROJECT_DIR)/ios/vungle",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -1093,6 +1177,7 @@
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(PROJECT_DIR)/ios/wx/export",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1100,6 +1185,7 @@
 					"$(SRCROOT)/../Classes",
 					"$(PROJECT_DIR)/ios/Gdt",
 					"$(PROJECT_DIR)/ios/Gdt/libs",
+					"$(PROJECT_DIR)/ios/wx/export",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -1132,6 +1218,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios/unity",
+					"$(PROJECT_DIR)/ios/vungle",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1142,6 +1233,7 @@
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
+					"$(PROJECT_DIR)/ios/wx/export",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1149,6 +1241,7 @@
 					"$(SRCROOT)/../Classes",
 					"$(PROJECT_DIR)/ios/Gdt",
 					"$(PROJECT_DIR)/ios/Gdt/libs",
+					"$(PROJECT_DIR)/ios/wx/export",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";

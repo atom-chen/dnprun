@@ -42,14 +42,10 @@
             </PlistImageFolder>
             <Image Name="background.png" />
             <Image Name="bottom.png" />
-            <Image Name="btn-start.png" />
-            <Image Name="btn-start-2.png" />
             <Image Name="bullet-1.png" />
             <Image Name="meta_tiles.png" />
             <Image Name="plane1.png" />
-            <Image Name="plane-2.png" />
             <Image Name="Player.png" />
-            <Image Name="title.png" />
             <Image Name="tmw_desert_spacing.png" />
             <Image Name="top.png" />
             <Image Name="windhead.png" />
@@ -78,10 +74,7 @@
           <Project Name="node_hud.csd" Type="Node" />
           <Project Name="node_top.csd" Type="Node" />
           <Project Name="scene_main.csd" Type="Scene" />
-          <Folder Name="plane">
-            <Project Name="layer_plane.csd" Type="Layer" />
-            <Project Name="layer_plane_main.csd" Type="Layer" />
-          </Folder>
+          <Project Name="layer_plane.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>

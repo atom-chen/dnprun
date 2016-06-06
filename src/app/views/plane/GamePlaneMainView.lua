@@ -22,7 +22,8 @@ end
 function GamePlaneMainView:onClick( path,node,funcName)
     if  node:getName()=="Button_1" and funcName =="onStartClick" then
         local function btnCallback(  node,eventType  )
-            self:setVisible(false)
+--            self:setVisible(false)
+            cc.Application:getInstance():openURL("http://www.baidu.com")
         end
         return btnCallback
     end

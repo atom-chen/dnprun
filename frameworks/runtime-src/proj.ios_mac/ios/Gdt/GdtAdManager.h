@@ -14,16 +14,13 @@
 
 + (GdtAdManager *) getInstance;
 
++ (void)init;
 + (void)loadInterAd;
 + (void)playInterAd;
 
 + (void)playSplashAd;
 
-//- (void) setCallbackId:(NSNumber *) callbackid;
-//- (void) callbackLua:(NSString*)status;
-
 @property (nonatomic, readwrite, retain) InterstitialViewController* _interstitial;
 @property (nonatomic, readwrite, retain) SplashViewController* _splash;
-//@property (nonatomic, readwrite, retain)  NSNumber *callback;
 
 @end

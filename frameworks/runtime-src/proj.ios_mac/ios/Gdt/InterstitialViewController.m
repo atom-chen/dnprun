@@ -14,6 +14,9 @@
 
 static NSString *INTERSTITIAL_STATE_TEXT = @"插屏状态";
 
+static NSString *APP_KEY     = @"1105259680";
+static NSString *PLACEMENTID = @"7070209906425334";
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
          NSLog(@"init gdt initWithNibName ");
@@ -39,7 +42,7 @@ static NSString *INTERSTITIAL_STATE_TEXT = @"插屏状态";
 - (void)initWithAppAndPlacement
 {
          NSLog(@"init gdt ad ");
-    _interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:@"1105259680" placementId:@"7070209906425334"];
+    _interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:APP_KEY placementId:PLACEMENTID];
     _interstitialObj.delegate = self; //设置委托
     _interstitialObj.isGpsOn = NO; //【可选】设置GPS开关
     
@@ -52,7 +55,7 @@ static NSString *INTERSTITIAL_STATE_TEXT = @"插屏状态";
 - (void)loadAd {
   
     //预加载广告
-    _interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:@"1105259680" placementId:@"7070209906425334"];
+    _interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:APP_KEY placementId:PLACEMENTID];
     _interstitialObj.delegate = self; //设置委托
     _interstitialObj.isGpsOn = NO; //【可选】设置GPS开关
     

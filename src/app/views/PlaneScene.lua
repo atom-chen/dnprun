@@ -6,7 +6,6 @@ local GamePlaneMainView = import(".plane.GamePlaneMainView")
 
 function PlaneScene:onCreate()
 
-
     self:onGame()
 end
 

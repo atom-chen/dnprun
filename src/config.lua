@@ -16,6 +16,28 @@ DNP_GAME = {
     default_scene = "PlaneScene"
 }
 
+--######## 广告区域 #######--
+DNP_AD = {
+    platform = {unity="unity",vungle = "vungle", unity = "unity"},
+    target = {
+        vungle = "vungle",
+        gdt = "gdt",
+        unity = "unity",
+    },
+
+    vungle = {
+        android = "com.donopo.helloKitty", --kt
+        ios = "56e633b62e4d11793d00000a", --kt
+    },
+
+    unity = {
+        android = "com.donopo.helloKitty", --kt
+        ios = "1070802", --kt
+    },
+
+}
+
+
 
 -- use framework, will disable all deprecated API, false - use legacy API
 CC_USE_FRAMEWORK = true
