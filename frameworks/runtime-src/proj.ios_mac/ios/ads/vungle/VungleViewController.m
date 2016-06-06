@@ -119,7 +119,7 @@
     NSError *error;
 //    [sdk playAd:[VungleAdManager getInstance].viewController error:&error];
      AppController* appController = (AppController*) [UIApplication sharedApplication].delegate;
-    [sdk playAd:appController.viewController error:&error];
+    [sdk playAd:[VungleAdManager getInstance].viewController error:&error];
     
     if (error) {
         NSLog(@"Error encountered playing ad: %@", error);

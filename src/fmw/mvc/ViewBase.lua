@@ -16,6 +16,7 @@ function ViewBase:ctor(app, name)
     self.events = {}
     self.timers = {}
     self.tables = {}
+    self.children = {}
 
     -- check CSB resource file
     local res = rawget(self.class, "RESOURCE_FILENAME")
@@ -30,7 +31,6 @@ function ViewBase:ctor(app, name)
 
     if self.onCreate then self:onCreate() end
 
-    print("onEnter_1")
 end
 
 function ViewBase:getApp()
@@ -65,7 +65,8 @@ end
 --@param self
 --@param string#string tableName 数据表命名
 function ViewBase:getChild(name)
-    return self:get():getChildByName(name)
+--    return self:get():getChildByName(name)
+    return self.children[name]
 end
 
 
@@ -94,6 +95,19 @@ function ViewBase:onFrameEvent(frame)
 end
 
 
+function ViewBase:pairesTarget(target)
+    local children = target:getChildren()
+    if next(children)  then
+        for _, child in pairs(children) do
+            local name = child:getName()
+            if name then
+                self.children[name] = child
+            end
+            self:pairesTarget(child)
+        end
+    end
+end
+
 
 function ViewBase:createResoueceNode(resourceFilename)
     if self.resourceNode_ then
@@ -104,6 +118,9 @@ function ViewBase:createResoueceNode(resourceFilename)
     local  csLuaScene = require(resourceFilename).create(handler(self,self.onClick))
     self.resourceExtend_  = csLuaScene  --所有资源，root，animation
     self.resourceNode_ = csLuaScene["root"]  --底层节点
+
+    self:pairesTarget(csLuaScene["root"])
+
     if csLuaScene['animation'] then
         self:get():runAction(csLuaScene['animation'])
         csLuaScene['animation']:setFrameEventCallFunc(handler(self,self.onFrameEvent))
@@ -355,7 +372,7 @@ end
 --@function [parent=#ViewBase] update
 --@param self
 function ViewBase:update(event)
- 
+
 end
 
 

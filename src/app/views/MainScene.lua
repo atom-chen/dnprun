@@ -98,6 +98,7 @@ function MainScene:onCreate()
 
 
     self:onGame()
+    
 end
 
 function MainScene:onClick( path,node,funcName)

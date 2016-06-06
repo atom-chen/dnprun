@@ -13,7 +13,7 @@ DNP_APP = {
 }
 
 DNP_GAME = {
---    default_scene = "PlaneScene"
+    default_scene = "PlaneScene"
 }
 
 --######## 广告区域 #######--

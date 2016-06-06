@@ -27,14 +27,14 @@
               <PlistImageFile Name="l-k-1.png" Key="l-k-1.png" />
               <PlistImageFile Name="l-k-2.png" Key="l-k-2.png" />
               <PlistImageFile Name="l-lock.png" Key="l-lock.png" />
+              <PlistImageFile Name="loading-bar-1.png" Key="loading-bar-1.png" />
+              <PlistImageFile Name="loading-bar-2.png" Key="loading-bar-2.png" />
               <PlistImageFile Name="l-p-1.png" Key="l-p-1.png" />
               <PlistImageFile Name="l-p-2.png" Key="l-p-2.png" />
               <PlistImageFile Name="l-p-3.png" Key="l-p-3.png" />
               <PlistImageFile Name="l-p-4.png" Key="l-p-4.png" />
               <PlistImageFile Name="l-p-6.png" Key="l-p-6.png" />
               <PlistImageFile Name="l-q.png" Key="l-q.png" />
-              <PlistImageFile Name="loading-bar-1.png" Key="loading-bar-1.png" />
-              <PlistImageFile Name="loading-bar-2.png" Key="loading-bar-2.png" />
               <PlistImageFile Name="star-star.png" Key="star-star.png" />
               <PlistImageFile Name="suit-btn-left.png" Key="suit-btn-left.png" />
               <PlistImageFile Name="suit-btn-right.png" Key="suit-btn-right.png" />
@@ -74,14 +74,14 @@
             <PlistImageFile Name="l-k-1.png" Key="l-k-1.png" />
             <PlistImageFile Name="l-k-2.png" Key="l-k-2.png" />
             <PlistImageFile Name="l-lock.png" Key="l-lock.png" />
+            <PlistImageFile Name="loading-bar-1.png" Key="loading-bar-1.png" />
+            <PlistImageFile Name="loading-bar-2.png" Key="loading-bar-2.png" />
             <PlistImageFile Name="l-p-1.png" Key="l-p-1.png" />
             <PlistImageFile Name="l-p-2.png" Key="l-p-2.png" />
             <PlistImageFile Name="l-p-3.png" Key="l-p-3.png" />
             <PlistImageFile Name="l-p-4.png" Key="l-p-4.png" />
             <PlistImageFile Name="l-p-6.png" Key="l-p-6.png" />
             <PlistImageFile Name="l-q.png" Key="l-q.png" />
-            <PlistImageFile Name="loading-bar-1.png" Key="loading-bar-1.png" />
-            <PlistImageFile Name="loading-bar-2.png" Key="loading-bar-2.png" />
             <PlistImageFile Name="star-star.png" Key="star-star.png" />
             <PlistImageFile Name="suit-btn-left.png" Key="suit-btn-left.png" />
             <PlistImageFile Name="suit-btn-right.png" Key="suit-btn-right.png" />
