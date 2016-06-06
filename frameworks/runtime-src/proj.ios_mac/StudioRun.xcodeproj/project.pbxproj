@@ -43,6 +43,17 @@
 		9FFE00A01ACCF59E00D6E35A /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009B1ACCF59E00D6E35A /* lua_debugger.c */; };
 		9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
+		A669AD701D05325200AB90D0 /* GdtAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A669AD591D05325200AB90D0 /* GdtAdManager.mm */; };
+		A669AD711D05325200AB90D0 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A669AD5B1D05325200AB90D0 /* InterstitialViewController.m */; };
+		A669AD721D05325200AB90D0 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD621D05325200AB90D0 /* libGDTMobSDK.a */; };
+		A669AD731D05325200AB90D0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A669AD641D05325200AB90D0 /* SplashViewController.m */; };
+		A669AD741D05325200AB90D0 /* UnityAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A669AD671D05325200AB90D0 /* UnityAdManager.mm */; };
+		A669AD751D05325200AB90D0 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A669AD681D05325200AB90D0 /* UnityAds.bundle */; };
+		A669AD761D05325200AB90D0 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD691D05325200AB90D0 /* UnityAds.framework */; };
+		A669AD771D05325300AB90D0 /* UnityAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A669AD6B1D05325200AB90D0 /* UnityAdsViewController.m */; };
+		A669AD781D05325300AB90D0 /* VungleAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A669AD6E1D05325200AB90D0 /* VungleAdManager.mm */; };
+		A669AD791D05325300AB90D0 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD6F1D05325200AB90D0 /* VungleSDK.framework */; };
+		A669AD7B1D054CEE00AB90D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD7A1D054CEE00AB90D0 /* libsqlite3.tbd */; };
 		A68450931CFF4AB600A7525C /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = A684507C1CFF4AB600A7525C /* libbase64.c */; };
 		A68450941CFF4AB600A7525C /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A684507E1CFF4AB600A7525C /* CCCrypto.cpp */; };
 		A68450961CFF4AB600A7525C /* build.bat in Resources */ = {isa = PBXBuildFile; fileRef = A68450841CFF4AB600A7525C /* build.bat */; };
@@ -54,12 +65,6 @@
 		A68450A21CFFD9F100A7525C /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
 		A68450A31CFFD9F100A7525C /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68450861CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp */; };
 		A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */; };
-		A68BB09A1D047C9800782F81 /* UnityAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0901D047C9800782F81 /* UnityAdManager.mm */; };
-		A68BB09B1D047C9800782F81 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A68BB0911D047C9800782F81 /* UnityAds.bundle */; };
-		A68BB09C1D047C9800782F81 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0921D047C9800782F81 /* UnityAds.framework */; };
-		A68BB09D1D047C9800782F81 /* UnityAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0941D047C9800782F81 /* UnityAdsViewController.m */; };
-		A68BB09E1D047C9800782F81 /* VungleAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0971D047C9800782F81 /* VungleAdManager.mm */; };
-		A68BB09F1D047C9800782F81 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0981D047C9800782F81 /* VungleSDK.framework */; };
 		A68BB0AB1D047DFB00782F81 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */; };
 		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
 		A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0AA1D047DFB00782F81 /* WXManager.mm */; };
@@ -69,7 +74,6 @@
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
 		A6BB80781D0048950053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
-		A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
 		A6D398C31CF99331000870D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C21CF99331000870D2 /* QuartzCore.framework */; };
@@ -78,9 +82,6 @@
 		A6D398C91CF9937F000870D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C81CF9937F000870D2 /* libz.tbd */; };
 		A6D398CB1CF99387000870D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CA1CF99387000870D2 /* Security.framework */; };
 		A6D398CD1CF99390000870D2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CC1CF99390000870D2 /* StoreKit.framework */; };
-		A6D398D21CF99427000870D2 /* GdtAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D398CF1CF99427000870D2 /* GdtAdManager.mm */; };
-		A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D398D11CF99427000870D2 /* InterstitialViewController.m */; };
-		A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8D6F11CFAA82800D82BBC /* SplashViewController.m */; };
 		A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5023811317EBBCAC00990C9B /* Info.plist */; };
 		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
@@ -227,6 +228,28 @@
 		9FFE009C1ACCF59E00D6E35A /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
 		9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeLuaImpl.cpp; sourceTree = "<group>"; };
 		9FFE009E1ACCF59E00D6E35A /* RuntimeLuaImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeLuaImpl.h; sourceTree = "<group>"; };
+		A669AD581D05325200AB90D0 /* GdtAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GdtAdManager.h; sourceTree = "<group>"; };
+		A669AD591D05325200AB90D0 /* GdtAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GdtAdManager.mm; sourceTree = "<group>"; };
+		A669AD5A1D05325200AB90D0 /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		A669AD5B1D05325200AB90D0 /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		A669AD5D1D05325200AB90D0 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		A669AD5E1D05325200AB90D0 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		A669AD5F1D05325200AB90D0 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
+		A669AD601D05325200AB90D0 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
+		A669AD611D05325200AB90D0 /* GDTTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTTrack.h; sourceTree = "<group>"; };
+		A669AD621D05325200AB90D0 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
+		A669AD631D05325200AB90D0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		A669AD641D05325200AB90D0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		A669AD661D05325200AB90D0 /* UnityAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdManager.h; sourceTree = "<group>"; };
+		A669AD671D05325200AB90D0 /* UnityAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityAdManager.mm; sourceTree = "<group>"; };
+		A669AD681D05325200AB90D0 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
+		A669AD691D05325200AB90D0 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+		A669AD6A1D05325200AB90D0 /* UnityAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsViewController.h; sourceTree = "<group>"; };
+		A669AD6B1D05325200AB90D0 /* UnityAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsViewController.m; sourceTree = "<group>"; };
+		A669AD6D1D05325200AB90D0 /* VungleAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdManager.h; sourceTree = "<group>"; };
+		A669AD6E1D05325200AB90D0 /* VungleAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VungleAdManager.mm; sourceTree = "<group>"; };
+		A669AD6F1D05325200AB90D0 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		A669AD7A1D054CEE00AB90D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		A68450791CFF4AB600A7525C /* cocos2dx_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocos2dx_extra.h; sourceTree = "<group>"; };
 		A684507C1CFF4AB600A7525C /* libbase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libbase64.c; sourceTree = "<group>"; };
 		A684507D1CFF4AB600A7525C /* libbase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase64.h; sourceTree = "<group>"; };
@@ -243,15 +266,6 @@
 		A68450921CFF4AB600A7525C /* CCCryptoWin32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCCryptoWin32.cpp; sourceTree = "<group>"; };
 		A68BB08C1D047C9800782F81 /* PGStoreKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGStoreKitManager.h; sourceTree = "<group>"; };
 		A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGStoreKitManager.mm; sourceTree = "<group>"; };
-		A68BB08F1D047C9800782F81 /* UnityAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdManager.h; sourceTree = "<group>"; };
-		A68BB0901D047C9800782F81 /* UnityAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityAdManager.mm; sourceTree = "<group>"; };
-		A68BB0911D047C9800782F81 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
-		A68BB0921D047C9800782F81 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
-		A68BB0931D047C9800782F81 /* UnityAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsViewController.h; sourceTree = "<group>"; };
-		A68BB0941D047C9800782F81 /* UnityAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsViewController.m; sourceTree = "<group>"; };
-		A68BB0961D047C9800782F81 /* VungleAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdManager.h; sourceTree = "<group>"; };
-		A68BB0971D047C9800782F81 /* VungleAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VungleAdManager.mm; sourceTree = "<group>"; };
-		A68BB0981D047C9800782F81 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		A68BB0A31D047DFB00782F81 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		A68BB0A41D047DFB00782F81 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
@@ -266,12 +280,6 @@
 		A6BB80601D0004730053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mac/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB806D1D0016BE0053D6E3 /* game.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = game.dat; path = ../../../encrypt/game.dat; sourceTree = "<group>"; };
 		A6BB80701D00183D0053D6E3 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Const.h; path = ../Classes/Const.h; sourceTree = "<group>"; };
-		A6D398B71CF992FA000870D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
-		A6D398B81CF992FA000870D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
-		A6D398B91CF992FA000870D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
-		A6D398BA1CF992FA000870D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
-		A6D398BB1CF992FA000870D2 /* GDTTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTTrack.h; sourceTree = "<group>"; };
-		A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
 		A6D398BE1CF99316000870D2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		A6D398C01CF99321000870D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		A6D398C21CF99331000870D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -280,12 +288,6 @@
 		A6D398C81CF9937F000870D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		A6D398CA1CF99387000870D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		A6D398CC1CF99390000870D2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		A6D398CE1CF99427000870D2 /* GdtAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GdtAdManager.h; sourceTree = "<group>"; };
-		A6D398CF1CF99427000870D2 /* GdtAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GdtAdManager.mm; sourceTree = "<group>"; };
-		A6D398D01CF99427000870D2 /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
-		A6D398D11CF99427000870D2 /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
-		A6F8D6F01CFAA82800D82BBC /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		A6F8D6F11CFAA82800D82BBC /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -337,11 +339,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A669AD7B1D054CEE00AB90D0 /* libsqlite3.tbd in Frameworks */,
 				A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */,
 				A68BB0AF1D047E3B00782F81 /* libsqlite3.0.tbd in Frameworks */,
 				A6D398CD1CF99390000870D2 /* StoreKit.framework in Frameworks */,
 				A6D398CB1CF99387000870D2 /* Security.framework in Frameworks */,
 				A6D398C91CF9937F000870D2 /* libz.tbd in Frameworks */,
+				A669AD761D05325200AB90D0 /* UnityAds.framework in Frameworks */,
 				A6D398C71CF99340000870D2 /* CoreTelephony.framework in Frameworks */,
 				A6D398C51CF99339000870D2 /* SystemConfiguration.framework in Frameworks */,
 				A6D398C31CF99331000870D2 /* QuartzCore.framework in Frameworks */,
@@ -349,6 +353,7 @@
 				A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */,
 				9FA3AE4E1BE9BCC900FC9645 /* CFNetwork.framework in Frameworks */,
 				A68BB0AB1D047DFB00782F81 /* libWeChatSDK.a in Frameworks */,
+				A669AD721D05325200AB90D0 /* libGDTMobSDK.a in Frameworks */,
 				ED545A891B68A23E00C3958E /* libiconv.dylib in Frameworks */,
 				9FF504871A5E88CE00AFDA55 /* libsimulator iOS.a in Frameworks */,
 				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
@@ -357,17 +362,15 @@
 				3EEEDB61197107C0006A9FF8 /* MediaPlayer.framework in Frameworks */,
 				D6B061351803AC000077942B /* CoreMotion.framework in Frameworks */,
 				1AF4C403178663F200122817 /* libz.dylib in Frameworks */,
-				A68BB09C1D047C9800782F81 /* UnityAds.framework in Frameworks */,
 				50805AAF17EBBEAA004CFAD3 /* UIKit.framework in Frameworks */,
 				5023817A17EBBE8300990C9B /* OpenGLES.framework in Frameworks */,
 				F293B3CD15EB7BE500256477 /* QuartzCore.framework in Frameworks */,
 				F293B3D115EB7BE500256477 /* OpenAL.framework in Frameworks */,
-				A68BB09F1D047C9800782F81 /* VungleSDK.framework in Frameworks */,
+				A669AD791D05325300AB90D0 /* VungleSDK.framework in Frameworks */,
 				F293B3D315EB7BE500256477 /* AudioToolbox.framework in Frameworks */,
 				F293B3D515EB7BE500256477 /* AVFoundation.framework in Frameworks */,
 				F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */,
 				F293B3DB15EB7BE500256477 /* CoreGraphics.framework in Frameworks */,
-				A6D398BD1CF992FA000870D2 /* libGDTMobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +389,9 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				A669AD561D05325200AB90D0 /* ads */,
 				A68BB0A01D047DFB00782F81 /* wx */,
 				A68BB08B1D047C9800782F81 /* iap */,
-				A68BB08E1D047C9800782F81 /* unity */,
-				A68BB0951D047C9800782F81 /* vungle */,
-				A6D398B51CF992FA000870D2 /* gdt */,
 				5023810717EBBCAC00990C9B /* AppController.h */,
 				5023810817EBBCAC00990C9B /* AppController.mm */,
 				5023811317EBBCAC00990C9B /* Info.plist */,
@@ -442,6 +443,66 @@
 				9FF504801A5E86D600AFDA55 /* libsimulator iOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A669AD561D05325200AB90D0 /* ads */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD571D05325200AB90D0 /* gdt */,
+				A669AD651D05325200AB90D0 /* unity */,
+				A669AD6C1D05325200AB90D0 /* vungle */,
+			);
+			path = ads;
+			sourceTree = "<group>";
+		};
+		A669AD571D05325200AB90D0 /* gdt */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD581D05325200AB90D0 /* GdtAdManager.h */,
+				A669AD591D05325200AB90D0 /* GdtAdManager.mm */,
+				A669AD5A1D05325200AB90D0 /* InterstitialViewController.h */,
+				A669AD5B1D05325200AB90D0 /* InterstitialViewController.m */,
+				A669AD5C1D05325200AB90D0 /* libs */,
+				A669AD631D05325200AB90D0 /* SplashViewController.h */,
+				A669AD641D05325200AB90D0 /* SplashViewController.m */,
+			);
+			path = gdt;
+			sourceTree = "<group>";
+		};
+		A669AD5C1D05325200AB90D0 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD5D1D05325200AB90D0 /* GDTMobBannerView.h */,
+				A669AD5E1D05325200AB90D0 /* GDTMobInterstitial.h */,
+				A669AD5F1D05325200AB90D0 /* GDTNativeAd.h */,
+				A669AD601D05325200AB90D0 /* GDTSplashAd.h */,
+				A669AD611D05325200AB90D0 /* GDTTrack.h */,
+				A669AD621D05325200AB90D0 /* libGDTMobSDK.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		A669AD651D05325200AB90D0 /* unity */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD661D05325200AB90D0 /* UnityAdManager.h */,
+				A669AD671D05325200AB90D0 /* UnityAdManager.mm */,
+				A669AD681D05325200AB90D0 /* UnityAds.bundle */,
+				A669AD691D05325200AB90D0 /* UnityAds.framework */,
+				A669AD6A1D05325200AB90D0 /* UnityAdsViewController.h */,
+				A669AD6B1D05325200AB90D0 /* UnityAdsViewController.m */,
+			);
+			path = unity;
+			sourceTree = "<group>";
+		};
+		A669AD6C1D05325200AB90D0 /* vungle */ = {
+			isa = PBXGroup;
+			children = (
+				A669AD6D1D05325200AB90D0 /* VungleAdManager.h */,
+				A669AD6E1D05325200AB90D0 /* VungleAdManager.mm */,
+				A669AD6F1D05325200AB90D0 /* VungleSDK.framework */,
+			);
+			path = vungle;
 			sourceTree = "<group>";
 		};
 		A68450781CFF4AB600A7525C /* extra */ = {
@@ -547,29 +608,6 @@
 			path = iap;
 			sourceTree = "<group>";
 		};
-		A68BB08E1D047C9800782F81 /* unity */ = {
-			isa = PBXGroup;
-			children = (
-				A68BB08F1D047C9800782F81 /* UnityAdManager.h */,
-				A68BB0901D047C9800782F81 /* UnityAdManager.mm */,
-				A68BB0911D047C9800782F81 /* UnityAds.bundle */,
-				A68BB0921D047C9800782F81 /* UnityAds.framework */,
-				A68BB0931D047C9800782F81 /* UnityAdsViewController.h */,
-				A68BB0941D047C9800782F81 /* UnityAdsViewController.m */,
-			);
-			path = unity;
-			sourceTree = "<group>";
-		};
-		A68BB0951D047C9800782F81 /* vungle */ = {
-			isa = PBXGroup;
-			children = (
-				A68BB0961D047C9800782F81 /* VungleAdManager.h */,
-				A68BB0971D047C9800782F81 /* VungleAdManager.mm */,
-				A68BB0981D047C9800782F81 /* VungleSDK.framework */,
-			);
-			path = vungle;
-			sourceTree = "<group>";
-		};
 		A68BB0A01D047DFB00782F81 /* wx */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,34 +647,6 @@
 			name = pbulish;
 			sourceTree = "<group>";
 		};
-		A6D398B51CF992FA000870D2 /* gdt */ = {
-			isa = PBXGroup;
-			children = (
-				A6F8D6F01CFAA82800D82BBC /* SplashViewController.h */,
-				A6F8D6F11CFAA82800D82BBC /* SplashViewController.m */,
-				A6D398CE1CF99427000870D2 /* GdtAdManager.h */,
-				A6D398CF1CF99427000870D2 /* GdtAdManager.mm */,
-				A6D398D01CF99427000870D2 /* InterstitialViewController.h */,
-				A6D398D11CF99427000870D2 /* InterstitialViewController.m */,
-				A6D398B61CF992FA000870D2 /* libs */,
-			);
-			name = gdt;
-			path = Gdt;
-			sourceTree = "<group>";
-		};
-		A6D398B61CF992FA000870D2 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				A6D398B71CF992FA000870D2 /* GDTMobBannerView.h */,
-				A6D398B81CF992FA000870D2 /* GDTMobInterstitial.h */,
-				A6D398B91CF992FA000870D2 /* GDTNativeAd.h */,
-				A6D398BA1CF992FA000870D2 /* GDTSplashAd.h */,
-				A6D398BB1CF992FA000870D2 /* GDTTrack.h */,
-				A6D398BC1CF992FA000870D2 /* libGDTMobSDK.a */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +683,7 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A669AD7A1D054CEE00AB90D0 /* libsqlite3.tbd */,
 				A68BB0B21D047E8000782F81 /* libc++.tbd */,
 				A68BB0AE1D047E3B00782F81 /* libsqlite3.0.tbd */,
 				A6D398CC1CF99390000870D2 /* StoreKit.framework */,
@@ -894,7 +905,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68BB09B1D047C9800782F81 /* UnityAds.bundle in Resources */,
+				A669AD751D05325200AB90D0 /* UnityAds.bundle in Resources */,
 				A6BB80781D0048950053D6E3 /* res in Resources */,
 				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,
@@ -947,24 +958,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
-				A6D398D31CF99427000870D2 /* InterstitialViewController.m in Sources */,
-				A68BB09E1D047C9800782F81 /* VungleAdManager.mm in Sources */,
+				A669AD771D05325300AB90D0 /* UnityAdsViewController.m in Sources */,
 				A68450931CFF4AB600A7525C /* libbase64.c in Sources */,
-				A68BB09D1D047C9800782F81 /* UnityAdsViewController.m in Sources */,
-				A68BB09A1D047C9800782F81 /* UnityAdManager.mm in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				A68450981CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp in Sources */,
 				A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
-				A6F8D6F21CFAA82800D82BBC /* SplashViewController.m in Sources */,
+				A669AD711D05325200AB90D0 /* InterstitialViewController.m in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				A669AD781D05325300AB90D0 /* VungleAdManager.mm in Sources */,
 				A68450941CFF4AB600A7525C /* CCCrypto.cpp in Sources */,
 				A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */,
-				A6D398D21CF99427000870D2 /* GdtAdManager.mm in Sources */,
+				A669AD731D05325200AB90D0 /* SplashViewController.m in Sources */,
 				A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
+				A669AD701D05325200AB90D0 /* GdtAdManager.mm in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
+				A669AD741D05325200AB90D0 /* UnityAdManager.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,6 +1176,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios/unity",
 					"$(PROJECT_DIR)/ios/vungle",
+					"$(PROJECT_DIR)/ios/ads/unity",
+					"$(PROJECT_DIR)/ios/ads/vungle",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1186,6 +1199,7 @@
 					"$(PROJECT_DIR)/ios/Gdt",
 					"$(PROJECT_DIR)/ios/Gdt/libs",
 					"$(PROJECT_DIR)/ios/wx/export",
+					"$(PROJECT_DIR)/ios/ads/gdt/libs",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -1196,6 +1210,7 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-ObjC",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donpo.dnprun;
@@ -1222,6 +1237,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios/unity",
 					"$(PROJECT_DIR)/ios/vungle",
+					"$(PROJECT_DIR)/ios/ads/unity",
+					"$(PROJECT_DIR)/ios/ads/vungle",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -1242,6 +1259,7 @@
 					"$(PROJECT_DIR)/ios/Gdt",
 					"$(PROJECT_DIR)/ios/Gdt/libs",
 					"$(PROJECT_DIR)/ios/wx/export",
+					"$(PROJECT_DIR)/ios/ads/gdt/libs",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -1252,6 +1270,7 @@
 					10000,
 					"-image_base",
 					100000000,
+					"-ObjC",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donpo.dnprun;

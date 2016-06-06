@@ -31,6 +31,11 @@
 #import "RootViewController.h"
 #import "platform/ios/CCEAGLView-ios.h"
 
+//###################QHZFFF#################
+#include "UnityAdManager.h"
+#include "VungleAdManager.h"
+//###################QHZFFF#################
+
 @implementation AppController
 
 #pragma mark -
@@ -80,10 +85,17 @@ static AppDelegate s_sharedApplication;
     [window makeKeyAndVisible];
 
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
-
+    
     // IMPORTANT: Setting the GLView should be done after creating the RootViewController
     cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView(eaglView);
     cocos2d::Director::getInstance()->setOpenGLView(glview);
+    
+    //################ QHZF ###################
+    [[UnityAdManager getInstance] setViewController:viewController];
+    [[VungleAdManager getInstance] setViewController:viewController];
+
+    //################ QHZF ###################
+
 
     app->run();
     return YES;
