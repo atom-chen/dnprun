@@ -10,6 +10,8 @@
 #import "CCLuaBridge.h"
 #include "SimpleAudioEngine.h"
 
+#import <VungleSDK/VungleSDK.h>
+
 @implementation UnityAdManager
 
 
@@ -27,6 +29,7 @@
     NSString *appID = [dict objectForKey:@"id"];
     [UnityAdManager getInstance]._adsView = [[UnityAdsViewController alloc] init];
     [[UnityAdManager getInstance]._adsView startAds:appID];
+    
 }
 
 
@@ -38,6 +41,7 @@
     cocos2d::LuaBridge::retainLuaFunctionById([callbackId intValue]);
     
     [[UnityAdManager getInstance]._adsView openAds];
+
 }
 
 

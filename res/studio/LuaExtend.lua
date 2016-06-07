@@ -14,7 +14,6 @@ end
 local luaExtend = {}
 
 local function getChildInSubNodes(nodeTable, key)
-print(key)
     if #nodeTable == 0 then
         return nil
     end

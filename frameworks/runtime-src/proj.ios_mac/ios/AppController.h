@@ -33,8 +33,8 @@
     UIWindow *window;
 //    RootViewController *viewController;,
 }
-
-@property(nonatomic, readonly) RootViewController* viewController;
+@property (nonatomic, readwrite, retain) RootViewController* viewController;
+//@property(nonatomic, readonly) RootViewController* viewController;
 
 @end
 

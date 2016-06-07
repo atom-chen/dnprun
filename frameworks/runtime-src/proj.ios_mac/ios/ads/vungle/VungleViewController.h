@@ -11,9 +11,9 @@
 
 @interface VungleViewController : UIViewController<VungleSDKDelegate>
 
-//@property (weak, nonatomic) IBOutlet UIButton *showAdButton;
-//@property (weak, nonatomic) IBOutlet UIButton *showAdWithOptionsButton;
-//@property (weak, nonatomic) IBOutlet UIButton *showIncentivizedAdButton;
+@property (nonatomic, retain) IBOutlet UIButton *showAdButton;
+@property (nonatomic, retain) IBOutlet  UIButton *showAdWithOptionsButton;
+@property (nonatomic, retain) IBOutlet  UIButton *showIncentivizedAdButton;
 
 -(void)startWithAppId:(NSString*) appID;
 

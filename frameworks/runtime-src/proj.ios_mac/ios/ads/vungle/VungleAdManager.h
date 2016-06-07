@@ -10,12 +10,12 @@
 #import <VungleSDK/VungleSDK.h>
 #import "VungleViewController.h"
 
-@interface VungleAdManager : NSObject<VungleSDKDelegate,VungleSDKLogger>
+@interface VungleAdManager : NSObject
 
 + (VungleAdManager *) getInstance;
 + (void)init:(NSDictionary*) dict;
 + (void)play:(NSDictionary*) dict;
-+ (void)isVideoReady:(NSDictionary*) dict;
++ (void)isReady:(NSDictionary*) dict;
 
 
 - (void) adsWillShow;

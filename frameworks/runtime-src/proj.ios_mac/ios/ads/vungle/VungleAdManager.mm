@@ -26,81 +26,65 @@
     NSString *appID = [dict objectForKey:@"id"];
     [VungleAdManager getInstance]._adsView = [[VungleViewController alloc] init];
     [[VungleAdManager getInstance]._adsView startWithAppId:appID];
-     [[VungleAdManager getInstance]._adsView viewDidLoad];
-    
+    [[VungleAdManager getInstance]._adsView viewDidLoad];
 }
+
 + (void)play:(NSDictionary*) dict
 {
     [[VungleAdManager getInstance]._adsView showAd];
 }
 
-+ (void)isVideoReady:(NSDictionary*) dict
++ (void)isReady:(NSDictionary*) dict
 {
     
 }
 
-
-- (void) dealloc
+-(void)unityAdsWillShow
 {
-    [super dealloc];
+    CocosDenshion::SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
+}
+
+-(void)unityAdsVideoCompleted
+{
+    CocosDenshion::SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
 
 
-//
-//- (void) setCallbackId:(NSNumber *) callbackid
-//{
-//    //    int callbackId = self -> callbackId;
-//    self.callback = callbackid;
-//    
-//    cocos2d::LuaBridge::retainLuaFunctionById([callbackid intValue]);
-//    
-//}
-//- (void) callbackLua:(NSString*)status
-//{
-//    if(self.callback != nil) {
-//        
-//        
-//        int callbackid = [self.callback intValue];
-//        // 1. 将引用 ID 对应的 Lua function 放入 Lua stack
-//        cocos2d::LuaBridge::pushLuaFunctionById(callbackid);
-//        // 2. 将需要传递给 Lua function 的参数放入 Lua stack
-//        cocos2d::LuaBridge::getStack()->pushString([status UTF8String]);
-//        // 3. 执行 Lua function
-//        cocos2d::LuaBridge::getStack()->executeFunction(1);
-//        // 4. 释放引用 ID
-//        cocos2d::LuaBridge::releaseLuaFunctionById(callbackid);
-//        
-//        self.callbackId = Nil;
-//    }
-//}
-//
-//
-//- (void) setCallbackId1:(NSNumber *) callbackid
-//{
-//    //    int callbackId = self -> callbackId;
-//    self.callback1 = callbackid;
-//    
-//    cocos2d::LuaBridge::retainLuaFunctionById([callbackid intValue]);
-//    
-//}
-//- (void) callbackLua1:(NSString*)status
-//{
-//    if(self.callback1 != nil) {
-//        
-//        
-//        int callbackid = [self.callback1 intValue];
-//        // 1. 将引用 ID 对应的 Lua function 放入 Lua stack
-//        cocos2d::LuaBridge::pushLuaFunctionById(callbackid);
-//        // 2. 将需要传递给 Lua function 的参数放入 Lua stack
-//        cocos2d::LuaBridge::getStack()->pushString([status UTF8String]);
-//        // 3. 执行 Lua function
-//        cocos2d::LuaBridge::getStack()->executeFunction(1);
-//        // 4. 释放引用 ID
-//        cocos2d::LuaBridge::releaseLuaFunctionById(callbackid);
-//        
-//        self.callbackId1 = Nil;
-//    }
-//}
 
+- (void) readyCallLua:(NSString*)status
+{
+    if(self.readyCall != nil) {
+        
+        int callbackid = [self.readyCall intValue];
+        // 1. 将引用 ID 对应的 Lua function 放入 Lua stack
+        cocos2d::LuaBridge::pushLuaFunctionById(callbackid);
+        // 2. 将需要传递给 Lua function 的参数放入 Lua stack
+        cocos2d::LuaBridge::getStack()->pushString([status UTF8String]);
+        // 3. 执行 Lua function
+        cocos2d::LuaBridge::getStack()->executeFunction(1);
+        // 4. 释放引用 ID
+        cocos2d::LuaBridge::releaseLuaFunctionById(callbackid);
+        
+        self.readyCall = Nil;
+    }
+}
+
+- (void) showCallLua:(NSString*)status
+{
+    if(self.showCall != nil) {
+        
+        int callbackid = [self.readyCall intValue];
+        // 1. 将引用 ID 对应的 Lua function 放入 Lua stack
+        cocos2d::LuaBridge::pushLuaFunctionById(callbackid);
+        // 2. 将需要传递给 Lua function 的参数放入 Lua stack
+        cocos2d::LuaBridge::getStack()->pushString([status UTF8String]);
+        // 3. 执行 Lua function
+        cocos2d::LuaBridge::getStack()->executeFunction(1);
+        // 4. 释放引用 ID
+        cocos2d::LuaBridge::releaseLuaFunctionById(callbackid);
+        
+        self.showCall = Nil;
+    }
+}
 
 @end
