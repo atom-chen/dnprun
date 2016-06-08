@@ -10,6 +10,8 @@
 
 NS_CC_EXTRA_BEGIN
 
+typedef int LUA_STRING;
+
 class Crypto
 {
 public:
@@ -84,22 +86,22 @@ public:
 //#if CC_LUA_ENGINE_ENABLED > 0
     
     /** @brief Encrypt data with AES256 algorithm, return ciphertext string, return nil if failed */
-    static LUA_STRING encryptAES256Lua(const char* plaintext,
-                                       int plaintextLength,
-                                       const char* key,
-                                       int keyLength)
-    {
-        return cryptAES256Lua(false, plaintext, plaintextLength, key, keyLength);
-    }
-    
-    /** @brief Decrypt data with AES256 algorithm, return plaintext string, return nil if failed */
-    static LUA_STRING decryptAES256Lua(const char* ciphertext,
-                                       int ciphertextLength,
-                                       const char* key,
-                                       int keyLength)
-    {
-        return cryptAES256Lua(true, ciphertext, ciphertextLength, key, keyLength);
-    }
+//    static LUA_STRING encryptAES256Lua(const char* plaintext,
+//                                       int plaintextLength,
+//                                       const char* key,
+//                                       int keyLength)
+//    {
+//        return cryptAES256Lua(false, plaintext, plaintextLength, key, keyLength);
+//    }
+//    
+//    /** @brief Decrypt data with AES256 algorithm, return plaintext string, return nil if failed */
+//    static LUA_STRING decryptAES256Lua(const char* ciphertext,
+//                                       int ciphertextLength,
+//                                       const char* key,
+//                                       int keyLength)
+//    {
+//        return cryptAES256Lua(true, ciphertext, ciphertextLength, key, keyLength);
+//    }
     
     /** @brief Encrypt data with XXTEA algorithm, return ciphertext string and length, return nil if failed */
     static LUA_STRING encryptXXTEALua(const char* plaintext,
@@ -138,21 +140,21 @@ public:
 private:
     Crypto(void) {}
     
-    static int cryptAES256(bool isDecrypt,
-                           unsigned char* input,
-                           int inputLength,
-                           unsigned char* output,
-                           int outputBufferLength,
-                           unsigned char* key,
-                           int keyLength);
-    
-//#if CC_LUA_ENGINE_ENABLED > 0
-    static LUA_STRING cryptAES256Lua(bool isDecrypt,
-                                     const char* input,
-                                     int inputLength,
-                                     const char* key,
-                                     int keyLength);
-    
+//    static int cryptAES256(bool isDecrypt,
+//                           unsigned char* input,
+//                           int inputLength,
+//                           unsigned char* output,
+//                           int outputBufferLength,
+//                           unsigned char* key,
+//                           int keyLength);
+//    
+////#if CC_LUA_ENGINE_ENABLED > 0
+//    static LUA_STRING cryptAES256Lua(bool isDecrypt,
+//                                     const char* input,
+//                                     int inputLength,
+//                                     const char* key,
+//                                     int keyLength);
+//    
     static LUA_STRING encodingBase64Lua(bool isDecoding,
                                         const char* input,
                                         int inputLength);

@@ -78,6 +78,10 @@
 		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
 		A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0AA1D047DFB00782F81 /* WXManager.mm */; };
 		A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0B21D047E8000782F81 /* libc++.tbd */; };
+		A6A7D8661D07CFA9009FCC0D /* cocos2dx_extra.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450791CFF4AB600A7525C /* cocos2dx_extra.h */; };
+		A6A7D8671D07CFA9009FCC0D /* cocos2dx_extra_luabinding.h in Sources */ = {isa = PBXBuildFile; fileRef = A68450871CFF4AB600A7525C /* cocos2dx_extra_luabinding.h */; };
+		A6A7D8681D07CFB3009FCC0D /* cocos2dx_extra_luabinding.tolua in Sources */ = {isa = PBXBuildFile; fileRef = A68450881CFF4AB600A7525C /* cocos2dx_extra_luabinding.tolua */; };
+		A6A7D86B1D07FE6A009FCC0D /* CCCrypto.h in Sources */ = {isa = PBXBuildFile; fileRef = A684507F1CFF4AB600A7525C /* CCCrypto.h */; };
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
@@ -1051,6 +1055,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A7D86B1D07FE6A009FCC0D /* CCCrypto.h in Sources */,
+				A6A7D8681D07CFB3009FCC0D /* cocos2dx_extra_luabinding.tolua in Sources */,
+				A6A7D8661D07CFA9009FCC0D /* cocos2dx_extra.h in Sources */,
+				A6A7D8671D07CFA9009FCC0D /* cocos2dx_extra_luabinding.h in Sources */,
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
 				A669AD771D05325300AB90D0 /* UnityAdsViewController.m in Sources */,
 				A68450931CFF4AB600A7525C /* libbase64.c in Sources */,
@@ -1288,6 +1296,7 @@
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
 					"$(PROJECT_DIR)/ios/wx/export",
+					"$(SRCROOT)/../Classes/extra",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1296,6 +1305,7 @@
 					"$(PROJECT_DIR)/ios/Gdt/libs",
 					"$(PROJECT_DIR)/ios/wx/export",
 					"$(PROJECT_DIR)/ios/ads/gdt/libs",
+					"$(SRCROOT)/../Classes/extra",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1312,7 +1322,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) $(SRCROOT)/../Classes/extra";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -1347,6 +1357,7 @@
 					"$(SRCROOT)/../Classes",
 					"$(SRCROOT)/../../cocos2d-x/tools/simulator/libsimulator/lib",
 					"$(PROJECT_DIR)/ios/wx/export",
+					"$(SRCROOT)/../Classes/extra",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1355,6 +1366,7 @@
 					"$(PROJECT_DIR)/ios/Gdt/libs",
 					"$(PROJECT_DIR)/ios/wx/export",
 					"$(PROJECT_DIR)/ios/ads/gdt/libs",
+					"$(SRCROOT)/../Classes/extra",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1371,7 +1383,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) $(SRCROOT)/../Classes/extra";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

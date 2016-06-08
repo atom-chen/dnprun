@@ -11,9 +11,19 @@ LOCAL_SRC_FILES := \
 ../../Classes/ide-support/SimpleConfigParser.cpp \
 ../../Classes/ide-support/RuntimeLuaImpl.cpp \
 ../../Classes/ide-support/lua_debugger.c \
+../../Classes/extra/crypto/CCCrypto.cpp \
+../../Classes/extra/crypto/base64/libbase64.c \
+../../Classes/extra/platform/android/CCCryptoAndroid.cpp \
+../../Classes/extra/luabinding/cocos2dx_extra_luabinding.cpp \
 hellolua/main.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_C_INCLUDES := \
+$(LOCAL_PATH)/../../Classes/extra/crypto \
+$(LOCAL_PATH)/../../Classes/extra \
+$(LOCAL_PATH)/../../Classes
+
+LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API -DCC_LUA_ENGINE_ENABLED=1 $(ANDROID_COCOS2D_BUILD_FLAGS)
+LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API -DCC_LUA_ENGINE_ENABLED=1
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END

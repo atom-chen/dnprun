@@ -39,13 +39,13 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="play" StartIndex="0" EndIndex="90">
-          <RenderColor A="150" R="238" G="130" B="238" />
+          <RenderColor A="255" R="238" G="130" B="238" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Layer" Tag="5" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="960.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="601923354" Tag="7" IconVisible="False" LeftMargin="-5.0419" RightMargin="5.0419" TopMargin="-0.9916" BottomMargin="0.9916" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="601923354" Tag="7" IconVisible="False" LeftMargin="-5.0419" RightMargin="5.0419" TopMargin="-0.9916" BottomMargin="0.9916" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="960.0000" />
             <Children>
               <AbstractNodeData Name="Button_1" ActionTag="707913335" CallBackType="Click" CallBackName="onStartClick" Tag="9" IconVisible="False" LeftMargin="170.5417" RightMargin="160.4583" TopMargin="561.1485" BottomMargin="296.8515" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="279" Scale9Height="80" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -60,6 +60,17 @@
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="Resource/atlas/btn-start-2.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Resource/atlas/btn-start.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="text" ActionTag="945974231" Tag="10" IconVisible="False" LeftMargin="120.0419" RightMargin="427.9581" TopMargin="441.0216" BottomMargin="495.9784" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="92.0000" Y="23.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="166.0419" Y="507.4784" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2594" Y="0.5286" />
+                <PreSize X="0.1437" Y="0.0240" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

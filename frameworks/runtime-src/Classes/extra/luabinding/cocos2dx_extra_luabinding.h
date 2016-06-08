@@ -5,8 +5,8 @@
 extern "C" {
 #include "lua.h"
 #include "tolua++.h"
-}
 #include "tolua_fix.h"
+}
 
 TOLUA_API int luaopen_cocos2dx_extra_luabinding(lua_State* tolua_S);
 

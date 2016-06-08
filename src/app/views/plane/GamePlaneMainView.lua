@@ -17,6 +17,12 @@ end
 
 function GamePlaneMainView:onCreate()
     self:runAnimation("play",true)
+    
+    helper.saveSloterData("testandroind","android123")
+    
+    local text =   self:getChild("text")
+    local t = helper.getSloterData("testandroind")
+    text:setString(t)
 end
 
 

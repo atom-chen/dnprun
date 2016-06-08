@@ -5,7 +5,7 @@
 #include "lua_module_register.h"
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
-#include "cocos2dx_extra_luabinding.h"
+#include "extra/luabinding/cocos2dx_extra_luabinding.h"
  //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -94,7 +94,13 @@ bool AppDelegate::applicationDidFinishLaunching()
 //    register_all_cocos2dx_dnp(engine->getLuaStack()->getLuaState());
 //    lua_settop(L, 0);
     
-     quick_module_register(L);
+//     quick_module_register(L);
+    lua_getglobal(L, "_G");
+    if (lua_istable(L, -1))//stack:...,_G,
+    {
+        luaopen_cocos2dx_extra_luabinding(L);
+    }
+    lua_pop(L, 1);
      //################# QHZF ###################
     
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)

@@ -1,6 +1,6 @@
 /*
 ** Lua binding: cocos2dx_extra_luabinding
-** Generated automatically by tolua++-1.0.92 on Tue Jul 15 15:28:05 2014.
+** Generated automatically by tolua++-1.0.92 on Wed Jun  8 17:14:24 2016.
 */
 
 #include "cocos2dx_extra_luabinding.h"
@@ -26,8 +26,8 @@ using namespace cocos2d::extra;
 /* function to register type */
 static void tolua_reg_types (lua_State* tolua_S)
 {
-// tolua_usertype(tolua_S,"cc.Ref");
  tolua_usertype(tolua_S,"Crypto");
+ 
 }
 
 /* method: encryptXXTEALua of class  Crypto */
@@ -54,7 +54,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_encryptXXTEA00(lua_State* tolu
   int keyLength = ((int)  tolua_tonumber(tolua_S,5,0));
   {
      Crypto::encryptXXTEALua(plaintext,plaintextLength,key,keyLength);
-
+   
   }
  }
  return 1;
@@ -90,7 +90,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_decryptXXTEA00(lua_State* tolu
   int keyLength = ((int)  tolua_tonumber(tolua_S,5,0));
   {
      Crypto::decryptXXTEALua(ciphertext,ciphertextLength,key,keyLength);
-
+   
   }
  }
  return 1;
@@ -122,7 +122,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_encodeBase6400(lua_State* tolu
   int inputLength = ((int)  tolua_tonumber(tolua_S,3,0));
   {
      Crypto::encodeBase64Lua(input,inputLength);
-
+   
   }
  }
  return 1;
@@ -152,7 +152,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_decodeBase6400(lua_State* tolu
   const char* input = ((const char*)  tolua_tostring(tolua_S,2,0));
   {
      Crypto::decodeBase64Lua(input);
-
+   
   }
  }
  return 1;
@@ -184,7 +184,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_MD500(lua_State* tolua_S)
   bool isRawOutput = ((bool)  tolua_toboolean(tolua_S,3,0));
   {
      Crypto::MD5Lua(input,isRawOutput);
-
+   
   }
  }
  return 1;
@@ -214,7 +214,7 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_MD5File00(lua_State* tolua_S)
   const char* path = ((const char*)  tolua_tostring(tolua_S,2,0));
   {
      Crypto::MD5FileLua(path);
-
+   
   }
  }
  return 1;
@@ -225,7 +225,6 @@ static int tolua_cocos2dx_extra_luabinding_Crypto_MD5File00(lua_State* tolua_S)
 #endif
 }
 #endif //#ifndef TOLUA_DISABLE
-
 
 /* Open function */
 TOLUA_API int tolua_cocos2dx_extra_luabinding_open (lua_State* tolua_S)
