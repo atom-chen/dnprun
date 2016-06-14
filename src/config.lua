@@ -4,8 +4,8 @@ DEBUG = 2
 
 --######## 应用区域 #######--
 DNP_APP = {
-    appName = "DnpRun", 
-    
+    appName = "OverLap", 
+    version = 1.1,
     slotKey = "D*N@P#L0NGL1FE",         -- 存档加密
     confuseKey = 10240806,              -- 内存混淆
     gcInterval = 10,                    -- 垃圾回收频度(秒)
@@ -13,7 +13,7 @@ DNP_APP = {
 }
 
 DNP_GAME = {
-    default_scene = "PlaneScene"
+--    default_scene = "PlaneScene"
 }
 
 --######## 广告区域 #######--
@@ -50,6 +50,18 @@ DNP_SHARE = {
 }
 
 
+--######## 日志区域 #######--
+DNP_EVENT = {
+    flurry = {
+        ios     = "967FPWMY789FXZMDKBXV",
+        android = "TB4STFPW85STXPH2Y8YB"
+    }
+}
+
+
+--######## 调试区域 #######--
+DNP_USE_FLURRY = true
+
 -- use framework, will disable all deprecated API, false - use legacy API
 CC_USE_FRAMEWORK = true
 
@@ -61,9 +73,9 @@ CC_DISABLE_GLOBAL = false
 
 -- for module display
 CC_DESIGN_RESOLUTION = {
-    width = 640,
-    height = 960,
-    autoscale = "FIXED_WIDTH",
+    width = 1080,
+    height = 1920,
+    autoscale = "FIXED_HEIGHT",
     callback = function(framesize)
         local ratio = framesize.width / framesize.height
         if ratio >= 768/1024 then

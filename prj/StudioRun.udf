@@ -30,7 +30,10 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
-        <ActiveDocument />
+        <OpenedDocuments>
+          <FilePathData Path="views/plane/layer_plane_main.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="views/plane/layer_plane_main.csd" />
       </Value>
     </Item>
   </Properties>

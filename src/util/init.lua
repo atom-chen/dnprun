@@ -34,3 +34,5 @@ gamer = require("util.gamer"):new()
 helper = require("util.helper"):new()
 app = require("util.app").new()
 
+analytic = require("util.analytic")
+

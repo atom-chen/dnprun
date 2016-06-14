@@ -6,17 +6,17 @@ local ViewBase = class("ViewBase", cc.Node)
 
 function ViewBase:ctor(app, name)
     self:enableNodeEvents()
-    self.app_ = app
-    self.name_ = name
-
-    self.tag         = tagen:get()
-
     self.resourceExtend_ = nil
+    
+    self.app_      = app
+    self.name_     = name
+    self.visible   = true
+    self.tag       = tagen:get()
 
-    self.events = {}
-    self.timers = {}
-    self.tables = {}
-    self.children = {}
+    self.events    = {}
+    self.timers    = {}
+    self.tables    = {}
+    self.children  = {}
 
     -- check CSB resource file
     local res = rawget(self.class, "RESOURCE_FILENAME")
@@ -31,6 +31,7 @@ function ViewBase:ctor(app, name)
 
     if self.onCreate then self:onCreate() end
 
+    self:register()
 end
 
 function ViewBase:getApp()
@@ -102,6 +103,7 @@ function ViewBase:pairesTarget(target)
             local name = child:getName()
             if name then
                 self.children[name] = child
+                self[name] = child
             end
             self:pairesTarget(child)
         end
@@ -161,7 +163,7 @@ function ViewBase:showWithScene(transition, time, more)
     scene:addChild(self)
     --######################QHZF####################
     AppViews:clearAll()
-    AppViews:setScene(scene):registerView(self)
+    AppViews:setScene(self):registerView(self)
     --######################QHZF####################
     display.runScene(scene, transition, time, more)
     return self
@@ -361,9 +363,7 @@ end
 --@function [parent=#ViewBase] disUpdate
 --@param self
 function ViewBase:disUpdate()
-    if  self.touchLayer then
-        self.touchLayer:setTouchEnabled(false)
-    end
+    self:unscheduleUpdate()
 end
 
 
@@ -374,6 +374,18 @@ end
 function ViewBase:update(event)
 
 end
+
+
+function ViewBase:show()
+    self:setVisible(true)
+    self.visible = true
+end
+
+function ViewBase:hide()
+    self:setVisible(false)
+    self.visible = false
+end
+
 
 
 

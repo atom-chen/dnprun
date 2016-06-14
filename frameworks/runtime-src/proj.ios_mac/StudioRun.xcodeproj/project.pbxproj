@@ -43,6 +43,24 @@
 		9FFE00A01ACCF59E00D6E35A /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009B1ACCF59E00D6E35A /* lua_debugger.c */; };
 		9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
+		A61FB53D1D100C2B002F67BC /* DeviceUtils.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB51E1D100C2B002F67BC /* DeviceUtils.lua */; };
+		A61FB53E1D100C2B002F67BC /* DNPAnalyticX.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB51F1D100C2B002F67BC /* DNPAnalyticX.lua */; };
+		A61FB53F1D100C2B002F67BC /* DNPDeviceUtils.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5201D100C2B002F67BC /* DNPDeviceUtils.lua */; };
+		A61FB5401D100C2B002F67BC /* DNPGameCenter.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5211D100C2B002F67BC /* DNPGameCenter.lua */; };
+		A61FB5411D100C2B002F67BC /* DNPParticleSystemFrameQuad.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5221D100C2B002F67BC /* DNPParticleSystemFrameQuad.lua */; };
+		A61FB5421D100C2B002F67BC /* DNPShareUtils.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5231D100C2B002F67BC /* DNPShareUtils.lua */; };
+		A61FB5431D100C2B002F67BC /* lua_cocos2dx_dnp_auto_api.lua in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5241D100C2B002F67BC /* lua_cocos2dx_dnp_auto_api.lua */; };
+		A61FB5441D100C2B002F67BC /* DeviceUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = A61FB5261D100C2B002F67BC /* DeviceUtils.mm */; };
+		A61FB5451D100C2B002F67BC /* DNPDeviceUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61FB5271D100C2B002F67BC /* DNPDeviceUtils.cpp */; };
+		A61FB5461D100C2B002F67BC /* DNPParticleSystemFrameQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61FB5291D100C2B002F67BC /* DNPParticleSystemFrameQuad.cpp */; };
+		A61FB5471D100C2B002F67BC /* AnalyticXStringUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = A61FB52E1D100C2B002F67BC /* AnalyticXStringUtil.mm */; };
+		A61FB54A1D100C2B002F67BC /* DNPAnalyticX.mm in Sources */ = {isa = PBXBuildFile; fileRef = A61FB5331D100C2B002F67BC /* DNPAnalyticX.mm */; };
+		A61FB54B1D100C2B002F67BC /* libFlurry-6.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61FB5351D100C2B002F67BC /* libFlurry-6.2.0.a */; };
+		A61FB54C1D100C2B002F67BC /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A61FB5381D100C2B002F67BC /* KeychainItemWrapper.m */; };
+		A61FB54D1D100C2B002F67BC /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A61FB53A1D100C2B002F67BC /* SvUDIDTools.m */; };
+		A61FB54E1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61FB53B1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.cpp */; };
+		A61FB54F1D1012C7002F67BC /* lua_cocos2dx_dnp_auto.hpp in Sources */ = {isa = PBXBuildFile; fileRef = A61FB53C1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.hpp */; };
+		A61FB5511D1017E9002F67BC /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */; };
 		A65EEE391D05B70900D69833 /* VungleAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A65EEE351D05B70900D69833 /* VungleAdManager.mm */; };
 		A65EEE3B1D05B70900D69833 /* VungleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65EEE381D05B70900D69833 /* VungleViewController.m */; };
 		A65EEE3F1D05CAB800D69833 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD891D05785D00AB90D0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -247,6 +265,33 @@
 		9FFE009C1ACCF59E00D6E35A /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
 		9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeLuaImpl.cpp; sourceTree = "<group>"; };
 		9FFE009E1ACCF59E00D6E35A /* RuntimeLuaImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeLuaImpl.h; sourceTree = "<group>"; };
+		A61FB51E1D100C2B002F67BC /* DeviceUtils.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeviceUtils.lua; sourceTree = "<group>"; };
+		A61FB51F1D100C2B002F67BC /* DNPAnalyticX.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DNPAnalyticX.lua; sourceTree = "<group>"; };
+		A61FB5201D100C2B002F67BC /* DNPDeviceUtils.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DNPDeviceUtils.lua; sourceTree = "<group>"; };
+		A61FB5211D100C2B002F67BC /* DNPGameCenter.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DNPGameCenter.lua; sourceTree = "<group>"; };
+		A61FB5221D100C2B002F67BC /* DNPParticleSystemFrameQuad.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DNPParticleSystemFrameQuad.lua; sourceTree = "<group>"; };
+		A61FB5231D100C2B002F67BC /* DNPShareUtils.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DNPShareUtils.lua; sourceTree = "<group>"; };
+		A61FB5241D100C2B002F67BC /* lua_cocos2dx_dnp_auto_api.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lua_cocos2dx_dnp_auto_api.lua; sourceTree = "<group>"; };
+		A61FB5251D100C2B002F67BC /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
+		A61FB5261D100C2B002F67BC /* DeviceUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DeviceUtils.mm; sourceTree = "<group>"; };
+		A61FB5271D100C2B002F67BC /* DNPDeviceUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DNPDeviceUtils.cpp; sourceTree = "<group>"; };
+		A61FB5281D100C2B002F67BC /* DNPDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPDeviceUtils.h; sourceTree = "<group>"; };
+		A61FB5291D100C2B002F67BC /* DNPParticleSystemFrameQuad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DNPParticleSystemFrameQuad.cpp; sourceTree = "<group>"; };
+		A61FB52A1D100C2B002F67BC /* DNPParticleSystemFrameQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPParticleSystemFrameQuad.h; sourceTree = "<group>"; };
+		A61FB52C1D100C2B002F67BC /* AnalyticXMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticXMacros.h; sourceTree = "<group>"; };
+		A61FB52D1D100C2B002F67BC /* AnalyticXStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticXStringUtil.h; sourceTree = "<group>"; };
+		A61FB52E1D100C2B002F67BC /* AnalyticXStringUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AnalyticXStringUtil.mm; sourceTree = "<group>"; };
+		A61FB5321D100C2B002F67BC /* DNPAnalyticX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPAnalyticX.h; sourceTree = "<group>"; };
+		A61FB5331D100C2B002F67BC /* DNPAnalyticX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DNPAnalyticX.mm; sourceTree = "<group>"; };
+		A61FB5341D100C2B002F67BC /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		A61FB5351D100C2B002F67BC /* libFlurry-6.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libFlurry-6.2.0.a"; sourceTree = "<group>"; };
+		A61FB5371D100C2B002F67BC /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		A61FB5381D100C2B002F67BC /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		A61FB5391D100C2B002F67BC /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
+		A61FB53A1D100C2B002F67BC /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
+		A61FB53B1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_dnp_auto.cpp; sourceTree = "<group>"; };
+		A61FB53C1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_dnp_auto.hpp; sourceTree = "<group>"; };
+		A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
 		A65EEE341D05B70900D69833 /* VungleAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdManager.h; sourceTree = "<group>"; };
 		A65EEE351D05B70900D69833 /* VungleAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VungleAdManager.mm; sourceTree = "<group>"; };
 		A65EEE371D05B70900D69833 /* VungleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleViewController.h; sourceTree = "<group>"; };
@@ -413,6 +458,7 @@
 				F293B3D315EB7BE500256477 /* AudioToolbox.framework in Frameworks */,
 				F293B3D515EB7BE500256477 /* AVFoundation.framework in Frameworks */,
 				F293B3D915EB7BE500256477 /* Foundation.framework in Frameworks */,
+				A61FB54B1D100C2B002F67BC /* libFlurry-6.2.0.a in Frameworks */,
 				F293B3DB15EB7BE500256477 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +478,7 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */,
 				A669AD911D057DFC00AB90D0 /* gamer */,
 				A669AD8D1D057BE800AB90D0 /* Icon.png */,
 				A669AD561D05325200AB90D0 /* ads */,
@@ -488,6 +535,63 @@
 				9FF504801A5E86D600AFDA55 /* libsimulator iOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A61FB51C1D100C2B002F67BC /* dnp */ = {
+			isa = PBXGroup;
+			children = (
+				A61FB51D1D100C2B002F67BC /* api */,
+				A61FB5251D100C2B002F67BC /* DeviceUtils.h */,
+				A61FB5261D100C2B002F67BC /* DeviceUtils.mm */,
+				A61FB5271D100C2B002F67BC /* DNPDeviceUtils.cpp */,
+				A61FB5281D100C2B002F67BC /* DNPDeviceUtils.h */,
+				A61FB5291D100C2B002F67BC /* DNPParticleSystemFrameQuad.cpp */,
+				A61FB52A1D100C2B002F67BC /* DNPParticleSystemFrameQuad.h */,
+				A61FB52B1D100C2B002F67BC /* flurry */,
+				A61FB5361D100C2B002F67BC /* keychain */,
+				A61FB53B1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.cpp */,
+				A61FB53C1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.hpp */,
+			);
+			path = dnp;
+			sourceTree = "<group>";
+		};
+		A61FB51D1D100C2B002F67BC /* api */ = {
+			isa = PBXGroup;
+			children = (
+				A61FB51E1D100C2B002F67BC /* DeviceUtils.lua */,
+				A61FB51F1D100C2B002F67BC /* DNPAnalyticX.lua */,
+				A61FB5201D100C2B002F67BC /* DNPDeviceUtils.lua */,
+				A61FB5211D100C2B002F67BC /* DNPGameCenter.lua */,
+				A61FB5221D100C2B002F67BC /* DNPParticleSystemFrameQuad.lua */,
+				A61FB5231D100C2B002F67BC /* DNPShareUtils.lua */,
+				A61FB5241D100C2B002F67BC /* lua_cocos2dx_dnp_auto_api.lua */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		A61FB52B1D100C2B002F67BC /* flurry */ = {
+			isa = PBXGroup;
+			children = (
+				A61FB52C1D100C2B002F67BC /* AnalyticXMacros.h */,
+				A61FB52D1D100C2B002F67BC /* AnalyticXStringUtil.h */,
+				A61FB52E1D100C2B002F67BC /* AnalyticXStringUtil.mm */,
+				A61FB5321D100C2B002F67BC /* DNPAnalyticX.h */,
+				A61FB5331D100C2B002F67BC /* DNPAnalyticX.mm */,
+				A61FB5341D100C2B002F67BC /* Flurry.h */,
+				A61FB5351D100C2B002F67BC /* libFlurry-6.2.0.a */,
+			);
+			path = flurry;
+			sourceTree = "<group>";
+		};
+		A61FB5361D100C2B002F67BC /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				A61FB5371D100C2B002F67BC /* KeychainItemWrapper.h */,
+				A61FB5381D100C2B002F67BC /* KeychainItemWrapper.m */,
+				A61FB5391D100C2B002F67BC /* SvUDIDTools.h */,
+				A61FB53A1D100C2B002F67BC /* SvUDIDTools.m */,
+			);
+			path = keychain;
 			sourceTree = "<group>";
 		};
 		A65EEE331D05B70900D69833 /* vungle */ = {
@@ -810,6 +914,7 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A61FB51C1D100C2B002F67BC /* dnp */,
 				A6BB80701D00183D0053D6E3 /* Const.h */,
 				A68450781CFF4AB600A7525C /* extra */,
 				9FC7603E1A67791200D1E6E7 /* ide-support */,
@@ -997,16 +1102,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A669AD751D05325200AB90D0 /* UnityAds.bundle in Resources */,
+				A61FB5421D100C2B002F67BC /* DNPShareUtils.lua in Resources */,
+				A61FB53D1D100C2B002F67BC /* DeviceUtils.lua in Resources */,
+				A61FB5401D100C2B002F67BC /* DNPGameCenter.lua in Resources */,
+				A61FB53F1D100C2B002F67BC /* DNPDeviceUtils.lua in Resources */,
 				A6FFBDA81D067707006AB2BE /* vg_close.png in Resources */,
 				A6BB80781D0048950053D6E3 /* res in Resources */,
 				A6FFBDA91D067707006AB2BE /* vg_cta.png in Resources */,
 				A669AD8E1D057BE800AB90D0 /* Icon.png in Resources */,
 				A6FFBDA71D067707006AB2BE /* __vungle.db in Resources */,
+				A61FB5431D100C2B002F67BC /* lua_cocos2dx_dnp_auto_api.lua in Resources */,
 				A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */,
 				A6FFBDAA1D067707006AB2BE /* vg_mute_off.png in Resources */,
+				A61FB53E1D100C2B002F67BC /* DNPAnalyticX.lua in Resources */,
+				A61FB5411D100C2B002F67BC /* DNPParticleSystemFrameQuad.lua in Resources */,
 				A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */,
 				A68450961CFF4AB600A7525C /* build.bat in Resources */,
 				A68450971CFF4AB600A7525C /* build.sh in Resources */,
+				A61FB5511D1017E9002F67BC /* KeychainAccessGroups.plist in Resources */,
 				A6FFBDAC1D067707006AB2BE /* vg_privacy.png in Resources */,
 				A6FFBDAB1D067707006AB2BE /* vg_mute_on.png in Resources */,
 				C03781BB18BF655400FE4F13 /* src in Resources */,
@@ -1055,18 +1168,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61FB54F1D1012C7002F67BC /* lua_cocos2dx_dnp_auto.hpp in Sources */,
+				A61FB54D1D100C2B002F67BC /* SvUDIDTools.m in Sources */,
+				A61FB5451D100C2B002F67BC /* DNPDeviceUtils.cpp in Sources */,
 				A6A7D86B1D07FE6A009FCC0D /* CCCrypto.h in Sources */,
 				A6A7D8681D07CFB3009FCC0D /* cocos2dx_extra_luabinding.tolua in Sources */,
 				A6A7D8661D07CFA9009FCC0D /* cocos2dx_extra.h in Sources */,
+				A61FB5461D100C2B002F67BC /* DNPParticleSystemFrameQuad.cpp in Sources */,
 				A6A7D8671D07CFA9009FCC0D /* cocos2dx_extra_luabinding.h in Sources */,
+				A61FB54A1D100C2B002F67BC /* DNPAnalyticX.mm in Sources */,
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
 				A669AD771D05325300AB90D0 /* UnityAdsViewController.m in Sources */,
 				A68450931CFF4AB600A7525C /* libbase64.c in Sources */,
+				A61FB5441D100C2B002F67BC /* DeviceUtils.mm in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				A65EEE3B1D05B70900D69833 /* VungleViewController.m in Sources */,
 				A68450981CFF4AB600A7525C /* cocos2dx_extra_luabinding.cpp in Sources */,
+				A61FB54E1D100C2B002F67BC /* lua_cocos2dx_dnp_auto.cpp in Sources */,
+				A61FB5471D100C2B002F67BC /* AnalyticXStringUtil.mm in Sources */,
 				A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
+				A61FB54C1D100C2B002F67BC /* KeychainItemWrapper.m in Sources */,
 				A65EEE391D05B70900D69833 /* VungleAdManager.mm in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				A669AD711D05325200AB90D0 /* InterstitialViewController.m in Sources */,
@@ -1306,6 +1428,7 @@
 					"$(PROJECT_DIR)/ios/wx/export",
 					"$(PROJECT_DIR)/ios/ads/gdt/libs",
 					"$(SRCROOT)/../Classes/extra",
+					"$(PROJECT_DIR)/dnp/flurry",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1367,6 +1490,7 @@
 					"$(PROJECT_DIR)/ios/wx/export",
 					"$(PROJECT_DIR)/ios/ads/gdt/libs",
 					"$(SRCROOT)/../Classes/extra",
+					"$(PROJECT_DIR)/dnp/flurry",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";

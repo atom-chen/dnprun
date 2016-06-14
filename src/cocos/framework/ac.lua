@@ -317,4 +317,17 @@ function ac.ccDellayToCall(partent,dt,call)
 end
 
 
+function ac.ccFadeIn(time)
+    return cc.FadeIn:create(time)
+end
+
+function ac.ccFadeOut(time)
+  return cc.FadeOut:create(time)
+end
+
+function ac.ccFadeTo(time , opacity)
+    return cc.FadeTo:create(time, opacity)
+end
+
+
 return ac

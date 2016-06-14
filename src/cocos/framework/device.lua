@@ -113,4 +113,21 @@ printInfo("# device.directorySeparator    = " .. device.directorySeparator)
 printInfo("# device.pathSeparator         = " .. device.pathSeparator)
 printInfo("#")
 
+
+-- 获得手机唯一编码
+function device:getDeviceUid()
+    if device.platform == device.PLATFORM.ANDROID then
+        local a, b = LuaJavaBridge.callStaticMethod("org/cocos2dx/util/Gamer","getUUID",{},"()Ljava/lang/String;")
+        if a == true and b ~= nil then
+            return b
+        else
+            return "999999999999"
+        end
+    elseif device.platform == device.PLATFORM.IOS then
+        return dnp.DNPDeviceUtils:uuid()
+    else
+        return "999999999999"
+    end
+end
+
 return device

@@ -6,6 +6,7 @@
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
 #include "extra/luabinding/cocos2dx_extra_luabinding.h"
+#include "lua_cocos2dx_dnp_auto.hpp"
  //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -29,6 +30,7 @@ static void quick_module_register(lua_State *L)
     lua_getglobal(L, "_G");
     if (lua_istable(L, -1))//stack:...,_G,
     {
+//        register_all_cocos2dx_dnp(L);
         luaopen_cocos2dx_extra_luabinding(L);
     }
     lua_pop(L, 1);
@@ -95,6 +97,10 @@ bool AppDelegate::applicationDidFinishLaunching()
 //    lua_settop(L, 0);
     
 //     quick_module_register(L);
+    lua_getglobal(L, "_G");
+    register_all_cocos2dx_dnp(L);
+    lua_settop(L, 0);
+    
     lua_getglobal(L, "_G");
     if (lua_istable(L, -1))//stack:...,_G,
     {

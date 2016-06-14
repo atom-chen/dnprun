@@ -206,7 +206,7 @@ function class(classname, ...)
             end
         else
             error(string.format("class() - create class \"%s\" with invalid super type",
-                        classname), 0)
+                classname), 0)
         end
     end
 
@@ -332,6 +332,25 @@ function math.round(value)
     value = checknumber(value)
     return math.floor(value + 0.5)
 end
+
+
+function math.randsub(count,par)
+    local t = {}
+    local result = {}
+    for v=1, par do
+        t[v] = v
+    end
+    local a =1
+    while a<=count do
+        local r= math.random(1,#t)
+        table.insert(result,t[r])
+        table.remove(t,r)
+        a= a +1
+    end
+
+    return result
+end
+
 
 local pi_div_180 = math.pi / 180
 function math.angle2radian(angle)
@@ -518,6 +537,7 @@ function table.unique(t, bArray)
     end
     return n
 end
+
 
 string._htmlspecialchars_set = {}
 string._htmlspecialchars_set["&"] = "&amp;"
