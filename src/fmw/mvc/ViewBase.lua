@@ -215,6 +215,7 @@ function ViewBase:closeSelf()
     else
         self:removeSelf()
     end
+    AppViews:removeView(self.name_)
 end
 
 
@@ -379,11 +380,13 @@ end
 function ViewBase:show()
     self:setVisible(true)
     self.visible = true
+    return self
 end
 
 function ViewBase:hide()
     self:setVisible(false)
     self.visible = false
+    return self
 end
 
 
