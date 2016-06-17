@@ -224,10 +224,8 @@
 		A6BD649C1D13C360004B202E /* CCNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63BA1D13C360004B202E /* CCNative.mm */; };
 		A6BD649E1D13C360004B202E /* CCNativeIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63BC1D13C360004B202E /* CCNativeIOS.mm */; };
 		A6BD64A01D13C360004B202E /* CCStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63BD1D13C360004B202E /* CCStore.mm */; };
-		A6BD64A11D13C360004B202E /* CCStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63BD1D13C360004B202E /* CCStore.mm */; };
 		A6BD64A21D13C360004B202E /* CCStoreIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63BF1D13C360004B202E /* CCStoreIOS.mm */; };
 		A6BD64A41D13C360004B202E /* CCStorePaymentTransactionWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63C01D13C360004B202E /* CCStorePaymentTransactionWrapper.mm */; };
-		A6BD64A51D13C360004B202E /* CCStorePaymentTransactionWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63C01D13C360004B202E /* CCStorePaymentTransactionWrapper.mm */; };
 		A6BD64A61D13C360004B202E /* CCStoreReceiptVerifyRequestIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63C21D13C360004B202E /* CCStoreReceiptVerifyRequestIOS.mm */; };
 		A6BD64A81D13C360004B202E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63C51D13C360004B202E /* SBJSON.m */; };
 		A6BD64A91D13C360004B202E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63C51D13C360004B202E /* SBJSON.m */; };
@@ -243,9 +241,7 @@
 		A6BD64B41D13C360004B202E /* ReachabilityIOSMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63D21D13C360004B202E /* ReachabilityIOSMac.m */; };
 		A6BD64B51D13C360004B202E /* ReachabilityIOSMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63D21D13C360004B202E /* ReachabilityIOSMac.m */; };
 		A6BD64C81D13C360004B202E /* CCStorePaymentTransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63E51D13C360004B202E /* CCStorePaymentTransaction.cpp */; };
-		A6BD64C91D13C360004B202E /* CCStorePaymentTransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63E51D13C360004B202E /* CCStorePaymentTransaction.cpp */; };
 		A6BD64CA1D13C360004B202E /* CCStoreProduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63E81D13C360004B202E /* CCStoreProduct.cpp */; };
-		A6BD64CB1D13C360004B202E /* CCStoreProduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63E81D13C360004B202E /* CCStoreProduct.cpp */; };
 		A6BD64CC1D13C360004B202E /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = A6BD63ED1D13C360004B202E /* Android.mk */; };
 		A6BD64CD1D13C360004B202E /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = A6BD63ED1D13C360004B202E /* Android.mk */; };
 		A6BD64CE1D13C360004B202E /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = A6BD63EF1D13C360004B202E /* fpconv.c */; };
@@ -1922,7 +1918,6 @@
 				A6BD64D51D13C360004B202E /* debugger.c in Sources */,
 				A6BD65A81D14283A004B202E /* CCNative.mm in Sources */,
 				A6BD643B1D13C360004B202E /* CCFilteredSprite.cpp in Sources */,
-				A6BD64A11D13C360004B202E /* CCStore.mm in Sources */,
 				A6BD64211D13C360004B202E /* CCDropShadowFilter.cpp in Sources */,
 				A6BD64891D13C360004B202E /* NVGDrawNode.cpp in Sources */,
 				A6BD64831D13C360004B202E /* lua_cocos2dx_extension_filter_auto.cpp in Sources */,
@@ -1941,12 +1936,10 @@
 				A6BD64AF1D13C360004B202E /* SBJsonWriter.m in Sources */,
 				9FFE00A01ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				A6BD64911D13C360004B202E /* CCNetwork.cpp in Sources */,
-				A6BD64CB1D13C360004B202E /* CCStoreProduct.cpp in Sources */,
 				A6BD646B1D13C360004B202E /* FilterShaders.cpp in Sources */,
 				A6BD64A91D13C360004B202E /* SBJSON.m in Sources */,
 				A6BD64271D13C360004B202E /* CCGammaFilter.cpp in Sources */,
 				A6BD648B1D13C360004B202E /* NVGNode.cpp in Sources */,
-				A6BD64C91D13C360004B202E /* CCStorePaymentTransaction.cpp in Sources */,
 				5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */,
 				A6BD64E31D13C360004B202E /* lua_zlib.c in Sources */,
 				9FF504851A5E87B100AFDA55 /* ConsoleWindowController.m in Sources */,
@@ -1956,7 +1949,6 @@
 				A6BD65A91D142843004B202E /* CCNativeMac.mm in Sources */,
 				A6BD64151D13C360004B202E /* md5.c in Sources */,
 				A6BD647B1D13C360004B202E /* cocos2dx_extra_luabinding.cpp in Sources */,
-				A6BD64A51D13C360004B202E /* CCStorePaymentTransactionWrapper.mm in Sources */,
 				A6BD641D1D13C360004B202E /* CCContrastFilter.cpp in Sources */,
 				A6BD64CF1D13C360004B202E /* fpconv.c in Sources */,
 				A6BD64291D13C360004B202E /* CCGrayFilter.cpp in Sources */,

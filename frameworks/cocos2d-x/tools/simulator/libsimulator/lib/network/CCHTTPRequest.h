@@ -6,9 +6,9 @@
 #include "cocos2d.h"
 #include "network/CCHTTPRequestDelegate.h"
 
-#if CC_LUA_ENGINE_ENABLED > 0
+//#if CC_LUA_ENGINE_ENABLED > 0
 #include "CCLuaEngine.h"
-#endif
+//#endif
 
 #ifdef _WINDOWS_
 #include <Windows.h>

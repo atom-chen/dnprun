@@ -99,6 +99,11 @@ function MainScene:onCreate()
 
     self:onGame()
     
+    local function onButtonClicked()
+        print("DDDDDDDDD")
+    end
+    
+    device.showAlert("Confirm Exit", "Are you sure exit game ?", {"YES", "NO"}, onButtonClicked)
 end
 
 function MainScene:onClick( path,node,funcName)

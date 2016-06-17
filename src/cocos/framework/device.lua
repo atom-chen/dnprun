@@ -130,4 +130,241 @@ function device:getDeviceUid()
     end
 end
 
+
+
+
+--[[--
+显示活动指示器
+在 iOS 和 Android 设备上显示系统的活动指示器，可以用于阻塞操作时通知用户需要等待。
+]]
+function device.showActivityIndicator()
+    if DEBUG > 1 then
+        printInfo("device.showActivityIndicator()")
+    end
+    if device.platform == "android" then
+        luaj.callStaticMethod("org/cocos2dx/util/PSNative", "showActivityIndicator", {}, "()V");
+    elseif device.platform == "ios" then
+        cc.Native:showActivityIndicator()
+    end
+end
+
+--[[--
+隐藏正在显示的活动指示器
+]]
+function device.hideActivityIndicator()
+    if DEBUG > 1 then
+        printInfo("device.hideActivityIndicator()")
+    end
+    if device.platform == "android" then
+        luaj.callStaticMethod("org/cocos2dx/util/PSNative", "hideActivityIndicator", {}, "()V");
+    elseif device.platform == "ios" then
+        cc.Native:hideActivityIndicator()
+    end
+end
+
+--[[--
+显示一个包含按钮的弹出对话框
+~~~ lua
+local function onButtonClicked(event)
+if event.buttonIndex == 1 then
+.... 玩家选择了 YES 按钮
+else
+.... 玩家选择了 NO 按钮
+end
+end
+device.showAlert("Confirm Exit", "Are you sure exit game ?", {"YES", "NO"}, onButtonClicked)
+~~~
+当没有指定按钮标题时，对话框会默认显示一个“OK”按钮。
+回调函数获得的表格中，buttonIndex 指示玩家选择了哪一个按钮，其值是按钮的显示顺序。
+@param string title 对话框标题
+@param string message 内容
+@param table buttonLabels 包含多个按钮标题的表格对象
+@param function listener 回调函数
+]]
+function device.showAlert(title, message, buttonLabels, listener)
+    if type(buttonLabels) ~= "table" then
+        buttonLabels = {tostring(buttonLabels)}
+    else
+        table.map(buttonLabels, function(v) return tostring(v) end)
+    end
+
+    for i = 1 ,3 do
+        if buttonLabels[i] == nil then
+            buttonLabels[i] = ""
+        end
+    end
+
+
+    if DEBUG > 1 then
+        printInfo("device.showAlert() - title: %s", title)
+        printInfo("    message: %s", message)
+        printInfo("    buttonLabels: %s", table.concat(buttonLabels, ", "))
+    end
+
+    if device.platform == "android" then
+        local tempListner = function(event)
+            if type(event) == "string" then
+                event = require("framework.json").decode(event)
+                event.buttonIndex = tonumber(event.buttonIndex)
+            end
+            if listener then listener(event) end
+        end
+        require("luaj").callStaticMethod("org/cocos2dx/util/PSNative", "createAlert", {title, message, buttonLabels[1],buttonLabels[2],buttonLabels[3], tempListner},
+            "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V");
+    else
+        local defaultLabel = ""
+        if #buttonLabels > 0 then
+            defaultLabel = buttonLabels[1]
+            table.remove(buttonLabels, 1)
+        end
+
+        cc.Native:createAlert(title, message, defaultLabel)
+        for i, label in ipairs(buttonLabels) do
+            cc.Native:addAlertButton(label)
+        end
+
+        if type(listener) ~= "function" then
+            listener = function() end
+        end
+
+        cc.Native:showAlert(listener)
+    end
+end
+
+--[[--
+取消正在显示的对话框。
+提示：取消对话框，不会执行显示对话框时指定的回调函数。
+]]
+function device.cancelAlert()
+    if DEBUG > 1 then
+        printInfo("device.cancelAlert()")
+    end
+    cc.Native:cancelAlert()
+end
+
+--[[--
+返回设备的 OpenUDID 值
+OpenUDID 是为设备仿造的 UDID（唯一设备识别码），可以用来识别用户的设备。
+但 OpenUDID 存在下列问题：
+-   如果删除了应用再重新安装，获得的 OpenUDID 会发生变化
+-   iOS 7 不支持 OpenUDID
+@return string 设备的 OpenUDID 值
+]]
+function device.getOpenUDID()
+    local ret = cc.Native:getOpenUDID()
+    if DEBUG > 1 then
+        printInfo("device.getOpenUDID() - Open UDID: %s", tostring(ret))
+    end
+    return ret
+end
+
+--[[--
+用浏览器打开指定的网址
+~~~ lua
+-- 打开网页
+device.openURL("http://dualface.github.com/quick-cocos2d-x/")
+-- 打开设备上的邮件程序，并创建新邮件，填入收件人地址
+device.openURL("mailto:nobody@mycompany.com")
+-- 增加主题和内容
+local subject = string.urlencode("Hello")
+local body = string.urlencode("How are you ?")
+device.openURL(string.format("mailto:nobody@mycompany.com?subject=%s&body=%s", subject, body))
+-- 打开设备上的拨号程序
+device.openURL("tel:123-456-7890")
+~~~
+@param string 网址，邮件，拨号等的字符串
+]]
+function device.openURL(url)
+    if DEBUG > 1 then
+        printInfo("device.openURL() - url: %s", tostring(url))
+    end
+    cc.Native:openURL(url)
+end
+
+--[[--
+显示一个输入框，并返回用户输入的内容。
+当用户点击取消按钮时，showInputBox() 函数返回空字符串。
+@param string title 对话框标题
+@param string message 提示信息
+@param string defaultValue 输入框默认值
+@return string 用户输入的字符串
+]]
+function device.showInputBox(title, message, defaultValue)
+    title = tostring(title or "INPUT TEXT")
+    message = tostring(message or "INPUT TEXT, CLICK OK BUTTON")
+    defaultValue = tostring(defaultValue or "")
+    if DEBUG > 1 then
+        printInfo("device.showInputBox() - title: %s", tostring(title))
+        printInfo("    message: %s", tostring(message))
+        printInfo("    defaultValue: %s", tostring(defaultValue))
+    end
+    return cc.Native:getInputText(title, message, defaultValue)
+end
+
+
+--[[--
+震动
+@param int millisecond 震动时长(毫秒) (设置震动时长仅对android有效，默认200ms)
+android 需要添加震动服务权限
+<uses-permission android:name="android.permission.VIBRATE" />
+]]
+
+function device.vibrate(millisecond)
+    if DEBUG > 1 then
+        printInfo("device.vibrate(%s)", millisecond or "")
+    end
+
+    if device.platform == "android" then
+        if millisecond then
+            luaj.callStaticMethod("org/cocos2dx/util/PSNative", "vibrate", {millisecond}, "(I)V");
+        else
+            cc.Native:vibrate()
+        end
+    elseif device.platform == "ios" then
+        cc.Native:vibrate()
+    else
+        printInfo("%s platform unsupporte vibrate", device.platform)
+    end
+end
+
+--[[
+获得系统时间，精确到微妙
+@return cc_timeval
+cc_timeval.tv_sec  seconds
+cc_timeval.tv_usec microSeconds
+~~~ lua
+-- sample
+local tm = device.gettime()
+printInfo("%d:%d", tm.tv_sec, tm.tv_usec)
+~~~
+]]
+function device.gettime()
+    local tm = cc_timeval:new()
+    CCTime:gettimeofdayCocos2d(tm, nil)
+
+    if device.platform == "windows" then
+        tm.tv_sec = os.time()
+    end
+    return tm
+end
+
+--[[
+获得时间差，精确到毫秒
+@param cc_timeval tm_start 开始时间
+@param cc_timeval tm_end   结束时间
+@return double             时间差(毫秒)
+~~~ lua
+-- sample
+local tm_start = device.gettime()
+--do something
+local tm_end   = device.gettime()
+local timesub  = device.timersub(tm_start, tm_end)
+printInfo(timesub)
+~~~
+]]
+
+function device.timersub(tm_start, tm_end)
+    return CCTime:timersubCocos2d(tm_start, tm_end)
+end
+
 return device
