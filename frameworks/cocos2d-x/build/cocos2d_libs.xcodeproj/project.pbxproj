@@ -1910,6 +1910,18 @@
 		A0E749F81BA8FD7F001A8332 /* UIEditBoxImpl-common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0E749F51BA8FD7F001A8332 /* UIEditBoxImpl-common.cpp */; };
 		A0E749F91BA8FD7F001A8332 /* UIEditBoxImpl-common.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E749F61BA8FD7F001A8332 /* UIEditBoxImpl-common.h */; };
 		A0E749FA1BA8FD7F001A8332 /* UIEditBoxImpl-common.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E749F61BA8FD7F001A8332 /* UIEditBoxImpl-common.h */; };
+		A6BD65781D1417AC004B202E /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF541C180E3B6A000584C8 /* libcurl.a */; };
+		A6BD65871D14180A004B202E /* curl.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD657C1D14180A004B202E /* curl.h */; };
+		A6BD65881D14180A004B202E /* curlbuild-32.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD657D1D14180A004B202E /* curlbuild-32.h */; };
+		A6BD65891D14180A004B202E /* curlbuild-64.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD657E1D14180A004B202E /* curlbuild-64.h */; };
+		A6BD658A1D14180A004B202E /* curlbuild.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD657F1D14180A004B202E /* curlbuild.h */; };
+		A6BD658B1D14180A004B202E /* curlrules.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65801D14180A004B202E /* curlrules.h */; };
+		A6BD658C1D14180A004B202E /* curlver.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65811D14180A004B202E /* curlver.h */; };
+		A6BD658D1D14180A004B202E /* easy.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65821D14180A004B202E /* easy.h */; };
+		A6BD658E1D14180A004B202E /* mprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65831D14180A004B202E /* mprintf.h */; };
+		A6BD658F1D14180A004B202E /* multi.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65841D14180A004B202E /* multi.h */; };
+		A6BD65901D14180A004B202E /* stdcheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65851D14180A004B202E /* stdcheaders.h */; };
+		A6BD65911D14180A004B202E /* typecheck-gcc.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD65861D14180A004B202E /* typecheck-gcc.h */; };
 		B2165EEA19921124000BE3E6 /* CCPrimitiveCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B257B45E198A353E00D9A687 /* CCPrimitiveCommand.cpp */; };
 		B217703C1977ECB4009EE11B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B217703B1977ECB4009EE11B /* IOKit.framework */; };
 		B21770401977ECE6009EE11B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B217703F1977ECE6009EE11B /* OpenGL.framework */; };
@@ -4718,6 +4730,17 @@
 		A07A4D641783777C0073F6A7 /* libcocos2d iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2d iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E749F51BA8FD7F001A8332 /* UIEditBoxImpl-common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "UIEditBoxImpl-common.cpp"; sourceTree = "<group>"; };
 		A0E749F61BA8FD7F001A8332 /* UIEditBoxImpl-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIEditBoxImpl-common.h"; sourceTree = "<group>"; };
+		A6BD657C1D14180A004B202E /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		A6BD657D1D14180A004B202E /* curlbuild-32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "curlbuild-32.h"; sourceTree = "<group>"; };
+		A6BD657E1D14180A004B202E /* curlbuild-64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "curlbuild-64.h"; sourceTree = "<group>"; };
+		A6BD657F1D14180A004B202E /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		A6BD65801D14180A004B202E /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		A6BD65811D14180A004B202E /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		A6BD65821D14180A004B202E /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		A6BD65831D14180A004B202E /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		A6BD65841D14180A004B202E /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		A6BD65851D14180A004B202E /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		A6BD65861D14180A004B202E /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
 		B20564AA1A6E5744001C1B6E /* ccShader_PositionColorTextureAsPointsize.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ccShader_PositionColorTextureAsPointsize.vert; sourceTree = "<group>"; };
 		B217703B1977ECB4009EE11B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B217703D1977ECC1009EE11B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -5675,6 +5698,7 @@
 				29031E0919BFE8DE00EFA1DF /* libchipmunk.a in Frameworks */,
 				1A5703BB180BD2800088DEC7 /* libwebp.a in Frameworks */,
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
+				A6BD65781D1417AC004B202E /* libcurl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6628,6 +6652,7 @@
 		1AAF5403180E3B2D000584C8 /* curl */ = {
 			isa = PBXGroup;
 			children = (
+				A6BD657B1D14180A004B202E /* curl */,
 				1AAF5405180E3B38000584C8 /* prebuilt */,
 			);
 			name = curl;
@@ -7955,6 +7980,25 @@
 				A045F6EE1BA81821005076C7 /* GameNode3DReader.h */,
 			);
 			path = GameNode3DReader;
+			sourceTree = "<group>";
+		};
+		A6BD657B1D14180A004B202E /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				A6BD657C1D14180A004B202E /* curl.h */,
+				A6BD657D1D14180A004B202E /* curlbuild-32.h */,
+				A6BD657E1D14180A004B202E /* curlbuild-64.h */,
+				A6BD657F1D14180A004B202E /* curlbuild.h */,
+				A6BD65801D14180A004B202E /* curlrules.h */,
+				A6BD65811D14180A004B202E /* curlver.h */,
+				A6BD65821D14180A004B202E /* easy.h */,
+				A6BD65831D14180A004B202E /* mprintf.h */,
+				A6BD65841D14180A004B202E /* multi.h */,
+				A6BD65851D14180A004B202E /* stdcheaders.h */,
+				A6BD65861D14180A004B202E /* typecheck-gcc.h */,
+			);
+			name = curl;
+			path = ../external/curl/include/ios/curl;
 			sourceTree = "<group>";
 		};
 		B29594B81926D61F003EEF37 /* 3d */ = {
@@ -10174,6 +10218,7 @@
 				15AE1AA919AAD40300C27E9E /* b2TimeStep.h in Headers */,
 				B665E2C91AA80A6500DDB1C5 /* CCPUGravityAffector.h in Headers */,
 				15AE197A19AAD35700C27E9E /* CCActionTimelineCache.h in Headers */,
+				A6BD65881D14180A004B202E /* curlbuild-32.h in Headers */,
 				B6CAB5301AF9AA1A00B9B856 /* btStackAlloc.h in Headers */,
 				15AE19B919AAD39700C27E9E /* TextFieldReader.h in Headers */,
 				15AE181319AAD2F700C27E9E /* CCAnimation3D.h in Headers */,
@@ -10206,6 +10251,7 @@
 				B665E1F51AA80A6500DDB1C5 /* CCPUAffector.h in Headers */,
 				15AE1ACD19AAD40300C27E9E /* b2PrismaticJoint.h in Headers */,
 				B6CAB2B21AF9AA1A00B9B856 /* btConvexPolyhedron.h in Headers */,
+				A6BD658A1D14180A004B202E /* curlbuild.h in Headers */,
 				50ABBEBA1925AB6F00A911A9 /* ccUTF8.h in Headers */,
 				B6CAB3A61AF9AA1A00B9B856 /* btConeTwistConstraint.h in Headers */,
 				B6CAB32E1AF9AA1A00B9B856 /* btGImpactMassUtil.h in Headers */,
@@ -10257,6 +10303,7 @@
 				1A01C68918F57BE800EFE3A6 /* CCBool.h in Headers */,
 				B665E2851AA80A6500DDB1C5 /* CCPUDoStopSystemEventHandler.h in Headers */,
 				182C5CB61A95965500C30D34 /* CSParse3DBinary_generated.h in Headers */,
+				A6BD658E1D14180A004B202E /* mprintf.h in Headers */,
 				15AE184319AAD2F700C27E9E /* CCSprite3D.h in Headers */,
 				50CB247E19D9C5A100687767 /* AudioPlayer.h in Headers */,
 				1A57007C180BC5A10088DEC7 /* CCActionInstant.h in Headers */,
@@ -10269,6 +10316,7 @@
 				B665E2FD1AA80A6500DDB1C5 /* CCPUMaterialManager.h in Headers */,
 				3823840A1A25900F002C4610 /* FlatBuffersSerialize.h in Headers */,
 				B6CAB3C61AF9AA1A00B9B856 /* btHingeConstraint.h in Headers */,
+				A6BD658F1D14180A004B202E /* multi.h in Headers */,
 				1A570080180BC5A10088DEC7 /* CCActionInterval.h in Headers */,
 				B665E2A11AA80A6500DDB1C5 /* CCPUEventHandler.h in Headers */,
 				15AE192D19AAD35100C27E9E /* CCActionFrame.h in Headers */,
@@ -10588,6 +10636,7 @@
 				B6CAB32C1AF9AA1A00B9B856 /* btGImpactCollisionAlgorithm.h in Headers */,
 				15FB20961AE7C57D00C31518 /* cdt.h in Headers */,
 				15AE1AC919AAD40300C27E9E /* b2Joint.h in Headers */,
+				A6BD65871D14180A004B202E /* curl.h in Headers */,
 				382383EF1A258FA7002C4610 /* flatbuffers.h in Headers */,
 				B677B0CC1B18492D006762CB /* CCNavMesh.h in Headers */,
 				B665E2811AA80A6500DDB1C5 /* CCPUDoScaleEventHandlerTranslator.h in Headers */,
@@ -10637,6 +10686,7 @@
 				B665E1F91AA80A6500DDB1C5 /* CCPUAffectorManager.h in Headers */,
 				2980F0221BA9A5550059E678 /* CCUIEditBoxIOS.h in Headers */,
 				B665E2351AA80A6500DDB1C5 /* CCPUBoxEmitter.h in Headers */,
+				A6BD658C1D14180A004B202E /* curlver.h in Headers */,
 				B6CAB36C1AF9AA1A00B9B856 /* btConvexPenetrationDepthSolver.h in Headers */,
 				B6CAB4281AF9AA1A00B9B856 /* btSolveProjectedGaussSeidel.h in Headers */,
 				15AE1B7519AADA9A00C27E9E /* UILoadingBar.h in Headers */,
@@ -10651,6 +10701,7 @@
 				1A570289180BCC900088DEC7 /* CCSpriteFrame.h in Headers */,
 				15AE1B7F19AADA9A00C27E9E /* UIText.h in Headers */,
 				B29A7E3419EE1B7700872B35 /* SlotData.h in Headers */,
+				A6BD658D1D14180A004B202E /* easy.h in Headers */,
 				B6CAAFF91AF9A9E100B9B856 /* CCPhysics3DShape.h in Headers */,
 				B665E3D51AA80A6600DDB1C5 /* CCPUScriptLexer.h in Headers */,
 				50ABBE701925AB6F00A911A9 /* CCEventListenerKeyboard.h in Headers */,
@@ -10707,6 +10758,7 @@
 				15B3707F19EE414C00ABE682 /* CCEventAssetsManagerEx.h in Headers */,
 				1AC0269D1914068200FA920D /* ConvertUTF.h in Headers */,
 				15AE1A4419AAD3D500C27E9E /* b2DynamicTree.h in Headers */,
+				A6BD65911D14180A004B202E /* typecheck-gcc.h in Headers */,
 				507003241B69735300E83DDD /* HttpConnection-winrt.h in Headers */,
 				1A5702FD180BCE750088DEC7 /* CCTMXXMLParser.h in Headers */,
 				B665E3B11AA80A6500DDB1C5 /* CCPURender.h in Headers */,
@@ -10796,6 +10848,7 @@
 				50ABBE301925AB6F00A911A9 /* ccConfig.h in Headers */,
 				B6DD2FE41B04825B00E47F5F /* DetourPathCorridor.h in Headers */,
 				15AE195819AAD35100C27E9E /* CCInputDelegate.h in Headers */,
+				A6BD658B1D14180A004B202E /* curlrules.h in Headers */,
 				B6CAB3281AF9AA1A00B9B856 /* btGImpactBvh.h in Headers */,
 				B6DD2FB61B04825B00E47F5F /* RecastDump.h in Headers */,
 				50ABBDAC1925AB4100A911A9 /* CCRenderCommandPool.h in Headers */,
@@ -10836,6 +10889,7 @@
 				B665E3591AA80A6500DDB1C5 /* CCPUOnQuotaObserverTranslator.h in Headers */,
 				50ABBEC81925AB6F00A911A9 /* etc1.h in Headers */,
 				B6CAB3D81AF9AA1A00B9B856 /* btSolve2LinearConstraint.h in Headers */,
+				A6BD65891D14180A004B202E /* curlbuild-64.h in Headers */,
 				50ABBDB01925AB4100A911A9 /* CCRenderer.h in Headers */,
 				B6CAB3421AF9AA1A00B9B856 /* gim_bitset.h in Headers */,
 				B29594B71926D5EC003EEF37 /* CCMeshCommand.h in Headers */,
@@ -10938,6 +10992,7 @@
 				15AE195A19AAD35100C27E9E /* CCProcessBase.h in Headers */,
 				15AE193D19AAD35100C27E9E /* CCArmatureDefine.h in Headers */,
 				B6CAB37A1AF9AA1A00B9B856 /* btGjkEpaPenetrationDepthSolver.h in Headers */,
+				A6BD65901D14180A004B202E /* stdcheaders.h in Headers */,
 				B6CAB21A1AF9AA1A00B9B856 /* btBox2dBox2dCollisionAlgorithm.h in Headers */,
 				382384041A259005002C4610 /* CSParseBinary_generated.h in Headers */,
 				B6CAB5401AF9AA1A00B9B856 /* cl_platform.h in Headers */,
@@ -12849,6 +12904,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -12884,6 +12940,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -12972,6 +13029,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
 				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/platform/ios/cocos2d-prefix.pch";
@@ -13004,6 +13062,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
 				EXECUTABLE_PREFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

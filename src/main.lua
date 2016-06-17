@@ -11,7 +11,6 @@ require "config"
 require "cocos.init"
 require "util.init"
 require "fmw.init"
-require "app.init"
 
 local function main()
     require("app.MyApp"):create():run()
