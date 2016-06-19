@@ -1,5 +1,5 @@
 #include "lua_cocos2dx_dnp_auto.hpp"
-#include "DNPParticleSystemFrameQuad.h"
+//#include "DNPParticleSystemFrameQuad.h"
 #include "DNPDeviceUtils.h"
 #include "DNPAnalyticX.h"
 #include "tolua_fix.h"
@@ -7,180 +7,180 @@
 
 
 
-int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend(lua_State* tolua_S)
-{
-    int argc = 0;
-    DNPParticleSystemFrameQuad* cobj = nullptr;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertype(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    cobj = (DNPParticleSystemFrameQuad*)tolua_tousertype(tolua_S,1,0);
-
-#if COCOS2D_DEBUG >= 1
-    if (!cobj) 
-    {
-        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend'", nullptr);
-        return 0;
-    }
-#endif
-
-    argc = lua_gettop(tolua_S)-1;
-    if (argc == 0) 
-    {
-        if(!ok)
-            return 0;
-        cobj->resetBlend();
-        return 0;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "resetBlend",argc, 0);
-    return 0;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend'.",&tolua_err);
-#endif
-
-    return 0;
-}
-int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile(lua_State* tolua_S)
-{
-    int argc = 0;
-    DNPParticleSystemFrameQuad* cobj = nullptr;
-    bool ok  = true;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertype(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    cobj = (DNPParticleSystemFrameQuad*)tolua_tousertype(tolua_S,1,0);
-
-#if COCOS2D_DEBUG >= 1
-    if (!cobj) 
-    {
-        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile'", nullptr);
-        return 0;
-    }
-#endif
-
-    argc = lua_gettop(tolua_S)-1;
-    if (argc == 2) 
-    {
-        std::string arg0;
-        std::string arg1;
-
-        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
-
-        ok &= luaval_to_std_string(tolua_S, 3,&arg1);
-        if(!ok)
-            return 0;
-        cobj->spriteFrameWithFile(arg0, arg1);
-        return 0;
-    }
-    if (argc == 3) 
-    {
-        std::string arg0;
-        std::string arg1;
-        double arg2;
-
-        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
-
-        ok &= luaval_to_std_string(tolua_S, 3,&arg1);
-
-        ok &= luaval_to_number(tolua_S, 4,&arg2);
-        if(!ok)
-            return 0;
-        cobj->spriteFrameWithFile(arg0, arg1, arg2);
-        return 0;
-    }
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "spriteFrameWithFile",argc, 2);
-    return 0;
-
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile'.",&tolua_err);
-#endif
-
-    return 0;
-}
-int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create(lua_State* tolua_S)
-{
-    int argc = 0;
-    bool ok  = true;
-#if COCOS2D_DEBUG >= 1
-    tolua_Error tolua_err;
-#endif
-
-#if COCOS2D_DEBUG >= 1
-    if (!tolua_isusertable(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
-#endif
-
-    argc = lua_gettop(tolua_S)-1;
-
-    do 
-    {
-        if (argc == 1)
-        {
-            std::string arg0;
-            ok &= luaval_to_std_string(tolua_S, 2,&arg0);
-            if (!ok) { break; }
-            DNPParticleSystemFrameQuad* ret = DNPParticleSystemFrameQuad::create(arg0);
-            object_to_luaval<DNPParticleSystemFrameQuad>(tolua_S, "DNPParticleSystemFrameQuad",(DNPParticleSystemFrameQuad*)ret);
-            return 1;
-        }
-    } while (0);
-    ok  = true;
-    do 
-    {
-        if (argc == 0)
-        {
-            DNPParticleSystemFrameQuad* ret = DNPParticleSystemFrameQuad::create();
-            object_to_luaval<DNPParticleSystemFrameQuad>(tolua_S, "DNPParticleSystemFrameQuad",(DNPParticleSystemFrameQuad*)ret);
-            return 1;
-        }
-    } while (0);
-    ok  = true;
-    CCLOG("%s has wrong number of arguments: %d, was expecting %d", "create",argc, 0);
-    return 0;
-#if COCOS2D_DEBUG >= 1
-    tolua_lerror:
-    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create'.",&tolua_err);
-#endif
-    return 0;
-}
-static int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_finalize(lua_State* tolua_S)
-{
-    printf("luabindings: finalizing LUA object (DNPParticleSystemFrameQuad)");
-    return 0;
-}
-
-int lua_register_cocos2dx_dnp_DNPParticleSystemFrameQuad(lua_State* tolua_S)
-{
-    tolua_usertype(tolua_S,"DNPParticleSystemFrameQuad");
-    tolua_cclass(tolua_S,"DNPParticleSystemFrameQuad","DNPParticleSystemFrameQuad","cc.ParticleSystemQuad",nullptr);
-
-    tolua_beginmodule(tolua_S,"DNPParticleSystemFrameQuad");
-        tolua_function(tolua_S,"resetBlend",lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend);
-        tolua_function(tolua_S,"spriteFrameWithFile",lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile);
-        tolua_function(tolua_S,"create", lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create);
-    tolua_endmodule(tolua_S);
-    std::string typeName = typeid(DNPParticleSystemFrameQuad).name();
-    g_luaType[typeName] = "DNPParticleSystemFrameQuad";
-    g_typeCast["DNPParticleSystemFrameQuad"] = "DNPParticleSystemFrameQuad";
-    return 1;
-}
+//int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend(lua_State* tolua_S)
+//{
+//    int argc = 0;
+//    DNPParticleSystemFrameQuad* cobj = nullptr;
+//    bool ok  = true;
+//
+//#if COCOS2D_DEBUG >= 1
+//    tolua_Error tolua_err;
+//#endif
+//
+//
+//#if COCOS2D_DEBUG >= 1
+//    if (!tolua_isusertype(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
+//#endif
+//
+//    cobj = (DNPParticleSystemFrameQuad*)tolua_tousertype(tolua_S,1,0);
+//
+//#if COCOS2D_DEBUG >= 1
+//    if (!cobj) 
+//    {
+//        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend'", nullptr);
+//        return 0;
+//    }
+//#endif
+//
+//    argc = lua_gettop(tolua_S)-1;
+//    if (argc == 0) 
+//    {
+//        if(!ok)
+//            return 0;
+//        cobj->resetBlend();
+//        return 0;
+//    }
+//    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "resetBlend",argc, 0);
+//    return 0;
+//
+//#if COCOS2D_DEBUG >= 1
+//    tolua_lerror:
+//    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend'.",&tolua_err);
+//#endif
+//
+//    return 0;
+//}
+//int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile(lua_State* tolua_S)
+//{
+//    int argc = 0;
+//    DNPParticleSystemFrameQuad* cobj = nullptr;
+//    bool ok  = true;
+//
+//#if COCOS2D_DEBUG >= 1
+//    tolua_Error tolua_err;
+//#endif
+//
+//
+//#if COCOS2D_DEBUG >= 1
+//    if (!tolua_isusertype(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
+//#endif
+//
+//    cobj = (DNPParticleSystemFrameQuad*)tolua_tousertype(tolua_S,1,0);
+//
+//#if COCOS2D_DEBUG >= 1
+//    if (!cobj) 
+//    {
+//        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile'", nullptr);
+//        return 0;
+//    }
+//#endif
+//
+//    argc = lua_gettop(tolua_S)-1;
+//    if (argc == 2) 
+//    {
+//        std::string arg0;
+//        std::string arg1;
+//
+//        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+//
+//        ok &= luaval_to_std_string(tolua_S, 3,&arg1);
+//        if(!ok)
+//            return 0;
+//        cobj->spriteFrameWithFile(arg0, arg1);
+//        return 0;
+//    }
+//    if (argc == 3) 
+//    {
+//        std::string arg0;
+//        std::string arg1;
+//        double arg2;
+//
+//        ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+//
+//        ok &= luaval_to_std_string(tolua_S, 3,&arg1);
+//
+//        ok &= luaval_to_number(tolua_S, 4,&arg2);
+//        if(!ok)
+//            return 0;
+//        cobj->spriteFrameWithFile(arg0, arg1, arg2);
+//        return 0;
+//    }
+//    CCLOG("%s has wrong number of arguments: %d, was expecting %d \n", "spriteFrameWithFile",argc, 2);
+//    return 0;
+//
+//#if COCOS2D_DEBUG >= 1
+//    tolua_lerror:
+//    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile'.",&tolua_err);
+//#endif
+//
+//    return 0;
+//}
+//int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create(lua_State* tolua_S)
+//{
+//    int argc = 0;
+//    bool ok  = true;
+//#if COCOS2D_DEBUG >= 1
+//    tolua_Error tolua_err;
+//#endif
+//
+//#if COCOS2D_DEBUG >= 1
+//    if (!tolua_isusertable(tolua_S,1,"DNPParticleSystemFrameQuad",0,&tolua_err)) goto tolua_lerror;
+//#endif
+//
+//    argc = lua_gettop(tolua_S)-1;
+//
+//    do 
+//    {
+//        if (argc == 1)
+//        {
+//            std::string arg0;
+//            ok &= luaval_to_std_string(tolua_S, 2,&arg0);
+//            if (!ok) { break; }
+//            DNPParticleSystemFrameQuad* ret = DNPParticleSystemFrameQuad::create(arg0);
+//            object_to_luaval<DNPParticleSystemFrameQuad>(tolua_S, "DNPParticleSystemFrameQuad",(DNPParticleSystemFrameQuad*)ret);
+//            return 1;
+//        }
+//    } while (0);
+//    ok  = true;
+//    do 
+//    {
+//        if (argc == 0)
+//        {
+//            DNPParticleSystemFrameQuad* ret = DNPParticleSystemFrameQuad::create();
+//            object_to_luaval<DNPParticleSystemFrameQuad>(tolua_S, "DNPParticleSystemFrameQuad",(DNPParticleSystemFrameQuad*)ret);
+//            return 1;
+//        }
+//    } while (0);
+//    ok  = true;
+//    CCLOG("%s has wrong number of arguments: %d, was expecting %d", "create",argc, 0);
+//    return 0;
+//#if COCOS2D_DEBUG >= 1
+//    tolua_lerror:
+//    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create'.",&tolua_err);
+//#endif
+//    return 0;
+//}
+//static int lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_finalize(lua_State* tolua_S)
+//{
+//    printf("luabindings: finalizing LUA object (DNPParticleSystemFrameQuad)");
+//    return 0;
+//}
+//
+//int lua_register_cocos2dx_dnp_DNPParticleSystemFrameQuad(lua_State* tolua_S)
+//{
+//    tolua_usertype(tolua_S,"DNPParticleSystemFrameQuad");
+//    tolua_cclass(tolua_S,"DNPParticleSystemFrameQuad","DNPParticleSystemFrameQuad","cc.ParticleSystemQuad",nullptr);
+//
+//    tolua_beginmodule(tolua_S,"DNPParticleSystemFrameQuad");
+//        tolua_function(tolua_S,"resetBlend",lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_resetBlend);
+//        tolua_function(tolua_S,"spriteFrameWithFile",lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_spriteFrameWithFile);
+//        tolua_function(tolua_S,"create", lua_cocos2dx_dnp_DNPParticleSystemFrameQuad_create);
+//    tolua_endmodule(tolua_S);
+//    std::string typeName = typeid(DNPParticleSystemFrameQuad).name();
+//    g_luaType[typeName] = "DNPParticleSystemFrameQuad";
+//    g_typeCast["DNPParticleSystemFrameQuad"] = "DNPParticleSystemFrameQuad";
+//    return 1;
+//}
 
 int lua_cocos2dx_dnp_DNPDeviceUtils_uuid(lua_State* tolua_S)
 {
@@ -998,7 +998,7 @@ TOLUA_API int register_all_cocos2dx_dnp(lua_State* tolua_S)
 
 	lua_register_cocos2dx_dnp_DNPDeviceUtils(tolua_S);
 	lua_register_cocos2dx_dnp_DNPAnalyticX(tolua_S);
-	lua_register_cocos2dx_dnp_DNPParticleSystemFrameQuad(tolua_S);
+//	lua_register_cocos2dx_dnp_DNPParticleSystemFrameQuad(tolua_S);
 
 	tolua_endmodule(tolua_S);
 	return 1;
