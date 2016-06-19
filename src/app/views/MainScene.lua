@@ -81,14 +81,14 @@ function MainScene:onCreate()
     --    tab["Himi"]="himigame.com"
     --    tab["age"]="23"
     --
-    --    local enjson =  json.encode(tab)
-    --    print(enjson)
-    --    helper.saveSloterData("test","123")
-    --
-    --    local ts =  helper.getUserSloterData("test")
-    --    print(ts)
-    --
-    --    dump(sloter:value())
+    local enjson =  json.encode(tab)
+    print(enjson)
+    helper.saveSloterData("test","123")
+
+    local ts =  helper.getSloterData("test")
+    print(ts)
+
+    dump(sloter:value())
 
 
     --    local eventDispatcher = cc.Director:getInstance():getEventDispatcher()
@@ -99,11 +99,11 @@ function MainScene:onCreate()
 
     self:onGame()
     
-    local function onButtonClicked()
-        print("DDDDDDDDD")
-    end
-    
-    device.showAlert("Confirm Exit", "Are you sure exit game ?", {"YES", "NO"}, onButtonClicked)
+--    local function onButtonClicked()
+--        print("DDDDDDDDD")
+--    end
+--    
+--    device.showAlert("Confirm Exit", "Are you sure exit game ?", {"YES", "NO"}, onButtonClicked)
 end
 
 function MainScene:onClick( path,node,funcName)

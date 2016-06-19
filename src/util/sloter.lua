@@ -115,8 +115,7 @@ function sloter:encryptContent(values)
     local s = json.encode(values)
     local hash = crypto.md5(s)
     local contents = json.encode({h = hash, s = s})
-    return crypto.encryptXXTEA(contents, DNP_APP.slotKey)
---    return crypto.encryptXXTEA(contents, DNP_APP.slotKey .. device:getDeviceUid())
+    return crypto.encryptXXTEA(contents, DNP_APP.slotKey .. device:getDeviceUid())
 end
 
 
@@ -127,8 +126,7 @@ end
 --@param string#string content 保存的表
 --@return #string 内容
 function sloter:decryptContent(content)
-    local t = crypto.decryptXXTEA(content, DNP_APP.slotKey)
---    local t = crypto.decryptXXTEA(content, DNP_APP.slotKey .. device:getDeviceUid())
+    local t = crypto.decryptXXTEA(content, DNP_APP.slotKey .. device:getDeviceUid())
     if (t == nil) then
         return {}
     end
