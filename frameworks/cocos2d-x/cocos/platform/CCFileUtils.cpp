@@ -32,6 +32,7 @@ THE SOFTWARE.
 #include "base/CCDirector.h"
 #include "platform/CCSAXParser.h"
 #include "base/ccUtils.h"
+#include "xxtea/xxtea.h"
 
 #include "tinyxml2.h"
 #ifdef MINIZIP_FROM_SYSTEM
@@ -613,7 +614,7 @@ static Data getData(const std::string& filename, bool forString)
     {
         return Data::Null;
     }
-
+    
     Data ret;
     unsigned char* buffer = nullptr;
     size_t size = 0;
@@ -630,6 +631,7 @@ static Data getData(const std::string& filename, bool forString)
     {
         // Read the file from hardware
         std::string fullPath = fileutils->fullPathForFilename(filename);
+        
         FILE *fp = fopen(fileutils->getSuitableFOpen(fullPath).c_str(), mode);
         CC_BREAK_IF(!fp);
         fseek(fp,0,SEEK_END);

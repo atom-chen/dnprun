@@ -86,7 +86,9 @@ end
 function AppViews:registerView(viewBase)
     local view = viewBase
     local tag = self.orderz + 1
-    self.views[viewBase:getName()] = {tag = tag, obj = view}
+    if viewBase:getName() then
+        self.views[viewBase:getName()] = {tag = tag, obj = view}
+    end
     return self
 end
 

@@ -36,11 +36,13 @@ function KTTopView:onClick( path,node,funcName)
     --    printf("onClick")
     if  node:getName()=="Button_1" and funcName =="onHeadClick" then
         local function btnCallback(  node,eventType  )
-            --TODO
-            print("test"..funcName)
+--            --TODO
+--            print("test"..funcName)
+--
+--            local layer= KTDialogView:create(self:getApp(),"dialog")
+--                :addTo(self)
 
-            local layer= KTDialogView:create(self:getApp(),"dialog")
-                :addTo(self)
+           AppViews:getView("MainScene"):_onPrev()
         end
         return btnCallback
     end

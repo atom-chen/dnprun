@@ -1,0 +1,330 @@
+
+diceman.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1/12
+  rotate: false
+  xy: 811, 2
+  size: 273, 103
+  orig: 273, 103
+  offset: 0, 0
+  index: -1
+template/12
+  rotate: false
+  xy: 811, 2
+  size: 273, 103
+  orig: 273, 103
+  offset: 0, 0
+  index: -1
+1/13
+  rotate: false
+  xy: 1086, 2
+  size: 273, 103
+  orig: 273, 103
+  offset: 0, 0
+  index: -1
+template/13
+  rotate: false
+  xy: 1086, 2
+  size: 273, 103
+  orig: 273, 103
+  offset: 0, 0
+  index: -1
+1/8
+  rotate: false
+  xy: 1706, 815
+  size: 183, 957
+  orig: 183, 957
+  offset: 0, 0
+  index: -1
+template/1
+  rotate: false
+  xy: 1606, 24
+  size: 417, 748
+  orig: 417, 748
+  offset: 0, 0
+  index: -1
+template/10/10
+  rotate: true
+  xy: 1706, 1774
+  size: 269, 260
+  orig: 269, 260
+  offset: 0, 0
+  index: -1
+template/15
+  rotate: false
+  xy: 2, 774
+  size: 1702, 1269
+  orig: 1702, 1269
+  offset: 0, 0
+  index: -1
+template/3emotion/02-1
+  rotate: true
+  xy: 811, 107
+  size: 665, 793
+  orig: 665, 793
+  offset: 0, 0
+  index: -1
+template/5
+  rotate: false
+  xy: 2, 5
+  size: 807, 767
+  orig: 807, 767
+  offset: 0, 0
+  index: -1
+template/8
+  rotate: false
+  xy: 1891, 824
+  size: 129, 948
+  orig: 129, 948
+  offset: 0, 0
+  index: -1
+
+diceman2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1/14
+  rotate: false
+  xy: 1658, 1590
+  size: 254, 192
+  orig: 254, 192
+  offset: 0, 0
+  index: -1
+template/14
+  rotate: false
+  xy: 1658, 1590
+  size: 254, 192
+  orig: 254, 192
+  offset: 0, 0
+  index: -1
+1/9
+  rotate: true
+  xy: 2, 983
+  size: 183, 957
+  orig: 183, 957
+  offset: 0, 0
+  index: -1
+template/11/11
+  rotate: false
+  xy: 1658, 1784
+  size: 269, 260
+  orig: 269, 260
+  offset: 0, 0
+  index: -1
+template/3emotion/01-1
+  rotate: true
+  xy: 1115, 20
+  size: 508, 793
+  orig: 508, 793
+  offset: 0, 0
+  index: -1
+template/3emotion/05-1
+  rotate: false
+  xy: 536, 4
+  size: 577, 828
+  orig: 577, 828
+  offset: 0, 0
+  index: -1
+template/3emotion/06-2
+  rotate: false
+  xy: 2, 2
+  size: 532, 830
+  orig: 532, 830
+  offset: 0, 0
+  index: -1
+template/3emotion/12-2
+  rotate: true
+  xy: 1115, 530
+  size: 636, 797
+  orig: 636, 797
+  offset: 0, 0
+  index: -1
+template/4
+  rotate: false
+  xy: 2, 1168
+  size: 1654, 876
+  orig: 1654, 876
+  offset: 0, 0
+  index: -1
+template/9
+  rotate: false
+  xy: 1914, 834
+  size: 129, 948
+  orig: 129, 948
+  offset: 0, 0
+  index: -1
+
+diceman3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+template/2
+  rotate: false
+  xy: 2, 920
+  size: 840, 990
+  orig: 840, 990
+  offset: 0, 0
+  index: -1
+template/3emotion/04-1
+  rotate: false
+  xy: 644, 2
+  size: 590, 916
+  orig: 590, 916
+  offset: 0, 0
+  index: -1
+template/3emotion/07-1
+  rotate: false
+  xy: 1473, 935
+  size: 556, 975
+  orig: 556, 975
+  offset: 0, 0
+  index: -1
+template/3emotion/10-1
+  rotate: false
+  xy: 844, 990
+  size: 627, 920
+  orig: 627, 920
+  offset: 0, 0
+  index: -1
+template/3emotion/10-2
+  rotate: false
+  xy: 2, 6
+  size: 640, 912
+  orig: 640, 912
+  offset: 0, 0
+  index: -1
+template/3emotion/11-1
+  rotate: false
+  xy: 1236, 63
+  size: 625, 870
+  orig: 625, 870
+  offset: 0, 0
+  index: -1
+
+diceman4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+template/3emotion/02-2
+  rotate: false
+  xy: 608, 346
+  size: 653, 793
+  orig: 653, 793
+  offset: 0, 0
+  index: -1
+template/3emotion/03-1
+  rotate: false
+  xy: 2, 161
+  size: 604, 862
+  orig: 604, 862
+  offset: 0, 0
+  index: -1
+template/3emotion/05-2
+  rotate: false
+  xy: 1263, 582
+  size: 607, 827
+  orig: 607, 827
+  offset: 0, 0
+  index: -1
+template/3emotion/07-2
+  rotate: false
+  xy: 2, 1025
+  size: 556, 965
+  orig: 556, 965
+  offset: 0, 0
+  index: -1
+template/3emotion/09-1
+  rotate: true
+  xy: 1263, 2
+  size: 578, 783
+  orig: 578, 783
+  offset: 0, 0
+  index: -1
+template/3emotion/09-2
+  rotate: false
+  xy: 560, 1141
+  size: 610, 849
+  orig: 610, 849
+  offset: 0, 0
+  index: -1
+template/3emotion/11-2
+  rotate: true
+  xy: 1172, 1411
+  size: 579, 867
+  orig: 579, 867
+  offset: 0, 0
+  index: -1
+
+diceman5.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1/1
+  rotate: false
+  xy: 2, 863
+  size: 544, 905
+  orig: 544, 905
+  offset: 0, 0
+  index: -1
+1/6
+  rotate: true
+  xy: 1132, 486
+  size: 532, 802
+  orig: 532, 802
+  offset: 0, 0
+  index: -1
+1/7
+  rotate: true
+  xy: 1137, 1236
+  size: 532, 802
+  orig: 532, 802
+  offset: 0, 0
+  index: -1
+template/3emotion/00-1
+  rotate: false
+  xy: 2, 3
+  size: 539, 858
+  orig: 539, 858
+  offset: 0, 0
+  index: -1
+template/3emotion/08-1
+  rotate: false
+  xy: 543, 112
+  size: 587, 749
+  orig: 587, 749
+  offset: 0, 0
+  index: -1
+template/3emotion/08-2
+  rotate: false
+  xy: 548, 1020
+  size: 587, 748
+  orig: 587, 748
+  offset: 0, 0
+  index: -1
+template/6
+  rotate: true
+  xy: 1132, 2
+  size: 482, 827
+  orig: 482, 827
+  offset: 0, 0
+  index: -1
+
+diceman6.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+template/7
+  rotate: true
+  xy: 2, 2
+  size: 482, 827
+  orig: 482, 827
+  offset: 0, 0
+  index: -1

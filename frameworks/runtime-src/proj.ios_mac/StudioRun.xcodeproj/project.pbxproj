@@ -44,6 +44,7 @@
 		9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE009D1ACCF59E00D6E35A /* RuntimeLuaImpl.cpp */; };
 		A61FB5511D1017E9002F67BC /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */; };
+		A62176C31D17A7240078EF4D /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A63041781D1689540098E1F5 /* DeviceUtils.lua in Resources */ = {isa = PBXBuildFile; fileRef = A63041591D1689540098E1F5 /* DeviceUtils.lua */; };
 		A63041791D1689540098E1F5 /* DeviceUtils.lua in Resources */ = {isa = PBXBuildFile; fileRef = A63041591D1689540098E1F5 /* DeviceUtils.lua */; };
 		A630417A1D1689540098E1F5 /* DNPAnalyticX.lua in Resources */ = {isa = PBXBuildFile; fileRef = A630415A1D1689540098E1F5 /* DNPAnalyticX.lua */; };
@@ -283,7 +284,6 @@
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
-		A6BB80781D0048950053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BD65081D13C940004B202E /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = A6BD65011D13C940004B202E /* __vungle.db */; };
 		A6BD65091D13C940004B202E /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD65021D13C940004B202E /* vg_close.png */; };
 		A6BD650A1D13C940004B202E /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD65031D13C940004B202E /* vg_cta.png */; };
@@ -301,7 +301,6 @@
 		A6D398CB1CF99387000870D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CA1CF99387000870D2 /* Security.framework */; };
 		A6D398CD1CF99390000870D2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CC1CF99390000870D2 /* StoreKit.framework */; };
 		A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5023811317EBBCAC00990C9B /* Info.plist */; };
-		C03781BB18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C05D1C121923449100B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C111923449100B808A4 /* config.json */; };
 		C05D1C131923449100B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C111923449100B808A4 /* config.json */; };
@@ -1859,6 +1858,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62176C31D17A7240078EF4D /* res in Resources */,
 				A63042D91D1689B20098E1F5 /* example_Julia.fsh in Resources */,
 				A63042ED1D1689B20098E1F5 /* example_sepia.fsh in Resources */,
 				A63041801D1689540098E1F5 /* DNPParticleSystemFrameQuad.lua in Resources */,
@@ -1867,7 +1867,6 @@
 				A63042CD1D1689B20098E1F5 /* example_ColorBars.vsh in Resources */,
 				A669AD751D05325200AB90D0 /* UnityAds.bundle in Resources */,
 				A63042EF1D1689B20098E1F5 /* example_Twist.fsh in Resources */,
-				A6BB80781D0048950053D6E3 /* res in Resources */,
 				A63042FB1D1689B20098E1F5 /* build.sh in Resources */,
 				A63042C51D1689B20098E1F5 /* example_bloom.fsh in Resources */,
 				A6BD650C1D13C940004B202E /* vg_mute_on.png in Resources */,
@@ -1906,7 +1905,6 @@
 				A63041821D1689540098E1F5 /* DNPShareUtils.lua in Resources */,
 				A63042E11D1689B20098E1F5 /* example_MultiTexture.fsh in Resources */,
 				A6BD65091D13C940004B202E /* vg_close.png in Resources */,
-				C03781BB18BF655400FE4F13 /* src in Resources */,
 				A63043531D1689B20098E1F5 /* Android.mk in Resources */,
 				C05D1C121923449100B808A4 /* config.json in Resources */,
 				A63042D11D1689B20098E1F5 /* example_Flower.fsh in Resources */,

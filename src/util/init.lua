@@ -33,6 +33,7 @@ sloter = require("util.sloter"):new()
 gamer = require("util.gamer"):new()
 helper = require("util.helper"):new()
 app = require("util.app").new()
+filter = require("util.filter")
 
 analytic = require("util.analytic")
 

@@ -6,6 +6,7 @@
 //################# QHZF ###################
 //#include "lua_cocos2dx_dnp_auto.hpp"
 #include "extra/luabinding/cocos2dx_extra_luabinding.h"
+#include "extra/luabinding/lua_cocos2dx_extension_filter_auto.hpp"
 #include "lua_cocos2dx_dnp_auto.hpp"
  //################# QHZF ###################
 
@@ -86,7 +87,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     LuaStack* stack = engine->getLuaStack();
     //################# QHZF 修改Key and Sign ###################
-     stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+     stack->setXXTEAKeyAndSign("d@n0po", strlen("d@n0po"), "donopo", strlen("donopo"));
 
     //register custom function
 //    LuaStack* stack = engine->getLuaStack();
@@ -105,6 +106,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     if (lua_istable(L, -1))//stack:...,_G,
     {
         luaopen_cocos2dx_extra_luabinding(L);
+        register_all_cocos2dx_extension_filter(L);
     }
     lua_pop(L, 1);
      //################# QHZF ###################
@@ -115,18 +117,31 @@ bool AppDelegate::applicationDidFinishLaunching()
 //    engine->getLuaStack()->loadData("game.dat");
 //    usleep(500);
  //################# QHZF ###################
-    
+
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE
     auto runtimeEngine = RuntimeEngine::getInstance();
     runtimeEngine->addRuntime(RuntimeLuaImpl::create(), kRuntimeEngineLua);
     runtimeEngine->start();
 #else
-    if (engine->executeScriptFile("src/main.lua"))
-    {
-        return false;
+     //################# QHZF ###################
+//    if (engine->executeScriptFile("src/main.lua"))
+//    {
+//        return false;
+//    }
+    
+#ifdef CC_TARGET_OS_IPHONE
+    if (sizeof(long) == 4) {
+        stack->loadChunksFromZIP("res/game.zip");
+    } else {
+        stack->loadChunksFromZIP("res/game64.zip");
     }
+#else // #ifdef CC_TARGET_OS_IPHONE
+    stack->loadChunksFromZIP("res/game.zip");
 #endif
+    stack->executeString("require 'main'");
 
+#endif
+ //################# QHZF ###################
     return true;
 }
 
