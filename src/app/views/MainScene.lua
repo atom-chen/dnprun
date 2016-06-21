@@ -62,7 +62,7 @@ function MainScene:onCreate()
     -- vert固定为vert shader文件资源中的所在位置
     -- shaderName为当前shader的名字,不同的shader,不同参数对应不同名字,
     -- 其它值会认为是要传入的参数
-    local customParams = {frag = "Shaders/example_Noisy.fsh",
+    local customParams = {frag = "shader/example_Noisy.fsh",
         shaderName = "noisyShader",
         -- u_outlineColor = {1.0, 0.2, 0.3},
         -- u_radius = 0.01,
