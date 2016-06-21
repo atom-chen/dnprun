@@ -82,7 +82,6 @@
 		A63042981D1689B20098E1F5 /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = A63041A51D1689B10098E1F5 /* libbase64.c */; };
 		A63042991D1689B20098E1F5 /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63041A71D1689B10098E1F5 /* CCCrypto.cpp */; };
 		A630429A1D1689B20098E1F5 /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63041A71D1689B10098E1F5 /* CCCrypto.cpp */; };
-		A630429B1D1689B20098E1F5 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = A63041AA1D1689B10098E1F5 /* md5.c */; };
 		A630429D1D1689B20098E1F5 /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = A63041AD1D1689B10098E1F5 /* Android.mk */; };
 		A630429E1D1689B20098E1F5 /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = A63041AD1D1689B10098E1F5 /* Android.mk */; };
 		A630429F1D1689B20098E1F5 /* CCBlurFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63041B01D1689B10098E1F5 /* CCBlurFilter.cpp */; };
@@ -2089,7 +2088,6 @@
 				A63043551D1689B20098E1F5 /* fpconv.c in Sources */,
 				A63042A71D1689B20098E1F5 /* CCDropShadowFilter.cpp in Sources */,
 				A669AD701D05325200AB90D0 /* GdtAdManager.mm in Sources */,
-				A630429B1D1689B20098E1F5 /* md5.c in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 				A63043331D1689B20098E1F5 /* SBJsonParser.m in Sources */,
 				A630418C1D1689540098E1F5 /* AnalyticXStringUtil.mm in Sources */,
