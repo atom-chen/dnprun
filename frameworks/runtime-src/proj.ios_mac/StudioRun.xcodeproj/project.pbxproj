@@ -275,6 +275,14 @@
 		A669AD8E1D057BE800AB90D0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A669AD8D1D057BE800AB90D0 /* Icon.png */; };
 		A669AD941D057DFC00AB90D0 /* GameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A669AD931D057DFC00AB90D0 /* GameCenter.mm */; };
 		A669AD961D057F0400AB90D0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD951D057F0400AB90D0 /* GameKit.framework */; };
+		A68700E21D1A3DF500D8A147 /* LaserSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */; };
+		A68700E31D1A3DF500D8A147 /* LaserSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */; };
+		A68700E71D1A6F7A00D8A147 /* RippleSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */; };
+		A68700E81D1A6F7A00D8A147 /* RippleSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */; };
+		A68700EB1D1A769E00D8A147 /* LightningSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E91D1A769E00D8A147 /* LightningSprite.cpp */; };
+		A68700EC1D1A769E00D8A147 /* LightningSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E91D1A769E00D8A147 /* LightningSprite.cpp */; };
+		A68700EF1D1A9B0400D8A147 /* ShatterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700ED1D1A9B0400D8A147 /* ShatterSprite.cpp */; };
+		A68700F01D1A9B0400D8A147 /* ShatterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700ED1D1A9B0400D8A147 /* ShatterSprite.cpp */; };
 		A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */; };
 		A68BB0AB1D047DFB00782F81 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */; };
 		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
@@ -300,6 +308,22 @@
 		A6D398CB1CF99387000870D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CA1CF99387000870D2 /* Security.framework */; };
 		A6D398CD1CF99390000870D2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398CC1CF99390000870D2 /* StoreKit.framework */; };
 		A6F8D7341CFB14BF00D82BBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5023811317EBBCAC00990C9B /* Info.plist */; };
+		A6FDFFDE1D1919EE0041525E /* ColorAdjustSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFCD1D1919EE0041525E /* ColorAdjustSprite.cpp */; };
+		A6FDFFE11D1919EE0041525E /* ensGLProgramWithUnifos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFD41D1919EE0041525E /* ensGLProgramWithUnifos.cpp */; };
+		A6FDFFE81D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFE61D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp */; };
+		A6FDFFE91D191D360041525E /* lua_cocos2dx_dnp_shader_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFE61D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp */; };
+		A6FDFFEA1D191D3A0041525E /* ColorAdjustSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFCD1D1919EE0041525E /* ColorAdjustSprite.cpp */; };
+		A6FDFFEB1D191D3E0041525E /* ensGLProgramWithUnifos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFD41D1919EE0041525E /* ensGLProgramWithUnifos.cpp */; };
+		A6FDFFEE1D1947D80041525E /* TailSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFEC1D1947D80041525E /* TailSprite.cpp */; };
+		A6FDFFF31D1949300041525E /* ensIndexVBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFEF1D1949300041525E /* ensIndexVBO.cpp */; };
+		A6FDFFF41D1949300041525E /* ensMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFF11D1949300041525E /* ensMesh.cpp */; };
+		A6FDFFF51D194B540041525E /* ensMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFF11D1949300041525E /* ensMesh.cpp */; };
+		A6FDFFF61D194B570041525E /* ensIndexVBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFEF1D1949300041525E /* ensIndexVBO.cpp */; };
+		A6FDFFF71D194B5A0041525E /* TailSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFEC1D1947D80041525E /* TailSprite.cpp */; };
+		A6FDFFFA1D194C110041525E /* ensSimpleClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFF81D194C110041525E /* ensSimpleClasses.cpp */; };
+		A6FDFFFD1D19514C0041525E /* ensMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFFB1D19514C0041525E /* ensMath.cpp */; };
+		A6FDFFFE1D1952750041525E /* ensMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFFB1D19514C0041525E /* ensMath.cpp */; };
+		A6FDFFFF1D19527B0041525E /* ensSimpleClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FDFFF81D194C110041525E /* ensSimpleClasses.cpp */; };
 		C03781BC18BF655400FE4F13 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		C05D1C121923449100B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C111923449100B808A4 /* config.json */; };
 		C05D1C131923449100B808A4 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C05D1C111923449100B808A4 /* config.json */; };
@@ -704,6 +728,14 @@
 		A669AD921D057DFC00AB90D0 /* GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenter.h; sourceTree = "<group>"; };
 		A669AD931D057DFC00AB90D0 /* GameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameCenter.mm; sourceTree = "<group>"; };
 		A669AD951D057F0400AB90D0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaserSprite.cpp; sourceTree = "<group>"; };
+		A68700E11D1A3DF500D8A147 /* LaserSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserSprite.h; sourceTree = "<group>"; };
+		A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RippleSprite.cpp; sourceTree = "<group>"; };
+		A68700E61D1A6F7A00D8A147 /* RippleSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleSprite.h; sourceTree = "<group>"; };
+		A68700E91D1A769E00D8A147 /* LightningSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightningSprite.cpp; sourceTree = "<group>"; };
+		A68700EA1D1A769E00D8A147 /* LightningSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightningSprite.h; sourceTree = "<group>"; };
+		A68700ED1D1A9B0400D8A147 /* ShatterSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShatterSprite.cpp; sourceTree = "<group>"; };
+		A68700EE1D1A9B0400D8A147 /* ShatterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShatterSprite.h; sourceTree = "<group>"; };
 		A68BB08C1D047C9800782F81 /* PGStoreKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGStoreKitManager.h; sourceTree = "<group>"; };
 		A68BB08D1D047C9800782F81 /* PGStoreKitManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGStoreKitManager.mm; sourceTree = "<group>"; };
 		A68BB0A21D047DFB00782F81 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
@@ -735,6 +767,22 @@
 		A6D398C81CF9937F000870D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		A6D398CA1CF99387000870D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		A6D398CC1CF99390000870D2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6FDFFCD1D1919EE0041525E /* ColorAdjustSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorAdjustSprite.cpp; sourceTree = "<group>"; };
+		A6FDFFCE1D1919EE0041525E /* ColorAdjustSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorAdjustSprite.h; sourceTree = "<group>"; };
+		A6FDFFD41D1919EE0041525E /* ensGLProgramWithUnifos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ensGLProgramWithUnifos.cpp; sourceTree = "<group>"; };
+		A6FDFFD51D1919EE0041525E /* ensGLProgramWithUnifos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ensGLProgramWithUnifos.h; sourceTree = "<group>"; };
+		A6FDFFE61D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_dnp_shader_auto.cpp; sourceTree = "<group>"; };
+		A6FDFFE71D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_dnp_shader_auto.hpp; sourceTree = "<group>"; };
+		A6FDFFEC1D1947D80041525E /* TailSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TailSprite.cpp; sourceTree = "<group>"; };
+		A6FDFFED1D1947D80041525E /* TailSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TailSprite.h; sourceTree = "<group>"; };
+		A6FDFFEF1D1949300041525E /* ensIndexVBO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ensIndexVBO.cpp; sourceTree = "<group>"; };
+		A6FDFFF01D1949300041525E /* ensIndexVBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ensIndexVBO.h; sourceTree = "<group>"; };
+		A6FDFFF11D1949300041525E /* ensMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ensMesh.cpp; sourceTree = "<group>"; };
+		A6FDFFF21D1949300041525E /* ensMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ensMesh.h; sourceTree = "<group>"; };
+		A6FDFFF81D194C110041525E /* ensSimpleClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ensSimpleClasses.cpp; sourceTree = "<group>"; };
+		A6FDFFF91D194C110041525E /* ensSimpleClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ensSimpleClasses.h; sourceTree = "<group>"; };
+		A6FDFFFB1D19514C0041525E /* ensMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ensMath.cpp; sourceTree = "<group>"; };
+		A6FDFFFC1D19514C0041525E /* ensMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ensMath.h; sourceTree = "<group>"; };
 		C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_lua_bindings.xcodeproj; path = "../../cocos2d-x/cocos/scripting/lua-bindings/proj.ios_mac/cocos2d_lua_bindings.xcodeproj"; sourceTree = "<group>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -906,6 +954,7 @@
 		A63041571D1689540098E1F5 /* dnp */ = {
 			isa = PBXGroup;
 			children = (
+				A6FDFFA81D18F1760041525E /* shader */,
 				A63041581D1689540098E1F5 /* api */,
 				A63041601D1689540098E1F5 /* DeviceUtils.h */,
 				A63041611D1689540098E1F5 /* DeviceUtils.mm */,
@@ -1542,6 +1591,37 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A6FDFFA81D18F1760041525E /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				A68700ED1D1A9B0400D8A147 /* ShatterSprite.cpp */,
+				A68700EE1D1A9B0400D8A147 /* ShatterSprite.h */,
+				A68700E91D1A769E00D8A147 /* LightningSprite.cpp */,
+				A68700EA1D1A769E00D8A147 /* LightningSprite.h */,
+				A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */,
+				A68700E61D1A6F7A00D8A147 /* RippleSprite.h */,
+				A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */,
+				A68700E11D1A3DF500D8A147 /* LaserSprite.h */,
+				A6FDFFFB1D19514C0041525E /* ensMath.cpp */,
+				A6FDFFFC1D19514C0041525E /* ensMath.h */,
+				A6FDFFF81D194C110041525E /* ensSimpleClasses.cpp */,
+				A6FDFFF91D194C110041525E /* ensSimpleClasses.h */,
+				A6FDFFEF1D1949300041525E /* ensIndexVBO.cpp */,
+				A6FDFFF01D1949300041525E /* ensIndexVBO.h */,
+				A6FDFFF11D1949300041525E /* ensMesh.cpp */,
+				A6FDFFF21D1949300041525E /* ensMesh.h */,
+				A6FDFFEC1D1947D80041525E /* TailSprite.cpp */,
+				A6FDFFED1D1947D80041525E /* TailSprite.h */,
+				A6FDFFE61D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp */,
+				A6FDFFE71D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.hpp */,
+				A6FDFFCD1D1919EE0041525E /* ColorAdjustSprite.cpp */,
+				A6FDFFCE1D1919EE0041525E /* ColorAdjustSprite.h */,
+				A6FDFFD41D1919EE0041525E /* ensGLProgramWithUnifos.cpp */,
+				A6FDFFD51D1919EE0041525E /* ensGLProgramWithUnifos.h */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
 		C03781AF18BF654500FE4F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1937,10 +2017,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FDFFEB1D191D3E0041525E /* ensGLProgramWithUnifos.cpp in Sources */,
+				A6FDFFF61D194B570041525E /* ensIndexVBO.cpp in Sources */,
 				C07828FA18B4D72E00BD2287 /* SimulatorApp.mm in Sources */,
 				A63042A01D1689B20098E1F5 /* CCBlurFilter.cpp in Sources */,
 				A63042A61D1689B20098E1F5 /* CCCustomFilter.cpp in Sources */,
 				A63043381D1689B20098E1F5 /* OpenUDIDIOS.m in Sources */,
+				A68700EC1D1A769E00D8A147 /* LightningSprite.cpp in Sources */,
 				A630418B1D1689540098E1F5 /* DNPParticleSystemFrameQuad.cpp in Sources */,
 				A630433E1D1689B20098E1F5 /* CCCryptoMac.mm in Sources */,
 				A63042A81D1689B20098E1F5 /* CCDropShadowFilter.cpp in Sources */,
@@ -1956,6 +2039,8 @@
 				A63043321D1689B20098E1F5 /* SBJsonBase.m in Sources */,
 				A63043061D1689B20098E1F5 /* HelperFunc_luabinding.cpp in Sources */,
 				A63043661D1689B20098E1F5 /* sqlite3.c in Sources */,
+				A6FDFFF71D194B5A0041525E /* TailSprite.cpp in Sources */,
+				A6FDFFFF1D19527B0041525E /* ensSimpleClasses.cpp in Sources */,
 				A63042AC1D1689B20098E1F5 /* CCFilter.cpp in Sources */,
 				5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */,
 				A63043441D1689B20098E1F5 /* OpenUDIDMac.m in Sources */,
@@ -1965,11 +2050,13 @@
 				A630430E1D1689B20098E1F5 /* lua_cocos2dx_extension_nanovg_manual.cpp in Sources */,
 				A63043621D1689B20098E1F5 /* lpack.c in Sources */,
 				A63042BE1D1689B20098E1F5 /* CCSharpenFilter.cpp in Sources */,
+				A6FDFFF51D194B540041525E /* ensMesh.cpp in Sources */,
 				9FF504851A5E87B100AFDA55 /* ConsoleWindowController.m in Sources */,
 				A63042BA1D1689B20098E1F5 /* CCSaturationFilter.cpp in Sources */,
 				A63042B81D1689B20098E1F5 /* CCRGBFilter.cpp in Sources */,
 				A63042B01D1689B20098E1F5 /* CCGrayFilter.cpp in Sources */,
 				A630430C1D1689B20098E1F5 /* lua_cocos2dx_extension_nanovg_auto.cpp in Sources */,
+				A68700E81D1A6F7A00D8A147 /* RippleSprite.cpp in Sources */,
 				A63042A41D1689B20098E1F5 /* CCContrastFilter.cpp in Sources */,
 				A63043751D169A250098E1F5 /* ReachabilityIOSMac.m in Sources */,
 				A630429A1D1689B20098E1F5 /* CCCrypto.cpp in Sources */,
@@ -1982,23 +2069,28 @@
 				A63043341D1689B20098E1F5 /* SBJsonParser.m in Sources */,
 				C07828F818B4D72E00BD2287 /* main.m in Sources */,
 				A63042C41D1689B20098E1F5 /* ccFilterShaders.cpp in Sources */,
+				A6FDFFEA1D191D3A0041525E /* ColorAdjustSprite.cpp in Sources */,
 				A63042AA1D1689B20098E1F5 /* CCExposureFilter.cpp in Sources */,
 				A63043301D1689B20098E1F5 /* SBJSON.m in Sources */,
 				A630436F1D1691250098E1F5 /* CCNetwork.cpp in Sources */,
 				A63043561D1689B20098E1F5 /* fpconv.c in Sources */,
 				A63043021D1689B20098E1F5 /* cocos2dx_extra_luabinding.cpp in Sources */,
+				A6FDFFE91D191D360041525E /* lua_cocos2dx_dnp_shader_auto.cpp in Sources */,
 				A63041891D1689540098E1F5 /* DNPDeviceUtils.cpp in Sources */,
+				A68700F01D1A9B0400D8A147 /* ShatterSprite.cpp in Sources */,
 				A63042B61D1689B20098E1F5 /* CCMaskFilter.cpp in Sources */,
 				A630436A1D1689B20098E1F5 /* lua_zlib.c in Sources */,
 				A63043681D1689B20098E1F5 /* lua_extensions_more.c in Sources */,
 				A63041931D1689540098E1F5 /* DNPAnalyticX.mm in Sources */,
 				A63042C21D1689B20098E1F5 /* CCFilteredSprite.cpp in Sources */,
 				A63043741D1699480098E1F5 /* CCNetworkIOSMac.mm in Sources */,
+				A68700E31D1A3DF500D8A147 /* LaserSprite.cpp in Sources */,
 				A63042B41D1689B20098E1F5 /* CCHueFilter.cpp in Sources */,
 				A630418D1D1689540098E1F5 /* AnalyticXStringUtil.mm in Sources */,
 				9FFE00A21ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
 				A63043121D1689B20098E1F5 /* NVGNode.cpp in Sources */,
 				A630430A1D1689B20098E1F5 /* lua_cocos2dx_extension_filter_auto.cpp in Sources */,
+				A6FDFFFE1D1952750041525E /* ensMath.cpp in Sources */,
 				A63043581D1689B20098E1F5 /* lua_cjson.c in Sources */,
 				A63042B21D1689B20098E1F5 /* CCHazeFilter.cpp in Sources */,
 				A63043141D1689B20098E1F5 /* nanovg.c in Sources */,
@@ -2009,6 +2101,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68700EB1D1A769E00D8A147 /* LightningSprite.cpp in Sources */,
 				A630435B1D1689B20098E1F5 /* debugger.c in Sources */,
 				A63043171D1689B20098E1F5 /* CCNetwork.cpp in Sources */,
 				A63043351D1689B20098E1F5 /* SBJsonWriter.m in Sources */,
@@ -2016,17 +2109,22 @@
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
 				A63042991D1689B20098E1F5 /* CCCrypto.cpp in Sources */,
 				A63043391D1689B20098E1F5 /* CCNetworkIOSMac.mm in Sources */,
+				A6FDFFDE1D1919EE0041525E /* ColorAdjustSprite.cpp in Sources */,
 				A630419A1D1689540098E1F5 /* lua_cocos2dx_dnp_auto.cpp in Sources */,
 				A63041861D1689540098E1F5 /* DeviceUtils.mm in Sources */,
 				A669AD771D05325300AB90D0 /* UnityAdsViewController.m in Sources */,
+				A68700E71D1A6F7A00D8A147 /* RippleSprite.cpp in Sources */,
 				A63043431D1689B20098E1F5 /* OpenUDIDMac.m in Sources */,
 				A63043131D1689B20098E1F5 /* nanovg.c in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
+				A68700EF1D1A9B0400D8A147 /* ShatterSprite.cpp in Sources */,
 				A630418A1D1689540098E1F5 /* DNPParticleSystemFrameQuad.cpp in Sources */,
 				A63043151D1689B20098E1F5 /* CCHTTPRequest.cpp in Sources */,
 				A63042A31D1689B20098E1F5 /* CCContrastFilter.cpp in Sources */,
+				A6FDFFF41D1949300041525E /* ensMesh.cpp in Sources */,
 				A63043371D1689B20098E1F5 /* OpenUDIDIOS.m in Sources */,
 				A65EEE3B1D05B70900D69833 /* VungleViewController.m in Sources */,
+				A6FDFFEE1D1947D80041525E /* TailSprite.cpp in Sources */,
 				A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */,
 				A63042BF1D1689B20098E1F5 /* CCTestFilter.cpp in Sources */,
 				A630433B1D1689B20098E1F5 /* ReachabilityIOSMac.m in Sources */,
@@ -2034,6 +2132,7 @@
 				A63043231D1689B20098E1F5 /* CCNative.mm in Sources */,
 				A65EEE391D05B70900D69833 /* VungleAdManager.mm in Sources */,
 				A63043251D1689B20098E1F5 /* CCNativeIOS.mm in Sources */,
+				A68700E21D1A3DF500D8A147 /* LaserSprite.cpp in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				A630432F1D1689B20098E1F5 /* SBJSON.m in Sources */,
 				A63043511D1689B20098E1F5 /* CCStoreProduct.cpp in Sources */,
@@ -2055,9 +2154,11 @@
 				A63042B51D1689B20098E1F5 /* CCMaskFilter.cpp in Sources */,
 				A63042AD1D1689B20098E1F5 /* CCGammaFilter.cpp in Sources */,
 				A63041881D1689540098E1F5 /* DNPDeviceUtils.cpp in Sources */,
+				A6FDFFFA1D194C110041525E /* ensSimpleClasses.cpp in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
 				A63041961D1689540098E1F5 /* KeychainItemWrapper.m in Sources */,
 				A669AD941D057DFC00AB90D0 /* GameCenter.mm in Sources */,
+				A6FDFFE11D1919EE0041525E /* ensGLProgramWithUnifos.cpp in Sources */,
 				A63043271D1689B20098E1F5 /* CCStore.mm in Sources */,
 				A63043591D1689B20098E1F5 /* strbuf.c in Sources */,
 				A63042971D1689B20098E1F5 /* libbase64.c in Sources */,
@@ -2069,6 +2170,7 @@
 				A63042B11D1689B20098E1F5 /* CCHazeFilter.cpp in Sources */,
 				A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */,
 				A63043011D1689B20098E1F5 /* cocos2dx_extra_luabinding.cpp in Sources */,
+				A6FDFFE81D191BC80041525E /* lua_cocos2dx_dnp_shader_auto.cpp in Sources */,
 				A63043691D1689B20098E1F5 /* lua_zlib.c in Sources */,
 				A63043051D1689B20098E1F5 /* HelperFunc_luabinding.cpp in Sources */,
 				A630434F1D1689B20098E1F5 /* CCStorePaymentTransaction.cpp in Sources */,
@@ -2078,6 +2180,7 @@
 				A63043091D1689B20098E1F5 /* lua_cocos2dx_extension_filter_auto.cpp in Sources */,
 				A669AD731D05325200AB90D0 /* SplashViewController.m in Sources */,
 				A63042A51D1689B20098E1F5 /* CCCustomFilter.cpp in Sources */,
+				A6FDFFF31D1949300041525E /* ensIndexVBO.cpp in Sources */,
 				A63042C31D1689B20098E1F5 /* ccFilterShaders.cpp in Sources */,
 				A68BB0991D047C9800782F81 /* PGStoreKitManager.mm in Sources */,
 				A630430B1D1689B20098E1F5 /* lua_cocos2dx_extension_nanovg_auto.cpp in Sources */,
@@ -2093,6 +2196,7 @@
 				A630418C1D1689540098E1F5 /* AnalyticXStringUtil.mm in Sources */,
 				A63042AF1D1689B20098E1F5 /* CCGrayFilter.cpp in Sources */,
 				A63042FD1D1689B20098E1F5 /* cocos2dx_extra_ios_iap_luabinding.cpp in Sources */,
+				A6FDFFFD1D19514C0041525E /* ensMath.cpp in Sources */,
 				A630429F1D1689B20098E1F5 /* CCBlurFilter.cpp in Sources */,
 				A669AD741D05325200AB90D0 /* UnityAdManager.mm in Sources */,
 				A63042AB1D1689B20098E1F5 /* CCFilter.cpp in Sources */,

@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Vector Smart Object3
+  rotate: false
+  xy: 1693, 264
+  size: 57, 40
+  orig: 57, 40
+  offset: 0, 0
+  index: -1
+try-animation_0000_Layer-1
+  rotate: true
+  xy: 1693, 570
+  size: 446, 327
+  orig: 446, 327
+  offset: 0, 0
+  index: -1
+try-animation_0001_Layer-2
+  rotate: false
+  xy: 1854, 532
+  size: 50, 36
+  orig: 50, 36
+  offset: 0, 0
+  index: -1
+try-animation_0002_Layer-3
+  rotate: false
+  xy: 2022, 997
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+try-animation_0003_Layer-4
+  rotate: false
+  xy: 1693, 306
+  size: 159, 262
+  orig: 159, 262
+  offset: 0, 0
+  index: -1
+try-animation_0004_Layer-5
+  rotate: true
+  xy: 2, 2
+  size: 1014, 1689
+  orig: 1014, 1689
+  offset: 0, 0
+  index: -1

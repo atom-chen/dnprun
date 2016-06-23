@@ -31,9 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="views/plane/layer_plane_main.csd" />
+          <FilePathData Path="views/sd/shaderTest.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="views/plane/layer_plane_main.csd" />
+        <ActiveDocument Path="views/sd/shaderTest.csd" />
       </Value>
     </Item>
   </Properties>

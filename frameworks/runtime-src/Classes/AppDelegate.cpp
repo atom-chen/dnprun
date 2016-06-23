@@ -7,6 +7,7 @@
 //#include "lua_cocos2dx_dnp_auto.hpp"
 #include "extra/luabinding/cocos2dx_extra_luabinding.h"
 #include "extra/luabinding/lua_cocos2dx_extension_filter_auto.hpp"
+#include "lua_cocos2dx_dnp_shader_auto.hpp"
 #include "lua_cocos2dx_dnp_auto.hpp"
  //################# QHZF ###################
 
@@ -107,6 +108,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     {
         luaopen_cocos2dx_extra_luabinding(L);
         register_all_cocos2dx_extension_filter(L);
+        register_all_cocos2dx_dnp_shader(L);
     }
     lua_pop(L, 1);
      //################# QHZF ###################

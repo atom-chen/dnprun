@@ -1,0 +1,131 @@
+{
+"skeleton": {
+	"hash": "99lkm7VoVFimRG/Jy7BKWTAOju0",
+	"spine": "2.1.27",
+	"width": 5220.69,
+	"height": 8443,
+	"images": "/Users/tim/Documents/Donopo Games/startrek/anim"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -32, "y": -2656 },
+	{ "name": "bone2", "parent": "bone", "length": 2003.5, "x": 1.27, "y": -57.69, "rotation": 81.04 },
+	{ "name": "bone3", "parent": "bone2", "length": 660.38, "x": 2520.39, "y": 333.68, "rotation": 2.28 },
+	{ "name": "bone6", "parent": "bone2", "length": 822.51, "x": 4158, "y": -1233.17, "rotation": -13.86 },
+	{ "name": "bone4", "parent": "bone3", "length": 101.81, "x": 728.22, "y": 74.01, "rotation": -0.45 },
+	{ "name": "bone5", "parent": "bone4", "length": 59.81, "x": 16.34, "y": -85.92, "rotation": -2.25 }
+],
+"slots": [
+	{ "name": "try-animation_0004_Layer-5", "bone": "root", "attachment": "try-animation_0004_Layer-5" },
+	{ "name": "Vector Smart Object4", "bone": "bone2", "attachment": "Vector Smart Object3" },
+	{ "name": "try-animation_0000_Layer-2", "bone": "bone6", "attachment": "try-animation_0000_Layer-1" },
+	{ "name": "try-animation_0000_Layer-1", "bone": "root" },
+	{ "name": "try-animation_0003_Layer-4", "bone": "bone3", "attachment": "try-animation_0003_Layer-4" },
+	{ "name": "try-animation_0001_Layer-3", "bone": "bone4", "attachment": "try-animation_0001_Layer-2" },
+	{ "name": "try-animation_0001_Layer-2", "bone": "root" },
+	{ "name": "try-animation_0002_Layer-4", "bone": "bone5", "attachment": "try-animation_0002_Layer-3" },
+	{ "name": "try-animation_0002_Layer-3", "bone": "root" },
+	{ "name": "Vector Smart Object3", "bone": "root" }
+],
+"skins": {
+	"default": {
+		"Vector Smart Object4": {
+			"Vector Smart Object3": { "x": 1232.68, "y": 111.75, "scaleX": 16.639, "scaleY": 14.305, "rotation": 97.16, "width": 285, "height": 202 }
+		},
+		"try-animation_0000_Layer-2": {
+			"try-animation_0000_Layer-1": { "x": 420.09, "y": 350.25, "rotation": -72.1, "width": 2231, "height": 1637 }
+		},
+		"try-animation_0001_Layer-3": {
+			"try-animation_0001_Layer-2": { "x": 55.18, "y": -78.7, "rotation": -72.53, "width": 250, "height": 179 }
+		},
+		"try-animation_0002_Layer-4": {
+			"try-animation_0002_Layer-3": { "x": 30.05, "y": 5.69, "rotation": -70.27, "width": 98, "height": 97 }
+		},
+		"try-animation_0003_Layer-4": {
+			"try-animation_0003_Layer-4": { "x": 485.08, "y": 44.93, "rotation": -72.98, "width": 795, "height": 1308 }
+		},
+		"try-animation_0004_Layer-5": {
+			"try-animation_0004_Layer-5": { "x": 283, "y": -694, "width": 5068, "height": 8443 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 4.91, "curve": "stepped" },
+					{ "time": 1.4333, "angle": 4.91 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.2666, "x": -35.08, "y": -7.11 },
+					{ "time": 0.4333, "x": -50.39, "y": -17.27 },
+					{ "time": 0.6, "x": -4.94, "y": -11.52 },
+					{ "time": 1.1, "x": -75.82, "y": -25.94 },
+					{ "time": 1.1666, "x": -17.52, "y": -34.17 },
+					{ "time": 1.5666, "x": -4.94, "y": -11.52 },
+					{ "time": 2.3666, "x": -75.82, "y": -25.94 },
+					{ "time": 2.4666, "x": -17.52, "y": -34.17 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.5, "x": 0.54, "y": 1 },
+					{ "time": 0.6, "x": 1.037, "y": 1 },
+					{ "time": 1.1, "x": 0.408, "y": 1 },
+					{ "time": 1.1666, "x": 0.911, "y": 1 },
+					{ "time": 1.4333, "x": 0.54, "y": 1 },
+					{ "time": 1.5666, "x": 1.037, "y": 1 },
+					{ "time": 2.3666, "x": 0.408, "y": 1 },
+					{ "time": 2.4666, "x": 0.911, "y": 1 }
+				]
+			},
+			"bone5": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.4333, "x": -2.76, "y": -70.53 },
+					{ "time": 0.6666, "x": 2.66, "y": 72 },
+					{ "time": 0.9333, "x": -2.56, "y": -65.44 },
+					{ "time": 1.6666, "x": 2.66, "y": 72 },
+					{ "time": 2.1, "x": -2.56, "y": -65.44 }
+				]
+			},
+			"bone4": {
+				"translate": [
+					{ "time": 0.6666, "x": 0.76, "y": 97.99 },
+					{ "time": 0.9333, "x": 0.52, "y": 68.15 },
+					{ "time": 1.6666, "x": 0.76, "y": 97.99 },
+					{ "time": 2.1, "x": 0.52, "y": 68.15 }
+				],
+				"scale": [
+					{ "time": 0.7666, "x": 0.112, "y": 1 },
+					{ "time": 0.8, "x": 1, "y": 1 },
+					{ "time": 1.8333, "x": 0.112, "y": 1 },
+					{ "time": 1.9, "x": 1, "y": 1 }
+				]
+			},
+			"bone6": {
+				"rotate": [
+					{ "time": 0.4333, "angle": 0 },
+					{ "time": 0.5333, "angle": 16.54 },
+					{ "time": 0.6666, "angle": 3.94 },
+					{ "time": 1.4666, "angle": 16.54 },
+					{ "time": 1.6666, "angle": 3.94 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "Vector Smart Object4", "offset": 8 }
+				]
+			}
+		]
+	}
+}
+}

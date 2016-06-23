@@ -34,6 +34,7 @@ gamer = require("util.gamer"):new()
 helper = require("util.helper"):new()
 app = require("util.app").new()
 filter = require("util.filter")
+shader = require("util.shader")
 
 analytic = require("util.analytic")
 

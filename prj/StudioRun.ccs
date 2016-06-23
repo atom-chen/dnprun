@@ -5,6 +5,29 @@
       <RootFolder Name=".">
         <Folder Name="Resource">
           <Folder Name="atlas">
+            <PlistImageFolder Image="Butterflyfish0.png" PListFile="Butterflyfish0.plist" Name=".Butterflyfish0_PList.Dir">
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_001.png" Key="Fish11/normal/actor_fish_shizi_normal_001.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_002.png" Key="Fish11/normal/actor_fish_shizi_normal_002.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_003.png" Key="Fish11/normal/actor_fish_shizi_normal_003.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_004.png" Key="Fish11/normal/actor_fish_shizi_normal_004.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_005.png" Key="Fish11/normal/actor_fish_shizi_normal_005.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_006.png" Key="Fish11/normal/actor_fish_shizi_normal_006.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_007.png" Key="Fish11/normal/actor_fish_shizi_normal_007.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_008.png" Key="Fish11/normal/actor_fish_shizi_normal_008.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_009.png" Key="Fish11/normal/actor_fish_shizi_normal_009.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_010.png" Key="Fish11/normal/actor_fish_shizi_normal_010.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_011.png" Key="Fish11/normal/actor_fish_shizi_normal_011.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_012.png" Key="Fish11/normal/actor_fish_shizi_normal_012.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_013.png" Key="Fish11/normal/actor_fish_shizi_normal_013.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_014.png" Key="Fish11/normal/actor_fish_shizi_normal_014.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_015.png" Key="Fish11/normal/actor_fish_shizi_normal_015.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_016.png" Key="Fish11/normal/actor_fish_shizi_normal_016.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_017.png" Key="Fish11/normal/actor_fish_shizi_normal_017.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_018.png" Key="Fish11/normal/actor_fish_shizi_normal_018.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_019.png" Key="Fish11/normal/actor_fish_shizi_normal_019.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_020.png" Key="Fish11/normal/actor_fish_shizi_normal_020.png" />
+              <PlistImageFile Name="Fish11_normal_actor_fish_shizi_normal_021.png" Key="Fish11/normal/actor_fish_shizi_normal_021.png" />
+            </PlistImageFolder>
             <PlistImageFolder Image="common.png" PListFile="common.plist" Name=".common_PList.Dir">
               <PlistImageFile Name="btn-165-86-1.png" Key="btn-165-86-1.png" />
               <PlistImageFile Name="btn-165-86-2.png" Key="btn-165-86-2.png" />
@@ -39,6 +62,39 @@
               <PlistImageFile Name="suit-btn-left.png" Key="suit-btn-left.png" />
               <PlistImageFile Name="suit-btn-right.png" Key="suit-btn-right.png" />
               <PlistImageFile Name="tv-window.png" Key="tv-window.png" />
+            </PlistImageFolder>
+            <PlistImageFolder Image="shape-border.png" PListFile="shape-border.plist" Name=".shape-border_PList.Dir">
+              <PlistImageFile Name="l-1.png" Key="l-1.png" />
+              <PlistImageFile Name="l-2.png" Key="l-2.png" />
+              <PlistImageFile Name="l-3.png" Key="l-3.png" />
+              <PlistImageFile Name="l-4.png" Key="l-4.png" />
+              <PlistImageFile Name="l-5.png" Key="l-5.png" />
+              <PlistImageFile Name="l-6.png" Key="l-6.png" />
+            </PlistImageFolder>
+            <PlistImageFolder Image="shape-entity.png" PListFile="shape-entity.plist" Name=".shape-entity_PList.Dir">
+              <PlistImageFile Name="s-1.png" Key="s-1.png" />
+              <PlistImageFile Name="s-2.png" Key="s-2.png" />
+              <PlistImageFile Name="s-3.png" Key="s-3.png" />
+              <PlistImageFile Name="s-4.png" Key="s-4.png" />
+              <PlistImageFile Name="s-5.png" Key="s-5.png" />
+              <PlistImageFile Name="s-6.png" Key="s-6.png" />
+            </PlistImageFolder>
+            <PlistImageFolder Image="ui-mian.png" PListFile="ui-mian.plist" Name=".ui-mian_PList.Dir">
+              <PlistImageFile Name="best-dialog.png" Key="best-dialog.png" />
+              <PlistImageFile Name="btn-main-conten.png" Key="btn-main-conten.png" />
+              <PlistImageFile Name="btn-main-rank.png" Key="btn-main-rank.png" />
+              <PlistImageFile Name="btn-main-setting.png" Key="btn-main-setting.png" />
+              <PlistImageFile Name="btn-main-share.png" Key="btn-main-share.png" />
+              <PlistImageFile Name="dark-bg.png" Key="dark-bg.png" />
+              <PlistImageFile Name="dark-building.png" Key="dark-building.png" />
+              <PlistImageFile Name="dark-star.png" Key="dark-star.png" />
+              <PlistImageFile Name="game-bottom.png" Key="game-bottom.png" />
+              <PlistImageFile Name="logo-title-1.png" Key="logo-title-1.png" />
+              <PlistImageFile Name="logo-title.png" Key="logo-title.png" />
+              <PlistImageFile Name="menu-grid.png" Key="menu-grid.png" />
+              <PlistImageFile Name="menu-grid1.png" Key="menu-grid1.png" />
+              <PlistImageFile Name="result-star.png" Key="result-star.png" />
+              <PlistImageFile Name="teach-hand.png" Key="teach-hand.png" />
             </PlistImageFolder>
             <Image Name="background.png" />
             <Image Name="bottom.png" />
@@ -93,6 +149,37 @@
             <TTF Name="FZY4K.ttf" />
             <TTF Name="HURTMOLD.TTF" />
           </Folder>
+          <Folder Name="fonts">
+            <Fnt Name="digitalstrip.fnt" />
+            <TTF Name="FZY4K.ttf" />
+          </Folder>
+          <Folder Name="sounds">
+            <Audio Name="1.mp3" />
+            <Audio Name="2.mp3" />
+            <Audio Name="3.mp3" />
+            <Audio Name="4.mp3" />
+            <Audio Name="5.mp3" />
+            <Audio Name="6.mp3" />
+            <Audio Name="7.mp3" />
+            <Audio Name="8.mp3" />
+            <Audio Name="best.mp3" />
+            <Audio Name="bgm.mp3" />
+            <Audio Name="click.mp3" />
+            <Audio Name="correct.mp3" />
+            <Audio Name="end.mp3" />
+            <Audio Name="hit1.mp3" />
+            <Audio Name="hit2.mp3" />
+            <Audio Name="hit3.mp3" />
+            <Audio Name="hit4.mp3" />
+            <Audio Name="hit5.mp3" />
+            <Audio Name="new.mp3" />
+            <Audio Name="over.mp3" />
+            <Audio Name="slip.mp3" />
+            <Audio Name="startup.mp3" />
+            <Audio Name="ticktack.mp3" />
+            <Audio Name="unlock.mp3" />
+            <Audio Name="wrong.mp3" />
+          </Folder>
           <Image Name="background.png" />
           <Image Name="bottom.png" />
           <TmxFile Name="challenge1_1.tmx" />
@@ -111,6 +198,10 @@
           <Folder Name="plane">
             <Project Name="layer_plane.csd" Type="Layer" />
             <Project Name="layer_plane_main.csd" Type="Layer" />
+          </Folder>
+          <Folder Name="sd">
+            <Project Name="color_adjust.csd" Type="Layer" />
+            <Project Name="shaderTest.csd" Type="Layer" />
           </Folder>
           <Project Name="layer_back.csd" Type="Layer" />
           <Project Name="layer_dialog.csd" Type="Layer" />

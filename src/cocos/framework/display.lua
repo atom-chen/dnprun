@@ -419,7 +419,7 @@ end
 -- @param number x
 -- @param number y
 -- @param table params
--- @return Sprite#Sprite ret (return value: cc.Sprite) 
+-- @return Sprite#Sprite ret (return value: cc.Sprite)
 -- @see Sprite
 
 
@@ -556,7 +556,7 @@ local function newAnimation(frames, time)
     assert(count > 0, "display.newAnimation() - invalid frames")
     time = time or 1.0 / count
     return cc.Animation:createWithSpriteFrames(frames, time),
-           cc.Sprite:createWithSpriteFrame(frames[1])
+        cc.Sprite:createWithSpriteFrame(frames[1])
 end
 
 function display.newAnimation(...)
@@ -706,7 +706,7 @@ end
 -- @param size size The tiled node size, use cc.size create it please.
 -- @param integer hPadding Horizontal padding, it will display 1 px gap on moving the node, set padding for fix it.
 -- @param integer vPadding Vertical padding.
--- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode) 
+-- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode)
 
 -- end --
 
@@ -789,6 +789,44 @@ function display.newFilteredSprite(filename, filters, params)
     return __sp
 end
 
+
+-- start --
+
+--------------------------------
+-- Create a Filtered Sprite
+-- @function [parent=#display] newFilteredSprite
+-- @param mixed filename As same a the first parameter for display.newSprite
+-- @param mixed filters One of the following:
+-- @param table params A or some parameters for Filter.
+-- @return ShaderSprite#ShaderSprite ret (return value: dnp.ShaderSprite)
+
+-- end --
+
+function display.newShaderSprite(filename, shaders,param)
+    if not shaders then return display.newSprite(filename) end
+    local __sp = nil
+    if shaders then
+        __sp =  shader.newShader(shaders, filename)
+        __sp:setShader()
+    end
+    if param then
+        if shaders == shader.laser then
+            if #param == 4 then
+                __sp:setLight(param[1],param[2],param[3],param[4])
+            else
+                assert( #param == 4, "d shader.laser - invalid paramerters number 4")
+            end
+        elseif shaders == shader.ripple then
+        end
+    end
+
+    return __sp
+end
+
+
+
+
+
 -- start --
 
 --------------------------------
@@ -809,7 +847,7 @@ end
 --------------------------------
 -- 创建并返回一个空的 DrawNode 对象
 -- @function [parent=#display] newDrawNode
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode) 
+-- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
 -- @see DrawNode
 
 -- end --
@@ -825,7 +863,7 @@ end
 -- @function [parent=#display] newSolidCircle
 -- @param number radius 实心圆的半径
 -- @param table params 创建圆的参数 x,y为圆点位置 color中圆的颜色
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode) 
+-- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
 -- @see DrawNode
 
 
@@ -857,7 +895,7 @@ end
 -- @function [parent=#display] newCircle
 -- @param number radius
 -- @param table params 有参数，x,y 圆的位置 填充色 fillColor, 边线色 borderColor 及边线宽度 borderWidth
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode) 
+-- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
 -- @see DrawNode
 
 
@@ -933,7 +971,7 @@ end
 -- @function [parent=#display] newRect
 -- @param table rect table
 -- @param table params 有参数，填充色 fillColor, 边线色 borderColor 及边线宽度 borderWidth
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode) 
+-- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
 -- @see ShapeNode
 
 
@@ -983,7 +1021,7 @@ end
 -- @function [parent=#display] newLine
 -- @param table point table
 -- @param table params 有参数，边线色 borderColor 及边线宽度 borderWidth
--- @return DrawNode#DrawNode ret (return value: cc.DrawNode) 
+-- @return DrawNode#DrawNode ret (return value: cc.DrawNode)
 -- @see ShapeNode
 
 
@@ -1309,7 +1347,7 @@ end
 -- @function [parent=#display] newBatchNode
 -- @param string image 图像文件名
 -- @param integer capacity
--- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode) 
+-- @return SpriteBatchNode#SpriteBatchNode ret (return value: cc.SpriteBatchNode)
 -- @see Batch Node
 
 --[[--
@@ -1392,10 +1430,10 @@ end
 ~~~ lua
 
 display.captureScreen(
-    function (bSuc, filePath)
-        --bSuc 截屏是否成功
-        --filePath 文件保存所在的绝对路径
-    end, "screen.png")
+function (bSuc, filePath)
+--bSuc 截屏是否成功
+--filePath 文件保存所在的绝对路径
+end, "screen.png")
 
 ~~~
 
