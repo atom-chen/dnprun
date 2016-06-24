@@ -807,7 +807,13 @@ function display.newShaderSprite(filename, shaders,param)
     local __sp = nil
     if shaders then
         __sp =  shader.newShader(shaders, filename)
-        __sp:setShader()
+        if shaders == shader.ghost then
+            if string.byte(filename) == 35 then -- first char is #
+                __sp:init(display.newSpriteFrame(filename))
+             else
+                __sp:init(display.newSprite(filename))
+            end
+        end
     end
     if param then
         if shaders == shader.laser then
@@ -817,9 +823,13 @@ function display.newShaderSprite(filename, shaders,param)
                 assert( #param == 4, "d shader.laser - invalid paramerters number 4")
             end
         elseif shaders == shader.ripple then
+        elseif shaders == shader.ghost then
+            __sp:init(display.newSprite(filename))
         end
     end
-
+    if __sp  then
+        __sp:setShader()
+    end
     return __sp
 end
 

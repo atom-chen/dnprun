@@ -96,4 +96,15 @@ int register_all_cocos2dx_dnp_shader(lua_State* tolua_S);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 #endif // __cocos2dx_dnp_shader_h__

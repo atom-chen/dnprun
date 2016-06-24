@@ -31,4 +31,9 @@
 -- @field [parent=#dnp] ShatterSprite#ShatterSprite ShatterSprite preloaded module
 
 
+--------------------------------------------------------
+-- the dnp GhostSprite
+-- @field [parent=#dnp] GhostSprite#GhostSprite GhostSprite preloaded module
+
+
 return nil

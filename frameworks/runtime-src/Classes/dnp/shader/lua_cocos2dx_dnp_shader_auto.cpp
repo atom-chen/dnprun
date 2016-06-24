@@ -5,6 +5,7 @@
 #include "RippleSprite.h"
 #include "LightningSprite.h"
 #include "ShatterSprite.h"
+#include "GhostSprite.h"
 #include "tolua_fix.h"
 #include "LuaBasicConversions.h"
 
@@ -3872,6 +3873,636 @@ int lua_register_cocos2dx_dnp_shader_ShatterSprite(lua_State* tolua_S)
     g_typeCast["ShatterSprite"] = "ShatterSprite";
     return 1;
 }
+
+int lua_cocos2dx_dnp_shader_GhostSprite_setShader(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_setShader'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_setShader'", nullptr);
+            return 0;
+        }
+        cobj->setShader();
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:setShader",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_setShader'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_getDownSample(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_getDownSample'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_getDownSample'", nullptr);
+            return 0;
+        }
+        double ret = cobj->getDownSample();
+        tolua_pushnumber(tolua_S,(lua_Number)ret);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:getDownSample",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_getDownSample'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_visit(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_visit'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 3) 
+    {
+        cocos2d::Renderer* arg0;
+        cocos2d::Mat4 arg1;
+        unsigned int arg2;
+
+        ok &= luaval_to_object<cocos2d::Renderer>(tolua_S, 2, "cc.Renderer",&arg0, "GhostSprite:visit");
+
+        ok &= luaval_to_mat4(tolua_S, 3, &arg1, "GhostSprite:visit");
+
+        ok &= luaval_to_uint32(tolua_S, 4,&arg2, "GhostSprite:visit");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_visit'", nullptr);
+            return 0;
+        }
+        cobj->visit(arg0, arg1, arg2);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:visit",argc, 3);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_visit'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_setDownSample(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_setDownSample'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 1) 
+    {
+        double arg0;
+
+        ok &= luaval_to_number(tolua_S, 2,&arg0, "GhostSprite:setDownSample");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_setDownSample'", nullptr);
+            return 0;
+        }
+        cobj->setDownSample(arg0);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:setDownSample",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_setDownSample'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_init(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+#if COCOS2D_DEBUG >= 1
+    if (!cobj)
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_init'", nullptr);
+        return 0;
+    }
+#endif
+    argc = lua_gettop(tolua_S)-1;
+    do{
+        if (argc == 1) {
+            cocos2d::SpriteFrame* arg0;
+            ok &= luaval_to_object<cocos2d::SpriteFrame>(tolua_S, 2, "cc.SpriteFrame",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 2) {
+            cocos2d::SpriteFrame* arg0;
+            ok &= luaval_to_object<cocos2d::SpriteFrame>(tolua_S, 2, "cc.SpriteFrame",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 3) {
+            cocos2d::SpriteFrame* arg0;
+            ok &= luaval_to_object<cocos2d::SpriteFrame>(tolua_S, 2, "cc.SpriteFrame",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg2;
+            ok &= luaval_to_number(tolua_S, 4,&arg2, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1, arg2);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 1) {
+            std::string arg0;
+            ok &= luaval_to_std_string(tolua_S, 2,&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 2) {
+            std::string arg0;
+            ok &= luaval_to_std_string(tolua_S, 2,&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 3) {
+            std::string arg0;
+            ok &= luaval_to_std_string(tolua_S, 2,&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg2;
+            ok &= luaval_to_number(tolua_S, 4,&arg2, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1, arg2);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 1) {
+            cocos2d::Sprite* arg0;
+            ok &= luaval_to_object<cocos2d::Sprite>(tolua_S, 2, "cc.Sprite",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 2) {
+            cocos2d::Sprite* arg0;
+            ok &= luaval_to_object<cocos2d::Sprite>(tolua_S, 2, "cc.Sprite",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    do{
+        if (argc == 3) {
+            cocos2d::Sprite* arg0;
+            ok &= luaval_to_object<cocos2d::Sprite>(tolua_S, 2, "cc.Sprite",&arg0, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg1;
+            ok &= luaval_to_number(tolua_S, 3,&arg1, "GhostSprite:init");
+
+            if (!ok) { break; }
+            double arg2;
+            ok &= luaval_to_number(tolua_S, 4,&arg2, "GhostSprite:init");
+
+            if (!ok) { break; }
+            bool ret = cobj->init(arg0, arg1, arg2);
+            tolua_pushboolean(tolua_S,(bool)ret);
+            return 1;
+        }
+    }while(0);
+    ok  = true;
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n",  "GhostSprite:init",argc, 1);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_init'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_getRefSprite(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_getRefSprite'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_getRefSprite'", nullptr);
+            return 0;
+        }
+        cocos2d::Sprite* ret = cobj->getRefSprite();
+        object_to_luaval<cocos2d::Sprite>(tolua_S, "cc.Sprite",(cocos2d::Sprite*)ret);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:getRefSprite",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_getRefSprite'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_onBiggerRTPassUnifoAndBindTex(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_onBiggerRTPassUnifoAndBindTex'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 2) 
+    {
+        cocos2d::Mat4 arg0;
+        unsigned int arg1;
+
+        ok &= luaval_to_mat4(tolua_S, 2, &arg0, "GhostSprite:onBiggerRTPassUnifoAndBindTex");
+
+        ok &= luaval_to_uint32(tolua_S, 3,&arg1, "GhostSprite:onBiggerRTPassUnifoAndBindTex");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_onBiggerRTPassUnifoAndBindTex'", nullptr);
+            return 0;
+        }
+        cobj->onBiggerRTPassUnifoAndBindTex(arg0, arg1);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:onBiggerRTPassUnifoAndBindTex",argc, 2);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_onBiggerRTPassUnifoAndBindTex'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_onFilterXRTPassUnifoAndBindTex(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (GhostSprite*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_dnp_shader_GhostSprite_onFilterXRTPassUnifoAndBindTex'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 2) 
+    {
+        cocos2d::Mat4 arg0;
+        unsigned int arg1;
+
+        ok &= luaval_to_mat4(tolua_S, 2, &arg0, "GhostSprite:onFilterXRTPassUnifoAndBindTex");
+
+        ok &= luaval_to_uint32(tolua_S, 3,&arg1, "GhostSprite:onFilterXRTPassUnifoAndBindTex");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_onFilterXRTPassUnifoAndBindTex'", nullptr);
+            return 0;
+        }
+        cobj->onFilterXRTPassUnifoAndBindTex(arg0, arg1);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:onFilterXRTPassUnifoAndBindTex",argc, 2);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_onFilterXRTPassUnifoAndBindTex'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_create(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"GhostSprite",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 1)
+    {
+        const char* arg0;
+        std::string arg0_tmp; ok &= luaval_to_std_string(tolua_S, 2, &arg0_tmp, "GhostSprite:create"); arg0 = arg0_tmp.c_str();
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_create'", nullptr);
+            return 0;
+        }
+        GhostSprite* ret = GhostSprite::create(arg0);
+        object_to_luaval<GhostSprite>(tolua_S, "GhostSprite",(GhostSprite*)ret);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "GhostSprite:create",argc, 1);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_create'.",&tolua_err);
+#endif
+    return 0;
+}
+int lua_cocos2dx_dnp_shader_GhostSprite_constructor(lua_State* tolua_S)
+{
+    int argc = 0;
+    GhostSprite* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_dnp_shader_GhostSprite_constructor'", nullptr);
+            return 0;
+        }
+        cobj = new GhostSprite();
+        cobj->autorelease();
+        int ID =  (int)cobj->_ID ;
+        int* luaID =  &cobj->_luaID ;
+        toluafix_pushusertype_ccobject(tolua_S, ID, luaID, (void*)cobj,"GhostSprite");
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "GhostSprite:GhostSprite",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_dnp_shader_GhostSprite_constructor'.",&tolua_err);
+#endif
+
+    return 0;
+}
+
+static int lua_cocos2dx_dnp_shader_GhostSprite_finalize(lua_State* tolua_S)
+{
+    printf("luabindings: finalizing LUA object (GhostSprite)");
+    return 0;
+}
+
+int lua_register_cocos2dx_dnp_shader_GhostSprite(lua_State* tolua_S)
+{
+    tolua_usertype(tolua_S,"GhostSprite");
+    tolua_cclass(tolua_S,"GhostSprite","GhostSprite","cc.Node",nullptr);
+
+    tolua_beginmodule(tolua_S,"GhostSprite");
+        tolua_function(tolua_S,"new",lua_cocos2dx_dnp_shader_GhostSprite_constructor);
+        tolua_function(tolua_S,"setShader",lua_cocos2dx_dnp_shader_GhostSprite_setShader);
+        tolua_function(tolua_S,"getDownSample",lua_cocos2dx_dnp_shader_GhostSprite_getDownSample);
+        tolua_function(tolua_S,"visit",lua_cocos2dx_dnp_shader_GhostSprite_visit);
+        tolua_function(tolua_S,"setDownSample",lua_cocos2dx_dnp_shader_GhostSprite_setDownSample);
+        tolua_function(tolua_S,"init",lua_cocos2dx_dnp_shader_GhostSprite_init);
+        tolua_function(tolua_S,"getRefSprite",lua_cocos2dx_dnp_shader_GhostSprite_getRefSprite);
+        tolua_function(tolua_S,"onBiggerRTPassUnifoAndBindTex",lua_cocos2dx_dnp_shader_GhostSprite_onBiggerRTPassUnifoAndBindTex);
+        tolua_function(tolua_S,"onFilterXRTPassUnifoAndBindTex",lua_cocos2dx_dnp_shader_GhostSprite_onFilterXRTPassUnifoAndBindTex);
+        tolua_function(tolua_S,"create", lua_cocos2dx_dnp_shader_GhostSprite_create);
+    tolua_endmodule(tolua_S);
+    std::string typeName = typeid(GhostSprite).name();
+    g_luaType[typeName] = "GhostSprite";
+    g_typeCast["GhostSprite"] = "GhostSprite";
+    return 1;
+}
 TOLUA_API int register_all_cocos2dx_dnp_shader(lua_State* tolua_S)
 {
 	tolua_open(tolua_S);
@@ -3880,6 +4511,7 @@ TOLUA_API int register_all_cocos2dx_dnp_shader(lua_State* tolua_S)
 	tolua_beginmodule(tolua_S,"dnp");
 
 	lua_register_cocos2dx_dnp_shader_ShatterSprite(tolua_S);
+	lua_register_cocos2dx_dnp_shader_GhostSprite(tolua_S);
 	lua_register_cocos2dx_dnp_shader_LightningSprite(tolua_S);
 	lua_register_cocos2dx_dnp_shader_LaserSprite(tolua_S);
 	lua_register_cocos2dx_dnp_shader_TailSprite(tolua_S);

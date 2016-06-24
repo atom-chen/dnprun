@@ -175,6 +175,83 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shatter::Cfrag::~Cfrag()"
+                  moduleName = "StudioRun-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikey/Documents/CocosProjects/StudioRun/frameworks/runtime-src/Classes/dnp/shader/ShatterSprite.h"
+                  timestampString = "488432054.060671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shatter::Cfrag::~Cfrag()"
+                  moduleName = "StudioRun-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikey/Documents/CocosProjects/StudioRun/frameworks/runtime-src/Classes/dnp/shader/ShatterSprite.h"
+                  timestampString = "488432054.062447"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to shatter::Cfrag::~Cfrag()"
+                  moduleName = "StudioRun-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikey/Documents/CocosProjects/StudioRun/frameworks/runtime-src/Classes/dnp/shader/ShatterSprite.h"
+                  timestampString = "488432054.062584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to shatter::Cfrag::~Cfrag()"
+                  moduleName = "StudioRun-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikey/Documents/CocosProjects/StudioRun/frameworks/runtime-src/Classes/dnp/shader/ShatterSprite.h"
+                  timestampString = "488432054.062683"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shatter::Cfrag::~Cfrag()"
+                  moduleName = "StudioRun-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikey/Documents/CocosProjects/StudioRun/frameworks/runtime-src/Classes/dnp/shader/ShatterSprite.h"
+                  timestampString = "488432054.062829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

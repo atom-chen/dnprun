@@ -3,15 +3,16 @@ local ShaderScene = class("ShaderScene", cc.load("mvc").ViewBase)
 
 ShaderScene.RESOURCE_FILENAME = "sd.shaderTest.lua"
 
-local ColorAdjust = import("app.views.sdtest.ColorAdjust.lua")
-local TailView = import("app.views.sdtest.TailView.lua")
-local LaserView = import("app.views.sdtest.LaserView.lua")
-local RippleView = import("app.views.sdtest.RippleView.lua")
-local LightningView = import("app.views.sdtest.LightningView.lua")
-local ShatterView = import("app.views.sdtest.ShatterView.lua")
+local ColorAdjust = import("app.views.sdtest.ColorAdjust")
+local TailView = import("app.views.sdtest.TailView")
+local LaserView = import("app.views.sdtest.LaserView")
+local RippleView = import("app.views.sdtest.RippleView")
+local LightningView = import("app.views.sdtest.LightningView")
+local ShatterView = import("app.views.sdtest.ShatterView")
+local GhostView = import("app.views.sdtest.GhostView")
 
 function ShaderScene:onCreate()
-    self.testLayer = {ColorAdjust,TailView,LaserView,RippleView,LightningView,ShatterView}
+    self.testLayer = {ColorAdjust,TailView,LaserView,RippleView,LightningView,ShatterView,GhostView}
     self.curLayer = 1
 
     --    ColorAdjust:create(self:getApp(),"level")

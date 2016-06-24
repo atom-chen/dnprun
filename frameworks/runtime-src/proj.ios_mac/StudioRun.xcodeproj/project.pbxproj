@@ -255,6 +255,8 @@
 		A630436F1D1691250098E1F5 /* CCNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63042371D1689B10098E1F5 /* CCNetwork.cpp */; };
 		A63043741D1699480098E1F5 /* CCNetworkIOSMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = A63042571D1689B20098E1F5 /* CCNetworkIOSMac.mm */; };
 		A63043751D169A250098E1F5 /* ReachabilityIOSMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A63042591D1689B20098E1F5 /* ReachabilityIOSMac.m */; };
+		A63E03911D1BE74400051712 /* GhostSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63E038F1D1BE74400051712 /* GhostSprite.cpp */; };
+		A63E03921D1BE8DD00051712 /* GhostSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A63E038F1D1BE74400051712 /* GhostSprite.cpp */; };
 		A65EEE391D05B70900D69833 /* VungleAdManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A65EEE351D05B70900D69833 /* VungleAdManager.mm */; };
 		A65EEE3B1D05B70900D69833 /* VungleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65EEE381D05B70900D69833 /* VungleViewController.m */; };
 		A65EEE3F1D05CAB800D69833 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD891D05785D00AB90D0 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -695,6 +697,8 @@
 		A630428C1D1689B20098E1F5 /* lua_extensions_more.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_extensions_more.h; sourceTree = "<group>"; };
 		A630428E1D1689B20098E1F5 /* lua_zlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_zlib.c; sourceTree = "<group>"; };
 		A630428F1D1689B20098E1F5 /* lua_zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_zlib.h; sourceTree = "<group>"; };
+		A63E038F1D1BE74400051712 /* GhostSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GhostSprite.cpp; sourceTree = "<group>"; };
+		A63E03901D1BE74400051712 /* GhostSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GhostSprite.h; sourceTree = "<group>"; };
 		A65EEE341D05B70900D69833 /* VungleAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdManager.h; sourceTree = "<group>"; };
 		A65EEE351D05B70900D69833 /* VungleAdManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VungleAdManager.mm; sourceTree = "<group>"; };
 		A65EEE371D05B70900D69833 /* VungleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleViewController.h; sourceTree = "<group>"; };
@@ -1594,6 +1598,8 @@
 		A6FDFFA81D18F1760041525E /* shader */ = {
 			isa = PBXGroup;
 			children = (
+				A63E038F1D1BE74400051712 /* GhostSprite.cpp */,
+				A63E03901D1BE74400051712 /* GhostSprite.h */,
 				A68700ED1D1A9B0400D8A147 /* ShatterSprite.cpp */,
 				A68700EE1D1A9B0400D8A147 /* ShatterSprite.h */,
 				A68700E91D1A769E00D8A147 /* LightningSprite.cpp */,
@@ -2043,6 +2049,7 @@
 				A6FDFFFF1D19527B0041525E /* ensSimpleClasses.cpp in Sources */,
 				A63042AC1D1689B20098E1F5 /* CCFilter.cpp in Sources */,
 				5023813317EBBCE400990C9B /* AppDelegate.cpp in Sources */,
+				A63E03921D1BE8DD00051712 /* GhostSprite.cpp in Sources */,
 				A63043441D1689B20098E1F5 /* OpenUDIDMac.m in Sources */,
 				A63042AE1D1689B20098E1F5 /* CCGammaFilter.cpp in Sources */,
 				A63042A21D1689B20098E1F5 /* CCBrightnessFilter.cpp in Sources */,
@@ -2195,6 +2202,7 @@
 				A63043331D1689B20098E1F5 /* SBJsonParser.m in Sources */,
 				A630418C1D1689540098E1F5 /* AnalyticXStringUtil.mm in Sources */,
 				A63042AF1D1689B20098E1F5 /* CCGrayFilter.cpp in Sources */,
+				A63E03911D1BE74400051712 /* GhostSprite.cpp in Sources */,
 				A63042FD1D1689B20098E1F5 /* cocos2dx_extra_ios_iap_luabinding.cpp in Sources */,
 				A6FDFFFD1D19514C0041525E /* ensMath.cpp in Sources */,
 				A630429F1D1689B20098E1F5 /* CCBlurFilter.cpp in Sources */,
