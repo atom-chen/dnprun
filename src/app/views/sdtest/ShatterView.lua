@@ -6,7 +6,7 @@ local ShatterView = class("ShatterView", cc.load("mvc").ViewBase)
 
 
 function ShatterView:onCreate()
-    self.sp =   display.newShaderSprite("demoRes/fish.png", shader.shatter)
+    self.sp =   display.newShaderSprite("Resource/background.png", shader.shatter)
     self:add(self.sp)
     self.sp:setPosition(display.center)
     self:enTouch()
@@ -25,7 +25,7 @@ function ShatterView:touch(event)
 
     if event.name == "began" then
        self.sp:setOpacity(0)
-       self.sp:stopAllActions()
+--       self.sp:stopAllActions()
       self.sp:startShatter(4)
       
         local function call(parameters)
@@ -33,7 +33,7 @@ function ShatterView:touch(event)
             self.sp:setOpacity(255)
       end
       
-      ac.ccDellayToCall(self,4,call)
+      ac.ccDellayToCall(self,5,call)
         
 --        self.sp:runAction(ac.ccEasing(cc.MoveBy:create(0.2,cc.p(500,1000)),12))
         return true

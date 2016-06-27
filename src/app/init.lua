@@ -23,5 +23,5 @@ THE SOFTWARE.
 ]]
 
 --
-require("app.data.GameConst")
+--require("app.data.GameConst")
 

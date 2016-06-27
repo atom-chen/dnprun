@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  MaryX
+
+  Created by Tim Mars on 6/9/15.
+
+*/
+
+CFBundleDisplayName = "公主与女王";
+CFBundleName = "公主与女王";

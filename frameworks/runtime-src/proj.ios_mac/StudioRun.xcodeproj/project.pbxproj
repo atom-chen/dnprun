@@ -290,6 +290,7 @@
 		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
 		A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0AA1D047DFB00782F81 /* WXManager.mm */; };
 		A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0B21D047E8000782F81 /* libc++.tbd */; };
+		A68FA5F11D1D850C009088A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A68FA5EF1D1D850C009088A9 /* InfoPlist.strings */; };
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
@@ -752,6 +753,10 @@
 		A68BB0AA1D047DFB00782F81 /* WXManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXManager.mm; sourceTree = "<group>"; };
 		A68BB0AE1D047E3B00782F81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
 		A68BB0B21D047E8000782F81 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		A68FA5F01D1D850C009088A9 /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		A68FA5F21D1D8514009088A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		A68FA5F31D1D851C009088A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		A68FA5F41D1D8525009088A9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		A6BB805E1D0004360053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ios/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB80601D0004730053D6E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mac/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A6BB80701D00183D0053D6E3 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Const.h; path = ../Classes/Const.h; sourceTree = "<group>"; };
@@ -896,6 +901,7 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				A68FA5EF1D1D850C009088A9 /* InfoPlist.strings */,
 				A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */,
 				A669AD911D057DFC00AB90D0 /* gamer */,
 				A669AD8D1D057BE800AB90D0 /* Icon.png */,
@@ -1812,6 +1818,8 @@
 				en,
 				Base,
 				"zh-Hans",
+				"en-US",
+				"zh-Hant",
 			);
 			mainGroup = F293B3BD15EB7BE500256477;
 			productRefGroup = F293B3C915EB7BE500256477 /* Products */;
@@ -1952,6 +1960,7 @@
 				A63042CD1D1689B20098E1F5 /* example_ColorBars.vsh in Resources */,
 				A669AD751D05325200AB90D0 /* UnityAds.bundle in Resources */,
 				A63042EF1D1689B20098E1F5 /* example_Twist.fsh in Resources */,
+				A68FA5F11D1D850C009088A9 /* InfoPlist.strings in Resources */,
 				A63042FB1D1689B20098E1F5 /* build.sh in Resources */,
 				A63042C51D1689B20098E1F5 /* example_bloom.fsh in Resources */,
 				A6BD650C1D13C940004B202E /* vg_mute_on.png in Resources */,
@@ -2258,6 +2267,17 @@
 				9FFC07371A4A765100AED399 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A68FA5EF1D1D850C009088A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68FA5F01D1D850C009088A9 /* en-US */,
+				A68FA5F21D1D8514009088A9 /* en */,
+				A68FA5F31D1D851C009088A9 /* zh-Hans */,
+				A68FA5F41D1D8525009088A9 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
