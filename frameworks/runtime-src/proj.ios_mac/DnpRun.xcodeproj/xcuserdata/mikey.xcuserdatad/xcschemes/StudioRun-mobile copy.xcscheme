@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A6B8639A1D16D2C1001651C2"
                BuildableName = "StudioRun-mobile copy.app"
                BlueprintName = "StudioRun-mobile copy"
-               ReferencedContainer = "container:OverLap.xcodeproj">
+               ReferencedContainer = "container:DnpRun.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "A6B8639A1D16D2C1001651C2"
             BuildableName = "StudioRun-mobile copy.app"
             BlueprintName = "StudioRun-mobile copy"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "A6B8639A1D16D2C1001651C2"
             BuildableName = "StudioRun-mobile copy.app"
             BlueprintName = "StudioRun-mobile copy"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "A6B8639A1D16D2C1001651C2"
             BuildableName = "StudioRun-mobile copy.app"
             BlueprintName = "StudioRun-mobile copy"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

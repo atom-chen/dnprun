@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F293B3C715EB7BE500256477"
-               BuildableName = "OverLap-mobile.app"
-               BlueprintName = "OverLap-mobile"
-               ReferencedContainer = "container:OverLap.xcodeproj">
+               BlueprintIdentifier = "5023812617EBBCE400990C9B"
+               BuildableName = "DnpRun-mobile.app"
+               BlueprintName = "DnpRun-desktop"
+               ReferencedContainer = "container:DnpRun.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F293B3C715EB7BE500256477"
-            BuildableName = "OverLap-mobile.app"
-            BlueprintName = "OverLap-mobile"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            BlueprintIdentifier = "5023812617EBBCE400990C9B"
+            BuildableName = "DnpRun-mobile.app"
+            BlueprintName = "DnpRun-desktop"
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F293B3C715EB7BE500256477"
-            BuildableName = "OverLap-mobile.app"
-            BlueprintName = "OverLap-mobile"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            BlueprintIdentifier = "5023812617EBBCE400990C9B"
+            BuildableName = "DnpRun-mobile.app"
+            BlueprintName = "DnpRun-desktop"
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F293B3C715EB7BE500256477"
-            BuildableName = "OverLap-mobile.app"
-            BlueprintName = "OverLap-mobile"
-            ReferencedContainer = "container:OverLap.xcodeproj">
+            BlueprintIdentifier = "5023812617EBBCE400990C9B"
+            BuildableName = "DnpRun-mobile.app"
+            BlueprintName = "DnpRun-desktop"
+            ReferencedContainer = "container:DnpRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
