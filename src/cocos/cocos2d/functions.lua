@@ -642,6 +642,40 @@ function string.utf8len(input)
     return cnt
 end
 
+
+function string.utf8str(str, start, num)
+    local function utf8CharSize(char)
+        if not char then
+            return 0
+        elseif char > 240 then
+            return 4
+        elseif char > 225 then
+            return 3
+        elseif char > 192 then
+            return 2
+        else
+            return 1
+        end
+    end
+    local startIdx = 1
+    while start > 1 do
+        local char = string.byte(str, startIdx)
+        startIdx = startIdx + utf8CharSize(char)
+        start = start - 1
+    end
+    local endIdx = startIdx
+    while num > 0 do
+        if endIdx > #str then
+            endIdx = #str
+            break
+        end
+        local char = string.byte(str, endIdx)
+        endIdx = endIdx + utf8CharSize(char)
+        num = num - 1
+    end
+    return str:sub(startIdx, endIdx - 1)
+end
+
 function string.formatnumberthousands(num)
     local formatted = tostring(checknumber(num))
     local k

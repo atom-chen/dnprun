@@ -35,10 +35,8 @@ public:
 	friend class shatter::CshatterAction;
 public:
 	ShatterSprite(){
-		m_gridSideLen=27;
+		m_gridSideLen=2.7;
         m_initalFrageScale=4.5;
-//        m_gridSideLen=2.7;
-//        m_initalFrageScale=4.5;
         m_fragBatchNode=NULL;
 	}
 	virtual~ShatterSprite(){}

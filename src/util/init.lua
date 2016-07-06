@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 ]]
 
-json = require("json")
+--json = require("json")
 --require("util.Set")
 tagen = require("util.tagen").new()
 
@@ -35,6 +35,9 @@ helper = require("util.helper"):new()
 app = require("util.app").new()
 filter = require("util.filter")
 shader = require("util.shader")
+
+locale = require("util.locale")
+_ = assert(require("util.locale").loadDefault())
 
 analytic = require("util.analytic")
 

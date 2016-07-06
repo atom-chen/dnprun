@@ -329,5 +329,10 @@ function ac.ccFadeTo(time , opacity)
     return cc.FadeTo:create(time, opacity)
 end
 
+function ac.ccForever(action)
+    return cc.RepeatForever:create(action)
+end
+
+
 
 return ac

@@ -68,11 +68,10 @@ end
 function AppViews:addViewByName(luaName, name ,parent)
     local view = require(luaName):create(self.app,name)
     local tag = self.orderz + 1
-    self.views[name] = {tag = tag, obj = view}
+    if name then
+        self.views[name] = {tag = tag, obj = view}
+    end
     if not parent  then
-        if name then
-            self.views[name] = {tag = tag, obj = view}
-        end
         parent = self.scene
     end
     parent:addChild(view,self:orderZ(),tag)

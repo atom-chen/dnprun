@@ -22,7 +22,6 @@ function timer:start(timerName,callback, interval, runCount, data)
         if runCount ~= nil then
             runCount = runCount - 1;
             if runCount <= 0 then -- 达到指定运行次数,杀掉
-                print(timerName)
                 self:kill(timerName)
             end
         end

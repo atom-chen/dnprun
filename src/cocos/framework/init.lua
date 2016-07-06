@@ -49,6 +49,9 @@ require("cocos.framework.extends.UIPageView")
 require("cocos.framework.extends.UIScrollView")
 require("cocos.framework.extends.UISlider")
 require("cocos.framework.extends.UITextField")
+require("cocos.framework.extends.UISlider")
+require("cocos.framework.extends.UITableViewCell")
+ccui.TebleView =  require("cocos.framework.extends.UITableView")
 end
 
 require("cocos.framework.package_support")

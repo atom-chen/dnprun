@@ -13,7 +13,7 @@ DNP_APP = {
 }
 
 DNP_GAME = {
-    default_scene = "ShaderScene"
+--    default_scene = "ShaderScene"
 }
 
 --######## 广告区域 #######--
@@ -57,6 +57,9 @@ DNP_EVENT = {
         android = "TB4STFPW85STXPH2Y8YB"
     }
 }
+DNP_DEBUG = {
+    count = 0
+}
 
 
 --######## 调试区域 #######--
@@ -73,8 +76,8 @@ CC_DISABLE_GLOBAL = false
 
 -- for module display
 CC_DESIGN_RESOLUTION = {
-    width = 1080,
-    height = 1920,
+    width = 750,
+    height = 1334,
     autoscale = "FIXED_HEIGHT",
     callback = function(framesize)
         local ratio = framesize.width / framesize.height

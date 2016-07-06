@@ -7,7 +7,7 @@ local ViewBase = class("ViewBase", cc.Node)
 function ViewBase:ctor(app, name)
     self:enableNodeEvents()
     self.resourceExtend_ = nil
-    
+
     self.app_      = app
     self.name_     = name
     self.visible   = true
@@ -66,7 +66,7 @@ end
 --@param self
 --@param string#string tableName 数据表命名
 function ViewBase:getChild(name)
---    return self:get():getChildByName(name)
+    --    return self:get():getChildByName(name)
     return self.children[name]
 end
 
@@ -171,19 +171,15 @@ end
 
 
 function ViewBase:onEnter()
-    print("onEnter_")
     if self.enterAni then
         self:runAnimation(self.enterAni)
     end
 end
 
 function ViewBase:onExit_()
-    print("onExit_")
 end
 
 function ViewBase:onCleanup_()
-    print("onCleanup_")
-
     if next(self.events) ~=nil then
         for eventName,evt in pairs(self.events) do
             event.removeEventListenersByEvent(eventName)
@@ -390,6 +386,52 @@ function ViewBase:hide()
 end
 
 
+function ViewBase:updateCell()
+end
+
+function ViewBase:clearCell(event)
+end
+
+function ViewBase:setCellHighlight(event)
+end
+
+function ViewBase:setCellUnHighlight(event)
+end
+
+function ViewBase:onCellTouched(event)
+end
+
+
+
+-----------------------------
+--国际化语言
+--
+function ViewBase:localLanguage()
+    local res = rawget(self.class, "LOCALE_LANG_LABEL")
+    if res then
+        local curLang =  locale.defaultLang()
+        print(curLang)
+        local lblType = 1
+        if   curLang == device.LANGUAGE.CN or curLang == device.LANGUAGE.JP or curLang == device.LANGUAGE.KR then
+            lblType = 1
+        else
+            lblType = 2
+        end
+        for name, langs in pairs(res) do
+            for t=1, 2 do
+                local lblName = "LO_"..name.."_"..t
+                if lblType == t then
+                    self[lblName]:setVisible(true)
+                    self[name] = self[lblName]
+                    self[name]:setString(langs)
+                else
+                    self[lblName]:setVisible(false)
+                end
+            end
+
+        end
+    end
+end
 
 
 -----------------------------

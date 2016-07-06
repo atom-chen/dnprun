@@ -312,4 +312,17 @@ function helper.openUrl(url)
     cc.Application:getInstance():openURL(url)
 end
 
+
+function helper.typewriterLabel(label,text,dt)
+
+    local totalLen = string.utf8len(text)
+    local i = 0    
+    local function showFont()
+        i = i+1
+        local str = string.utf8str(text, 1, i)
+        label:setString(str)
+    end
+    timer:start("DEFALUT_TIMER"..tagen:get(),showFont,dt,totalLen)
+end
+
 return helper

@@ -36,6 +36,20 @@ device.PLATFORM.WINRT = "winrt"
 device.PLATFORM.WP8 = "wp8"
 device.PLATFORM.UNKNOWN = "unknown"
 
+device.LANGUAGE = {}
+device.LANGUAGE.CN = "cn"
+device.LANGUAGE.FR = "fr"
+device.LANGUAGE.IT = "it"
+device.LANGUAGE.GR = "gr"
+device.LANGUAGE.SP = "sp"
+device.LANGUAGE.RU = "ru"
+device.LANGUAGE.KR = "kr"
+device.LANGUAGE.JP = "jp"
+device.LANGUAGE.HU = "hu"
+device.LANGUAGE.PT = "pt"
+device.LANGUAGE.AR = "ar"
+device.LANGUAGE.EN = "en"
+
 local app = cc.Application:getInstance()
 local target = app:getTargetPlatform()
 if target == cc.PLATFORM_OS_WINDOWS then
