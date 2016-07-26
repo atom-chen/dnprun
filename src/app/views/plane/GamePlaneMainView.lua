@@ -16,13 +16,13 @@ function GamePlaneMainView:bingRescource()
 end
 
 function GamePlaneMainView:onCreate()
-    self:runAnimation("play",true)
+--    self:runAnimation("play",true)
     
-    helper.saveSloterData("testandroind","android123")
-    
-    local text =  self:getChild("text")
-    local t = helper.getSloterData("testandroind")
-    text:setString(t)
+--    helper.saveSloterData("testandroind","android123")
+--    
+--    local text =  self:getChild("text")
+--    local t = helper.getSloterData("testandroind")
+--    text:setString(t)
 end
 
 
@@ -31,11 +31,11 @@ function GamePlaneMainView:onClick( path,node,funcName)
         local function btnCallback(  node,eventType  )
             --            self:setVisible(false)
             --            cc.Application:getInstance():openURL("http://www.baidu.com")
-            local function callback(re)
-                print(re)
-            end
-
-            gamer:playVungleAd(callback)
+--            local function callback(re)
+--                print(re)
+--            end
+--
+--            gamer:playVungleAd(callback)
 --            gamer:wxShareWeb(1,"http://www.baidu.con","111","2222")
         end
         return btnCallback

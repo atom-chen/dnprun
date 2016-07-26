@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
             endingLineNumber = "114"
-            landmarkName = "AppDelegate::applicationDidFinishLaunching()"
+            landmarkName = "AppDelegate::applicationDidEnterBackground()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

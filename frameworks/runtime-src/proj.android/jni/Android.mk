@@ -41,11 +41,11 @@ LOCAL_SRC_FILES := \
 ../../Classes/quick-src/lua_extensions/zlib/lua_zlib.c \
 ../../Classes/quick-src/lua_extensions/filesystem/lfs.c \
 ../../Classes/quick-src/lua_extensions/lpack/lpack.c \
-../../Classes/quick-src/cjson/fpconv.c \
-../../Classes/quick-src/cjson/lua_cjson.c \
-../../Classes/quick-src/cjson/strbuf.c \
-../../Classes/quick-src/lsqlite3/sqlite3.c \
-../../Classes/quick-src/lsqlite3/lsqlite3.c \
+../../Classes/quick-src/lua_extensions/cjson/fpconv.c \
+../../Classes/quick-src/lua_extensions/cjson/lua_cjson.c \
+../../Classes/quick-src/lua_extensions/cjson/strbuf.c \
+../../Classes/quick-src/lua_extensions/lsqlite3/sqlite3.c \
+../../Classes/quick-src/lua_extensions/lsqlite3/lsqlite3.c \
 ../../Classes/dnp/DNPParticleSystemFrameQuad.cpp \
 ../../Classes/dnp/DNPDeviceUtils.cpp \
 ../../Classes/dnp/flurry/DNPAnalyticX.cpp \
@@ -72,6 +72,8 @@ hellolua/main.cpp
 
 LOCAL_C_INCLUDES := \
 $(LOCAL_PATH)/../../../cocos2d-x/extensions \
+$(LOCAL_PATH)/../../Classes/dnp \
+$(LOCAL_PATH)/../../Classes/dnp/flurry \
 $(LOCAL_PATH)/../../Classes/quick-src/lua_extensions \
 $(LOCAL_PATH)/../../Classes/quick-src/extra/crypto \
 $(LOCAL_PATH)/../../Classes/quick-src/extra/filters \
