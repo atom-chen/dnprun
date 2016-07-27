@@ -7,6 +7,7 @@ LOCAL_MODULE := cocos2dlua_shared
 LOCAL_MODULE_FILENAME := libcocos2dlua
 
 LOCAL_SRC_FILES := \
+../../Classes/quick-src/extra/crypto/md5/md5.c \
 ../../Classes/quick-src/extra/luabinding/cocos2dx_extra_luabinding.cpp \
 ../../Classes/quick-src/extra/luabinding/HelperFunc_luabinding.cpp \
 ../../Classes/quick-src/extra/apptools/HelperFunc.cpp \

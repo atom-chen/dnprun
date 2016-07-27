@@ -6,10 +6,9 @@
 
 //################# QHZF ###################
 #include "lua_cocos2dx_dnp_auto.hpp"
-
-//#include "extra/luabinding/cocos2dx_extra_luabinding.h"
-//#include "extra/luabinding/lua_cocos2dx_extension_filter_auto.hpp"
-//#include "HelperFunc_luabinding.h"
+#include "extra/luabinding/cocos2dx_extra_luabinding.h"
+#include "extra/luabinding/lua_cocos2dx_extension_filter_auto.hpp"
+#include "extra/luabinding/HelperFunc_luabinding.h"
 //################# QHZF ###################
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -83,10 +82,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     lua_getglobal(L, "_G");
     if (lua_istable(L, -1))//stack:...,_G,
     {
-//        luaopen_cocos2dx_extra_luabinding(L);
-//        register_all_cocos2dx_extension_filter(L);
+        luaopen_cocos2dx_extra_luabinding(L);
+        register_all_cocos2dx_extension_filter(L);
 //        register_all_cocos2dx_dnp_shader(L);
-//        luaopen_HelperFunc_luabinding(L);
+        luaopen_HelperFunc_luabinding(L);
     }
     lua_pop(L, 1);
 
@@ -100,10 +99,23 @@ bool AppDelegate::applicationDidFinishLaunching()
     runtimeEngine->addRuntime(RuntimeLuaImpl::create(), kRuntimeEngineLua);
     runtimeEngine->start();
 #else
-    if (engine->executeScriptFile("src/main.lua"))
-    {
-        return false;
+//    if (engine->executeScriptFile("src/main.lua"))
+//    {
+//        return false;
+//    }
+    
+    
+#ifdef CC_TARGET_OS_IPHONE
+    if (sizeof(long) == 4) {
+        stack->loadChunksFromZIP("res/game.zip");
+    } else {
+        stack->loadChunksFromZIP("res/game64.zip");
     }
+#else // #ifdef CC_TARGET_OS_IPHONE
+    stack->loadChunksFromZIP("res/game.zip");
+#endif
+    stack->executeString("require 'main'");
+    
 #endif
 
     return true;
