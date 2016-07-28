@@ -290,7 +290,6 @@
 		A68BB0AC1D047DFB00782F81 /* WXShare.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0A81D047DFB00782F81 /* WXShare.mm */; };
 		A68BB0AD1D047DFB00782F81 /* WXManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A68BB0AA1D047DFB00782F81 /* WXManager.mm */; };
 		A68BB0B31D047E8000782F81 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A68BB0B21D047E8000782F81 /* libc++.tbd */; };
-		A6A5FE731D253A78004BFFC1 /* src in Resources */ = {isa = PBXBuildFile; fileRef = C03781B818BF655400FE4F13 /* src */; };
 		A6BB805F1D0004360053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB805E1D0004360053D6E3 /* Images.xcassets */; };
 		A6BB80681D0015840053D6E3 /* res in Resources */ = {isa = PBXBuildFile; fileRef = C03781B718BF655400FE4F13 /* res */; };
 		A6BB80691D0015B70053D6E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BB80601D0004730053D6E3 /* Images.xcassets */; };
@@ -1971,7 +1970,6 @@
 				A63042931D1689B20098E1F5 /* Android.mk in Resources */,
 				A63041841D1689540098E1F5 /* lua_cocos2dx_dnp_auto_api.lua in Resources */,
 				A6BD65081D13C940004B202E /* __vungle.db in Resources */,
-				A6A5FE731D253A78004BFFC1 /* src in Resources */,
 				A63042D71D1689B20098E1F5 /* example_HorizontalColor.fsh in Resources */,
 				A630435D1D1689B20098E1F5 /* ldt_debugger.lua in Resources */,
 				A63042E51D1689B20098E1F5 /* example_Noisy.fsh in Resources */,
