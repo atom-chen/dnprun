@@ -8,6 +8,12 @@ end
 function gamer:init()
     if device.platform == device.PLATFORM.ANDROID then
     elseif device.platform == device.PLATFORM.IOS then
+        print("gamer.init")
+        local function call()
+            print("store init")
+        end
+        store.init(call)
+
         luaoc.callStaticMethod("WXShare","regist",{id = DNP_SHARE.wxAppId})
         luaoc.callStaticMethod("GameCenter","init",DNP_GAME.ios)
         if DNP_AD.target.gdt then
@@ -138,7 +144,7 @@ function gamer:submitScore(score,leaderboardId,callback)
     --    dnp.DNPGameCenter:SubmitScore(score,leaderboardId)
     if type(score) == "number" and type(leaderboardId) == "number" then
         if device.platform == device.PLATFORM.ANDROID then
-        
+
         elseif device.platform == device.PLATFORM.IOS then
             luaoc.callStaticMethod("GameCenter","submitScoreToLeaderboard",{lId=leaderboardId,score=score,callback=callback})
         end
@@ -199,6 +205,26 @@ function gamer:showAchievementsUI()
     --    dnp.DNPGameCenter:ShowAchievementsUI()
 end
 
+function gamer:inserICloud(rid,rname,rkeys,rvalues)
+    if device.platform == device.PLATFORM.ANDROID then
+    elseif device.platform == device.PLATFORM.IOS then
+        luaoc.callStaticMethod("ICloudManager","insertRecord",{id = rid,name = rname,keys = rkeys,values = rvalues})
+    end
+end
 
+function gamer:selectICloud(rid,rname,rkeys,callback)
+    if device.platform == device.PLATFORM.ANDROID then
+    elseif device.platform == device.PLATFORM.IOS then
+        luaoc.callStaticMethod("ICloudManager","selectRecord",{id = rid,name = rname,keys = rkeys,callback = callback})
+    end
+end
+
+
+function gamer:updateICloud(rid,rname,rkeys,rvalues)
+    if device.platform == device.PLATFORM.ANDROID then
+    elseif device.platform == device.PLATFORM.IOS then
+        luaoc.callStaticMethod("ICloudManager","updateRecord",{id = rid,name = rname,keys = rkeys,values = rvalues})
+    end
+end
 
 return gamer

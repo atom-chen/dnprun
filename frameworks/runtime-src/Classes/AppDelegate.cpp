@@ -72,7 +72,6 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_all_packages();
 
     LuaStack* stack = engine->getLuaStack();
-//    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
     stack->setXXTEAKeyAndSign("d@n0po", strlen("d@n0po"), "donopo", strlen("donopo"));
     
     lua_getglobal(L, "_G");
@@ -88,10 +87,6 @@ bool AppDelegate::applicationDidFinishLaunching()
         luaopen_HelperFunc_luabinding(L);
     }
     lua_pop(L, 1);
-
-    //register custom function
-    //LuaStack* stack = engine->getLuaStack();
-    //register_custom_function(stack->getLuaState());
 
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE

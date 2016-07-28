@@ -277,6 +277,7 @@
 		A669AD8E1D057BE800AB90D0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A669AD8D1D057BE800AB90D0 /* Icon.png */; };
 		A669AD941D057DFC00AB90D0 /* GameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A669AD931D057DFC00AB90D0 /* GameCenter.mm */; };
 		A669AD961D057F0400AB90D0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669AD951D057F0400AB90D0 /* GameKit.framework */; };
+		A67D10021D49C39D00BEBC4E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67D10011D49C39D00BEBC4E /* CloudKit.framework */; };
 		A68700E21D1A3DF500D8A147 /* LaserSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */; };
 		A68700E31D1A3DF500D8A147 /* LaserSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */; };
 		A68700E71D1A6F7A00D8A147 /* RippleSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */; };
@@ -300,6 +301,7 @@
 		A6BD650C1D13C940004B202E /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD65051D13C940004B202E /* vg_mute_on.png */; };
 		A6BD650D1D13C940004B202E /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BD65061D13C940004B202E /* vg_privacy.png */; };
 		A6BD650E1D13C940004B202E /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD65071D13C940004B202E /* VungleSDK.framework */; };
+		A6C196F81D3E05F700BBECEF /* ICloudManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6C196F71D3E05F700BBECEF /* ICloudManager.mm */; };
 		A6C5287D1D16A44200C2BE75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5287C1D16A44200C2BE75 /* SystemConfiguration.framework */; };
 		A6D398BF1CF99316000870D2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398BE1CF99316000870D2 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A6D398C11CF99321000870D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D398C01CF99321000870D2 /* CoreLocation.framework */; };
@@ -444,7 +446,7 @@
 		5023811517EBBCAC00990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5023811617EBBCAC00990C9B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5023811717EBBCAC00990C9B /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
-		5023816B17EBBCE400990C9B /* DnpRun-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DnpRun-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5023816B17EBBCE400990C9B /* DnpRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5023817217EBBE3400990C9B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		5023817317EBBE3400990C9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5023817517EBBE3400990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -731,6 +733,7 @@
 		A669AD921D057DFC00AB90D0 /* GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenter.h; sourceTree = "<group>"; };
 		A669AD931D057DFC00AB90D0 /* GameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameCenter.mm; sourceTree = "<group>"; };
 		A669AD951D057F0400AB90D0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		A67D10011D49C39D00BEBC4E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		A68700E01D1A3DF500D8A147 /* LaserSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaserSprite.cpp; sourceTree = "<group>"; };
 		A68700E11D1A3DF500D8A147 /* LaserSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserSprite.h; sourceTree = "<group>"; };
 		A68700E51D1A6F7A00D8A147 /* RippleSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RippleSprite.cpp; sourceTree = "<group>"; };
@@ -761,6 +764,8 @@
 		A6BD65051D13C940004B202E /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
 		A6BD65061D13C940004B202E /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
 		A6BD65071D13C940004B202E /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		A6C196F61D3E05F700BBECEF /* ICloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICloudManager.h; sourceTree = "<group>"; };
+		A6C196F71D3E05F700BBECEF /* ICloudManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ICloudManager.mm; sourceTree = "<group>"; };
 		A6C5287C1D16A44200C2BE75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6D398BE1CF99316000870D2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		A6D398C01CF99321000870D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -797,7 +802,7 @@
 		DA9E7D871AB1ABCC004B27C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ED545A881B68A23E00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A8A1B68A24500C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		F293B3C815EB7BE500256477 /* DnpRun-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DnpRun-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F293B3C815EB7BE500256477 /* DnpRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnpRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F293B3CC15EB7BE500256477 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F293B3CE15EB7BE500256477 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		F293B3D015EB7BE500256477 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -843,6 +848,7 @@
 				A669AD841D05732C00AB90D0 /* MediaPlayer.framework in Frameworks */,
 				A669AD821D0572B700AB90D0 /* CFNetwork.framework in Frameworks */,
 				A65EEE3F1D05CAB800D69833 /* WebKit.framework in Frameworks */,
+				A67D10021D49C39D00BEBC4E /* CloudKit.framework in Frameworks */,
 				A669AD881D05749900AB90D0 /* libc++abi.tbd in Frameworks */,
 				A669AD7B1D054CEE00AB90D0 /* libsqlite3.tbd in Frameworks */,
 				A669AD801D056A8600AB90D0 /* CoreMedia.framework in Frameworks */,
@@ -895,6 +901,7 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				A6C196F51D3E05F700BBECEF /* icloud */,
 				A61FB5501D1017E9002F67BC /* KeychainAccessGroups.plist */,
 				A669AD911D057DFC00AB90D0 /* gamer */,
 				A669AD8D1D057BE800AB90D0 /* Icon.png */,
@@ -1594,6 +1601,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A6C196F51D3E05F700BBECEF /* icloud */ = {
+			isa = PBXGroup;
+			children = (
+				A6C196F61D3E05F700BBECEF /* ICloudManager.h */,
+				A6C196F71D3E05F700BBECEF /* ICloudManager.mm */,
+			);
+			path = icloud;
+			sourceTree = "<group>";
+		};
 		A6FDFFA81D18F1760041525E /* shader */ = {
 			isa = PBXGroup;
 			children = (
@@ -1654,8 +1670,8 @@
 		F293B3C915EB7BE500256477 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F293B3C815EB7BE500256477 /* DnpRun-mobile.app */,
-				5023816B17EBBCE400990C9B /* DnpRun-mobile.app */,
+				F293B3C815EB7BE500256477 /* DnpRun.app */,
+				5023816B17EBBCE400990C9B /* DnpRun.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1663,6 +1679,7 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A67D10011D49C39D00BEBC4E /* CloudKit.framework */,
 				A6C5287C1D16A44200C2BE75 /* SystemConfiguration.framework */,
 				A6BD64FF1D13C940004B202E /* VungleSDK.embeddedframework */,
 				A669AD951D057F0400AB90D0 /* GameKit.framework */,
@@ -1740,9 +1757,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5023812617EBBCE400990C9B /* DnpRun-desktop */ = {
+		5023812617EBBCE400990C9B /* DnpRunMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "DnpRun-desktop" */;
+			buildConfigurationList = 5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "DnpRunMac" */;
 			buildPhases = (
 				5023813117EBBCE400990C9B /* Sources */,
 				5023813617EBBCE400990C9B /* Frameworks */,
@@ -1756,14 +1773,14 @@
 				152A34B9199CE758004B68DC /* PBXTargetDependency */,
 				C0A2F04118975FF80072A7AB /* PBXTargetDependency */,
 			);
-			name = "DnpRun-desktop";
+			name = DnpRunMac;
 			productName = StudioRun;
-			productReference = 5023816B17EBBCE400990C9B /* DnpRun-mobile.app */;
+			productReference = 5023816B17EBBCE400990C9B /* DnpRun.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F293B3C715EB7BE500256477 /* DnpRun-mobile */ = {
+		F293B3C715EB7BE500256477 /* DnpRunIos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "DnpRun-mobile" */;
+			buildConfigurationList = F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "DnpRunIos" */;
 			buildPhases = (
 				F293B3C415EB7BE500256477 /* Sources */,
 				F293B3C515EB7BE500256477 /* Frameworks */,
@@ -1777,9 +1794,9 @@
 				152A349F199CE72E004B68DC /* PBXTargetDependency */,
 				15D1F3091994BBCA00302043 /* PBXTargetDependency */,
 			);
-			name = "DnpRun-mobile";
+			name = DnpRunIos;
 			productName = StudioRun;
-			productReference = F293B3C815EB7BE500256477 /* DnpRun-mobile.app */;
+			productReference = F293B3C815EB7BE500256477 /* DnpRun.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1797,7 +1814,7 @@
 								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -1831,8 +1848,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				F293B3C715EB7BE500256477 /* DnpRun-mobile */,
-				5023812617EBBCE400990C9B /* DnpRun-desktop */,
+				F293B3C715EB7BE500256477 /* DnpRunIos */,
+				5023812617EBBCE400990C9B /* DnpRunMac */,
 			);
 		};
 /* End PBXProject section */
@@ -2199,6 +2216,7 @@
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 				A63043331D1689B20098E1F5 /* SBJsonParser.m in Sources */,
 				A630418C1D1689540098E1F5 /* AnalyticXStringUtil.mm in Sources */,
+				A6C196F81D3E05F700BBECEF /* ICloudManager.mm in Sources */,
 				A63042AF1D1689B20098E1F5 /* CCGrayFilter.cpp in Sources */,
 				A63E03911D1BE74400051712 /* GhostSprite.cpp in Sources */,
 				A63042FD1D1689B20098E1F5 /* cocos2dx_extra_ios_iap_luabinding.cpp in Sources */,
@@ -2298,7 +2316,7 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
-				PRODUCT_NAME = "DnpRun-mobile";
+				PRODUCT_NAME = DnpRun;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/mac $(SRCROOT)/../../cocos2d-x/external/glfw3/include/mac $(SRCROOT)/../Classes/quick-src/extra/platform/mac $(SRCROOT)/../Classes/quick-src/extra/platform/ios_mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
@@ -2339,7 +2357,7 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
-				PRODUCT_NAME = "DnpRun-mobile";
+				PRODUCT_NAME = DnpRun;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/mac $(SRCROOT)/../../cocos2d-x/external/glfw3/include/mac $(SRCROOT)/../Classes/quick-src/extra/platform/mac $(SRCROOT)/../Classes/quick-src/extra/platform/ios_mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
@@ -2454,7 +2472,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donopo.dnprun;
-				PRODUCT_NAME = "DnpRun-mobile";
+				PRODUCT_NAME = DnpRun;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2516,7 +2534,7 @@
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donopo.dnprun;
-				PRODUCT_NAME = "DnpRun-mobile";
+				PRODUCT_NAME = DnpRun;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2528,7 +2546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "DnpRun-desktop" */ = {
+		5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "DnpRunMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5023816917EBBCE400990C9B /* Debug */,
@@ -2546,7 +2564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "DnpRun-mobile" */ = {
+		F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "DnpRunIos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F293B6C515EB7BEA00256477 /* Debug */,

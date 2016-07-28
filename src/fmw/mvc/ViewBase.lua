@@ -105,6 +105,9 @@ function ViewBase:pairesTarget(target)
                 self.children[name] = child
                 self[name] = child
             end
+            if child.UserData and child.UserData[1] == "sb" then
+                child:setPressedActionEnabled(true)
+            end
             self:pairesTarget(child)
         end
     end
@@ -410,7 +413,6 @@ function ViewBase:localLanguage()
     local res = rawget(self.class, "LOCALE_LANG_LABEL")
     if res then
         local curLang =  locale.defaultLang()
-        print(curLang)
         local lblType = 1
         if   curLang == device.LANGUAGE.CN or curLang == device.LANGUAGE.JP or curLang == device.LANGUAGE.KR then
             lblType = 1
@@ -420,6 +422,7 @@ function ViewBase:localLanguage()
         for name, langs in pairs(res) do
             for t=1, 2 do
                 local lblName = "LO_"..name.."_"..t
+                print(lblName)
                 if lblType == t then
                     self[lblName]:setVisible(true)
                     self[name] = self[lblName]
